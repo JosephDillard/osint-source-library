@@ -1,0 +1,980 @@
+{
+  "catalog_version": 1,
+  "review_date": "2026-09-20",
+  "categories": {
+    "weather": "Weather, flooding & air quality",
+    "hazards": "Natural hazards & disasters",
+    "crime": "Crime & public safety",
+    "events": "Public events, protests & conflict",
+    "aviation": "Air traffic & aviation",
+    "maritime": "Sea traffic & maritime safety",
+    "roads": "Road traffic & transport",
+    "government": "Government & humanitarian information",
+    "power": "Power outages & grid resilience",
+    "water": "Water outages & water systems",
+    "connectivity": "Internet & communications disruptions",
+    "context": "Maps, infrastructure & geographic context"
+  },
+  "sources": [
+    {
+      "id": "nws-alerts",
+      "name": "NWS forecasts, observations and alerts",
+      "provider": "NOAA / National Weather Service",
+      "category": "weather",
+      "coverage": "United States and supported territories",
+      "kind": "live-feed",
+      "access": "open",
+      "formats": [
+        "GeoJSON",
+        "JSON-LD",
+        "CAP",
+        "Atom"
+      ],
+      "url": "https://www.weather.gov/",
+      "documentation_url": "https://www.weather.gov/documentation/services-web-api",
+      "endpoint_url": "https://api.weather.gov/alerts/active",
+      "update_frequency": "Event driven; observations can lag. Respect cache headers and rate limits.",
+      "license_notes": "Documentation permits free use for any purpose; identify the application with a User-Agent.",
+      "security_use": "Weather alerts around facilities, outdoor operations and travel corridors.",
+      "limitations": "Some alerts use forecast zones without direct polygon geometry; an alert does not confirm damage.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.weather.gov/documentation/services-web-api"
+      ]
+    },
+    {
+      "id": "nhc-gis",
+      "name": "National Hurricane Center GIS products",
+      "provider": "NOAA / National Hurricane Center",
+      "category": "weather",
+      "coverage": "Atlantic and eastern North Pacific; product coverage varies",
+      "kind": "mixed",
+      "access": "open",
+      "formats": [
+        "Shapefile",
+        "KML",
+        "KMZ"
+      ],
+      "url": "https://www.nhc.noaa.gov/",
+      "documentation_url": "https://www.nhc.noaa.gov/gis",
+      "endpoint_url": null,
+      "update_frequency": "Advisory and product schedules; archives are also available.",
+      "license_notes": "Public NOAA products; retain attribution and product-specific caveats.",
+      "security_use": "Hurricane planning, coastal facilities and port disruption awareness.",
+      "limitations": "The forecast cone describes track uncertainty, not the full area of hazards.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.nhc.noaa.gov/gis"
+      ]
+    },
+    {
+      "id": "nwps",
+      "name": "National Water Prediction Service",
+      "provider": "NOAA / National Weather Service",
+      "category": "weather",
+      "coverage": "United States; coverage varies by gauge and model product",
+      "kind": "live-feed",
+      "access": "open",
+      "formats": [
+        "JSON",
+        "GIS web services"
+      ],
+      "url": "https://water.noaa.gov/",
+      "documentation_url": "https://api.water.noaa.gov/about/api",
+      "endpoint_url": null,
+      "update_frequency": "Observation, forecast and model schedules vary.",
+      "license_notes": "Public NOAA service; check each GIS product's terms and operational status.",
+      "security_use": "River flooding awareness near sites, access roads and supply routes.",
+      "limitations": "Flood forecasts and river gauges do not report drinking-water service outages.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://api.water.noaa.gov/about/api"
+      ]
+    },
+    {
+      "id": "airnow",
+      "name": "AirNow air quality observations and forecasts",
+      "provider": "US EPA and AirNow partners",
+      "category": "weather",
+      "coverage": "Supported reporting areas, principally United States",
+      "kind": "live-feed",
+      "access": "registration",
+      "formats": [
+        "JSON",
+        "CSV",
+        "XML",
+        "KML"
+      ],
+      "url": "https://www.airnow.gov/",
+      "documentation_url": "https://docs.airnowapi.org/webservices",
+      "endpoint_url": null,
+      "update_frequency": "Observation and forecast schedules vary; see endpoint documentation.",
+      "license_notes": "API key required; follow AirNow Data Use Guidelines and request limits.",
+      "security_use": "Smoke and air-quality awareness for outdoor staff and facility operations.",
+      "limitations": "Preliminary regional observations are not a measurement of indoor conditions.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://docs.airnowapi.org/webservices",
+        "https://docs.airnowapi.org/faq"
+      ]
+    },
+    {
+      "id": "usgs-earthquakes",
+      "name": "USGS earthquake feeds",
+      "provider": "US Geological Survey",
+      "category": "hazards",
+      "coverage": "Global, with uneven detection thresholds",
+      "kind": "live-feed",
+      "access": "open",
+      "formats": [
+        "GeoJSON",
+        "Atom",
+        "CSV",
+        "QuakeML"
+      ],
+      "url": "https://earthquake.usgs.gov/",
+      "documentation_url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php",
+      "endpoint_url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson",
+      "update_frequency": "Summary feeds refresh every minute; events can be revised.",
+      "license_notes": "Public USGS data; retain source attribution and revision timestamps.",
+      "security_use": "Seismic awareness and initial screening of potentially exposed facilities.",
+      "limitations": "Magnitude and distance alone do not establish site damage; use appropriate shaking products.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
+      ]
+    },
+    {
+      "id": "nasa-firms",
+      "name": "FIRMS active fire and thermal anomalies",
+      "provider": "NASA / LANCE",
+      "category": "hazards",
+      "coverage": "Global for MODIS/VIIRS; some products restricted to US/Canada",
+      "kind": "live-feed",
+      "access": "registration",
+      "formats": [
+        "CSV",
+        "WMS",
+        "WFS"
+      ],
+      "url": "https://firms.modaps.eosdis.nasa.gov/",
+      "documentation_url": "https://firms.modaps.eosdis.nasa.gov/api/area/",
+      "endpoint_url": null,
+      "update_frequency": "Satellite overpass and processing dependent; NRT, RT and URT availability varies.",
+      "license_notes": "Free MAP_KEY for API use; follow NASA/FIRMS attribution and transaction limits.",
+      "security_use": "Wildfire awareness around sites, routes and utility corridors.",
+      "limitations": "Thermal detections can represent industrial heat; points are not fire perimeters or confirmed impact.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://firms.modaps.eosdis.nasa.gov/api/area/"
+      ]
+    },
+    {
+      "id": "gdacs",
+      "name": "GDACS disaster alerts and geospatial services",
+      "provider": "United Nations / European Commission partnership",
+      "category": "hazards",
+      "coverage": "Global",
+      "kind": "live-feed",
+      "access": "open",
+      "formats": [
+        "GeoJSON",
+        "XML",
+        "KML"
+      ],
+      "url": "https://www.gdacs.org/",
+      "documentation_url": "https://www.gdacs.org/gdacsapi/swagger/index.html",
+      "endpoint_url": null,
+      "update_frequency": "Event updates and feed schedules; verify timestamps.",
+      "license_notes": "API quickstart describes free data access; check attribution and individual product terms.",
+      "security_use": "International disaster awareness and regional exposure screening.",
+      "limitations": "Modelled alert levels are screening signals; local impacts require confirmation.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.gdacs.org/gdacsapi/swagger/index.html",
+        "https://gdacs.org/Documents/2025/GDACS_API_quickstart_v1.pdf",
+        "https://data.gdacs.org/feed_reference.aspx"
+      ]
+    },
+    {
+      "id": "fbi-cde",
+      "name": "FBI Crime Data Explorer",
+      "provider": "FBI Uniform Crime Reporting Program",
+      "category": "crime",
+      "coverage": "United States, participating law-enforcement agencies",
+      "kind": "historical",
+      "access": "open",
+      "formats": [
+        "Dashboard",
+        "Downloads"
+      ],
+      "url": "https://cde.ucr.cjis.gov/",
+      "documentation_url": "https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr",
+      "endpoint_url": null,
+      "update_frequency": "Release based; inspect reporting period and agency participation.",
+      "license_notes": "Public statistical releases; consult dataset documentation and methodology.",
+      "security_use": "Area-level security planning and understanding reported crime patterns.",
+      "limitations": "Not a live incident or dispatch feed. Missing submissions and changing reporting practices affect comparisons.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr"
+      ]
+    },
+    {
+      "id": "chicago-crime",
+      "name": "Chicago reported crimes",
+      "provider": "Chicago Police Department / City of Chicago",
+      "category": "crime",
+      "coverage": "Chicago, Illinois",
+      "kind": "periodic",
+      "access": "open",
+      "formats": [
+        "JSON",
+        "CSV",
+        "Socrata API"
+      ],
+      "url": "https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2",
+      "documentation_url": "https://data.cityofchicago.org/api/views/ijzp-q8t2.json",
+      "endpoint_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json",
+      "update_frequency": "Updated daily; excludes the most recent seven days.",
+      "license_notes": "City terms apply; metadata prohibits deriving exact addresses from approximate locations.",
+      "security_use": "Local reported-incident context for site planning.",
+      "limitations": "Block-level locations and preliminary classifications. Provider cautions against comparisons over time; not current dispatch.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-metadata-reviewed",
+      "evidence_urls": [
+        "https://data.cityofchicago.org/api/views/ijzp-q8t2.json"
+      ]
+    },
+    {
+      "id": "nyc-complaints",
+      "name": "NYPD complaint data, current year to date",
+      "provider": "NYPD / NYC Open Data",
+      "category": "crime",
+      "coverage": "New York City",
+      "kind": "periodic",
+      "access": "open",
+      "formats": [
+        "JSON",
+        "CSV",
+        "Socrata API"
+      ],
+      "url": "https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Current-Year-To-Date-/5uac-w243",
+      "documentation_url": "https://data.cityofnewyork.us/api/views/5uac-w243.json",
+      "endpoint_url": "https://data.cityofnewyork.us/resource/5uac-w243.json",
+      "update_frequency": "Periodic release covering completed reporting periods; check current rows and metadata.",
+      "license_notes": "NYC Open Data terms apply; license identifier not supplied in reviewed metadata.",
+      "security_use": "Reported-incident context around facilities and routes.",
+      "limitations": "The description contains a stale year reference; inspect record dates. Complaints are not convictions or live dispatch.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-metadata-reviewed",
+      "evidence_urls": [
+        "https://data.cityofnewyork.us/api/views/5uac-w243.json"
+      ]
+    },
+    {
+      "id": "gdelt",
+      "name": "GDELT event and news data",
+      "provider": "The GDELT Project",
+      "category": "events",
+      "coverage": "Global news coverage; uneven by language and region",
+      "kind": "live-feed",
+      "access": "open",
+      "formats": [
+        "CSV",
+        "JSON",
+        "BigQuery"
+      ],
+      "url": "https://www.gdeltproject.org/",
+      "documentation_url": "https://gdeltproject.org/data.html",
+      "endpoint_url": null,
+      "update_frequency": "Some GDELT 2.0 datasets update every 15 minutes; product windows vary.",
+      "license_notes": "Provider describes database as free and open; underlying news articles retain publisher rights.",
+      "security_use": "Discover reports of protests, disruption and other emerging events.",
+      "limitations": "Machine-extracted events and place mentions need corroboration, deduplication and geolocation review.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://gdeltproject.org/data.html",
+        "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/"
+      ]
+    },
+    {
+      "id": "acled",
+      "name": "ACLED political violence and protest data",
+      "provider": "ACLED",
+      "category": "events",
+      "coverage": "Global; collection and release coverage vary",
+      "kind": "periodic",
+      "access": "approval",
+      "formats": [
+        "API",
+        "Downloads"
+      ],
+      "url": "https://acleddata.com/",
+      "documentation_url": "https://acleddata.com/acled-api-documentation",
+      "endpoint_url": null,
+      "update_frequency": "Curated releases and revisions; inspect product schedule.",
+      "license_notes": "Account and applicable access agreement required. Commercial reuse and redistribution depend on ACLED's current EULA and written permissions.",
+      "security_use": "Regional context for event exposure and travel planning.",
+      "limitations": "Not an emergency feed; review event and geographic precision. A peaceful protest is not evidence of a threat.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://acleddata.com/acled-api-documentation",
+        "https://acleddata.com/eula",
+        "https://acleddata.com/contentusage"
+      ]
+    },
+    {
+      "id": "nyc-permitted-events",
+      "name": "NYC permitted event information",
+      "provider": "NYC Office of Citywide Event Coordination and Management",
+      "category": "events",
+      "coverage": "New York City",
+      "kind": "periodic",
+      "access": "open",
+      "formats": [
+        "JSON",
+        "CSV",
+        "Socrata API"
+      ],
+      "url": "https://data.cityofnewyork.us/City-Government/NYC-Permitted-Event-Information/tvpp-9vvx",
+      "documentation_url": "https://data.cityofnewyork.us/api/views/tvpp-9vvx.json",
+      "endpoint_url": "https://data.cityofnewyork.us/resource/tvpp-9vvx.json",
+      "update_frequency": "Rolling list of approved events in the next month; inspect updates.",
+      "license_notes": "NYC Open Data terms apply; license identifier not supplied in reviewed metadata.",
+      "security_use": "Plan access, staffing and travel around permitted public events.",
+      "limitations": "Does not include all gatherings. Film permits included only when street impacts meet the dataset's duration criterion.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-metadata-reviewed",
+      "evidence_urls": [
+        "https://data.cityofnewyork.us/api/views/tvpp-9vvx.json"
+      ]
+    },
+    {
+      "id": "opensky",
+      "name": "OpenSky aircraft state vectors",
+      "provider": "OpenSky Network",
+      "category": "aviation",
+      "coverage": "Global receiver network; coverage varies",
+      "kind": "live-feed",
+      "access": "approval",
+      "formats": [
+        "JSON"
+      ],
+      "url": "https://opensky-network.org/",
+      "documentation_url": "https://openskynetwork.github.io/opensky-api/rest.html",
+      "endpoint_url": "https://opensky-network.org/api/states/all",
+      "update_frequency": "Near real time where receivers report; API quotas apply.",
+      "license_notes": "OAuth2 client credentials. Written license required for commercial entities and operational REST API use; see current terms.",
+      "security_use": "Airspace awareness and aviation exposure research where licensed.",
+      "limitations": "ADS-B coverage gaps and incomplete identity data; does not supply airline schedules or establish passenger identity.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://openskynetwork.github.io/opensky-api/rest.html",
+        "https://opensky-network.org/about/terms-of-use"
+      ]
+    },
+    {
+      "id": "faa-nas",
+      "name": "FAA National Airspace System status",
+      "provider": "Federal Aviation Administration",
+      "category": "aviation",
+      "coverage": "United States National Airspace System",
+      "kind": "dashboard",
+      "access": "open",
+      "formats": [
+        "Web dashboard"
+      ],
+      "url": "https://nasstatus.faa.gov/",
+      "documentation_url": "https://nasstatus.faa.gov/",
+      "endpoint_url": null,
+      "update_frequency": "Operational status updates; inspect published times.",
+      "license_notes": "Public FAA status page; no reusable machine endpoint was validated for this entry.",
+      "security_use": "Airport and airspace disruption awareness for travel and logistics.",
+      "limitations": "Status page is not a complete aircraft position feed or flight-specific guarantee.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "partial-review",
+      "evidence_urls": [
+        "https://nasstatus.faa.gov/"
+      ]
+    },
+    {
+      "id": "aviation-weather",
+      "name": "Aviation Weather Center Data API",
+      "provider": "NOAA / Aviation Weather Center",
+      "category": "aviation",
+      "coverage": "Worldwide observations and forecasts; some products regional",
+      "kind": "live-feed",
+      "access": "open",
+      "formats": [
+        "JSON",
+        "GeoJSON",
+        "XML",
+        "CSV",
+        "Text"
+      ],
+      "url": "https://aviationweather.gov/",
+      "documentation_url": "https://aviationweather.gov/data/api/",
+      "endpoint_url": "https://aviationweather.gov/api/data/metar?ids=KDFW&format=json",
+      "update_frequency": "Product dependent; latest observations and recent history.",
+      "license_notes": "Public API with query limits; use cache downloads for bulk data and follow provider guidance.",
+      "security_use": "Weather disruption context at airports and along planned air travel.",
+      "limitations": "Aviation weather is not aircraft traffic; product coverage and observation ages differ.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://aviationweather.gov/data/api/"
+      ]
+    },
+    {
+      "id": "noaa-ais",
+      "name": "Marine Cadastre vessel traffic / AIS",
+      "provider": "BOEM / NOAA / US Coast Guard",
+      "category": "maritime",
+      "coverage": "US coastal waters and supported vessel-traffic products",
+      "kind": "historical",
+      "access": "open",
+      "formats": [
+        "CSV",
+        "GeoPackage",
+        "GeoTIFF",
+        "Esri web services"
+      ],
+      "url": "https://marinecadastre.gov/ais/",
+      "documentation_url": "https://coast.noaa.gov/digitalcoast/data/vesseltraffic.html",
+      "endpoint_url": null,
+      "update_frequency": "Published archives and derived products; inspect each release.",
+      "license_notes": "Publicly distributed products; retain dataset metadata and check release-specific use constraints.",
+      "security_use": "Historical shipping patterns, port approaches and maritime exposure planning.",
+      "limitations": "Not a live AIS feed. AccessAIS ordering was unavailable when reviewed; its page points to bulk downloads.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://coast.noaa.gov/digitalcoast/data/vesseltraffic.html",
+        "https://marinecadastre.gov/accessais/"
+      ]
+    },
+    {
+      "id": "nga-maritime",
+      "name": "NGA maritime navigational warnings",
+      "provider": "National Geospatial-Intelligence Agency",
+      "category": "maritime",
+      "coverage": "Maritime warning areas and US shipping interests; coverage varies",
+      "kind": "dashboard",
+      "access": "open",
+      "formats": [
+        "Web notices",
+        "Text"
+      ],
+      "url": "https://msi.nga.mil/",
+      "documentation_url": "https://msi.nga.mil/NavWarnings",
+      "endpoint_url": null,
+      "update_frequency": "Warnings issued and cancelled as conditions change.",
+      "license_notes": "Public maritime safety information; follow product usage notices.",
+      "security_use": "Maritime route awareness, navigation hazards and regional shipping disruption.",
+      "limitations": "Not a live vessel feed and not a replacement for required official onboard warning services.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://msi.nga.mil/NavWarnings"
+      ]
+    },
+    {
+      "id": "marinetraffic",
+      "name": "MarineTraffic / Kpler AIS Data API",
+      "provider": "Kpler / MarineTraffic",
+      "category": "maritime",
+      "coverage": "Global, subject to receiver coverage and subscription",
+      "kind": "live-feed",
+      "access": "commercial",
+      "formats": [
+        "API"
+      ],
+      "url": "https://www.marinetraffic.com/",
+      "documentation_url": "https://servicedocs.marinetraffic.com/",
+      "endpoint_url": null,
+      "update_frequency": "Service- and subscription-dependent live and historical access.",
+      "license_notes": "Proprietary API; API key and applicable paid agreement required. Included as a licensed option.",
+      "security_use": "Vessel-position and maritime logistics awareness where contracted.",
+      "limitations": "Public map access does not grant bulk API or redistribution rights; AIS can be delayed or incomplete.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://servicedocs.marinetraffic.com/"
+      ]
+    },
+    {
+      "id": "ny-511",
+      "name": "511NY traffic API",
+      "provider": "New York State Department of Transportation",
+      "category": "roads",
+      "coverage": "New York State and included neighboring observations",
+      "kind": "live-feed",
+      "access": "registration",
+      "formats": [
+        "JSON",
+        "XML"
+      ],
+      "url": "https://511ny.org/",
+      "documentation_url": "https://www.511ny.org/developers/help",
+      "endpoint_url": "https://511ny.org/api/v2/get/event",
+      "update_frequency": "Operational updates; inspect individual event times.",
+      "license_notes": "Developer key and Developer Access Agreement required.",
+      "security_use": "Road incidents, closures, construction and travel disruption around routes.",
+      "limitations": "Coverage is not every street; camera availability does not confer unrestricted image reuse.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.511ny.org/developers/help",
+        "https://www.511ny.org/developers/daa",
+        "https://511ny.org/help/endpoint/event"
+      ]
+    },
+    {
+      "id": "caltrans-quickmap",
+      "name": "Caltrans QuickMap",
+      "provider": "California Department of Transportation",
+      "category": "roads",
+      "coverage": "California state highway network",
+      "kind": "dashboard",
+      "access": "open",
+      "formats": [
+        "Web map"
+      ],
+      "url": "https://quickmap.dot.ca.gov/",
+      "documentation_url": "https://dot.ca.gov/travel",
+      "endpoint_url": null,
+      "update_frequency": "Operational traffic, closure and incident updates.",
+      "license_notes": "Public traveler information; check layer terms before integration. No supported API validated here.",
+      "security_use": "California road closure and travel-condition awareness.",
+      "limitations": "Map layers have different providers and timestamps; QuickMap is not a navigation application.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://dot.ca.gov/travel",
+        "https://quickmap.dot.ca.gov/maps/traffic/mwebview.html"
+      ]
+    },
+    {
+      "id": "drivetexas",
+      "name": "DriveTexas highway conditions",
+      "provider": "Texas Department of Transportation",
+      "category": "roads",
+      "coverage": "Texas state-maintained roads",
+      "kind": "dashboard",
+      "access": "open",
+      "formats": [
+        "Web map"
+      ],
+      "url": "https://drivetexas.org/",
+      "documentation_url": "https://www.txdot.gov/about/newsroom/stories/be-your-own-traffic-reporter.html",
+      "endpoint_url": null,
+      "update_frequency": "Updates from TxDOT operations; inspect event times.",
+      "license_notes": "Public traveler information; no supported public integration API validated here.",
+      "security_use": "Texas road conditions, crashes, closures and logistics awareness.",
+      "limitations": "State roadway coverage does not establish the status of every local access road.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.txdot.gov/about/newsroom/stories/be-your-own-traffic-reporter.html"
+      ]
+    },
+    {
+      "id": "openfema",
+      "name": "OpenFEMA disaster declarations and program data",
+      "provider": "Federal Emergency Management Agency",
+      "category": "government",
+      "coverage": "United States and territories",
+      "kind": "periodic",
+      "access": "open",
+      "formats": [
+        "JSON",
+        "Downloads"
+      ],
+      "url": "https://www.fema.gov/about/openfema",
+      "documentation_url": "https://www.fema.gov/about/openfema/api",
+      "endpoint_url": "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries",
+      "update_frequency": "Dataset-specific administrative updates.",
+      "license_notes": "Public OpenFEMA data; review dataset metadata and terms.",
+      "security_use": "Declared disasters, affected jurisdictions and recovery context.",
+      "limitations": "Declarations and aid records are not live evacuation or incident alerts. Documentation fetch returned 403 in this review.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "partial-review",
+      "evidence_urls": [
+        "https://www.fema.gov/about/openfema/api",
+        "https://www.fema.gov/gu/about/reports-and-data/openfema"
+      ]
+    },
+    {
+      "id": "federal-register",
+      "name": "Federal Register API",
+      "provider": "Office of the Federal Register / Government Publishing Office",
+      "category": "government",
+      "coverage": "United States federal government",
+      "kind": "periodic",
+      "access": "open",
+      "formats": [
+        "JSON",
+        "XML",
+        "PDF"
+      ],
+      "url": "https://www.federalregister.gov/",
+      "documentation_url": "https://www.federalregister.gov/developers/documentation/api/v1",
+      "endpoint_url": "https://www.federalregister.gov/api/v1/documents.json?per_page=1",
+      "update_frequency": "Publication schedule; inspect dates and document status.",
+      "license_notes": "Public API without keys; linked source documents may have additional notices.",
+      "security_use": "Track agency notices, emergency declarations and infrastructure-related policy changes.",
+      "limitations": "Text usually needs geographic interpretation; verify legal reliance against the linked official edition.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.federalregister.gov/developers/documentation/api/v1"
+      ]
+    },
+    {
+      "id": "data-gov",
+      "name": "Data.gov catalog",
+      "provider": "US General Services Administration and contributing agencies",
+      "category": "government",
+      "coverage": "United States federal, state and local contributors",
+      "kind": "catalog",
+      "access": "mixed",
+      "formats": [
+        "Catalog",
+        "Dataset-specific downloads"
+      ],
+      "url": "https://data.gov/",
+      "documentation_url": "https://data.gov/",
+      "endpoint_url": null,
+      "update_frequency": "Catalog and underlying datasets update separately.",
+      "license_notes": "Licenses and access conditions are dataset-specific; catalog inclusion is not blanket permission.",
+      "security_use": "Discover local government, infrastructure and emergency-management sources.",
+      "limitations": "A catalog record is not an operational feed; validate the underlying publisher and resource.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://data.gov/"
+      ]
+    },
+    {
+      "id": "reliefweb",
+      "name": "ReliefWeb reports and disasters API",
+      "provider": "UN OCHA / ReliefWeb",
+      "category": "government",
+      "coverage": "Global humanitarian emergencies",
+      "kind": "live-feed",
+      "access": "approval",
+      "formats": [
+        "JSON"
+      ],
+      "url": "https://reliefweb.int/",
+      "documentation_url": "https://apidoc.reliefweb.int/",
+      "endpoint_url": "https://api.reliefweb.int/v2/reports",
+      "update_frequency": "Continuously curated reports; publication lag varies.",
+      "license_notes": "No API fee; pre-approved appname required since November 2025. Original publishers retain content rights.",
+      "security_use": "Humanitarian situation reports and international operational context.",
+      "limitations": "Reports can reference broad areas and older events; distinguish reporting time from event time.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://apidoc.reliefweb.int/"
+      ]
+    },
+    {
+      "id": "poweroutage-us",
+      "name": "PowerOutage.us",
+      "provider": "Bluefire Studios / PowerOutage.us",
+      "category": "power",
+      "coverage": "Tracked utilities in the United States; other markets via provider products",
+      "kind": "mixed",
+      "access": "commercial",
+      "formats": [
+        "Dashboard",
+        "REST API"
+      ],
+      "url": "https://poweroutage.us/",
+      "documentation_url": "https://poweroutage.us/use-our-data",
+      "endpoint_url": null,
+      "update_frequency": "Provider and utility dependent; inspect freshness.",
+      "license_notes": "Public viewing and licensed API products are distinct. API use and redistribution are governed by commercial terms.",
+      "security_use": "Area-level electricity disruption and business-continuity awareness.",
+      "limitations": "Outage counts and estimated affected areas do not prove a particular building has lost power.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://poweroutage.us/use-our-data",
+        "https://poweroutage.us/legal/apitermsofuse",
+        "https://poweroutage.us/legal/termsofuse"
+      ]
+    },
+    {
+      "id": "eaglei-history",
+      "name": "EAGLE-I historical power outage data, 2014-2022",
+      "provider": "Oak Ridge National Laboratory",
+      "category": "power",
+      "coverage": "United States, reporting utility coverage varies",
+      "kind": "historical",
+      "access": "open",
+      "formats": [
+        "Dataset downloads"
+      ],
+      "url": "https://doi.ccs.ornl.gov/dataset/ccec86f0-e144-5de8-aee0-fb26028b26e1",
+      "documentation_url": "https://doi.ccs.ornl.gov/dataset/ccec86f0-e144-5de8-aee0-fb26028b26e1",
+      "endpoint_url": null,
+      "update_frequency": "Fixed historical release; this entry is specifically the 2014-2022 dataset.",
+      "license_notes": "Review repository license and citation instructions before reuse; current bulk-download availability not tested.",
+      "security_use": "Historical outage exposure and resilience research.",
+      "limitations": "Does not provide current outages. Collection gaps and varying utility coverage affect comparisons.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://doi.ccs.ornl.gov/dataset/ccec86f0-e144-5de8-aee0-fb26028b26e1"
+      ]
+    },
+    {
+      "id": "austin-energy",
+      "name": "Austin Energy outage map",
+      "provider": "Austin Energy / City of Austin",
+      "category": "power",
+      "coverage": "Austin Energy service territory, Texas",
+      "kind": "dashboard",
+      "access": "open",
+      "formats": [
+        "Web map"
+      ],
+      "url": "https://www.austintexas.gov/services/view-and-report-power-outages",
+      "documentation_url": "https://www.austintexas.gov/services/view-and-report-power-outages",
+      "endpoint_url": null,
+      "update_frequency": "Operational outage updates; inspect map timestamps.",
+      "license_notes": "Public utility status map; integration and redistribution terms require provider review.",
+      "security_use": "Local utility outage awareness and restoration context.",
+      "limitations": "Service territory differs from city boundaries; map estimates do not establish building-level service.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.austintexas.gov/services/view-and-report-power-outages"
+      ]
+    },
+    {
+      "id": "dc-water",
+      "name": "DC Water service alerts and outage map",
+      "provider": "DC Water",
+      "category": "water",
+      "coverage": "DC Water service area, Washington, DC",
+      "kind": "dashboard",
+      "access": "open",
+      "formats": [
+        "Web alerts",
+        "Web map"
+      ],
+      "url": "https://www.dcwater.com/service-alerts",
+      "documentation_url": "https://www.dcwater.com/service-alerts",
+      "endpoint_url": null,
+      "update_frequency": "Incident-driven notices and utility updates.",
+      "license_notes": "Public utility information; no supported public machine API validated here.",
+      "security_use": "Water service interruptions, repairs and local operational awareness.",
+      "limitations": "Confirm the applicable service area and advisory details. Absence from a map does not establish service.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.dcwater.com/service-alerts"
+      ]
+    },
+    {
+      "id": "usgs-water",
+      "name": "USGS modern Water Data APIs",
+      "provider": "US Geological Survey",
+      "category": "water",
+      "coverage": "United States monitoring locations",
+      "kind": "live-feed",
+      "access": "mixed",
+      "formats": [
+        "GeoJSON",
+        "JSON",
+        "OGC API"
+      ],
+      "url": "https://api.waterdata.usgs.gov/",
+      "documentation_url": "https://api.waterdata.usgs.gov/docs/ogcapi",
+      "endpoint_url": "https://api.waterdata.usgs.gov/ogcapi/v0/collections/latest-continuous/items?limit=1",
+      "update_frequency": "Sensor and telemetry dependent; historical series also available.",
+      "license_notes": "Public USGS data; consult current API-key, quota and service guidance for the selected endpoint.",
+      "security_use": "Streamflow, gauge height and water-resource conditions affecting sites and routes.",
+      "limitations": "Not a drinking-water outage feed. Prefer modern APIs; legacy WaterServices retirement is announced for early 2027.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://api.waterdata.usgs.gov/docs/ogcapi",
+        "https://waterdata.usgs.gov/blog/api-waterservices-decom"
+      ]
+    },
+    {
+      "id": "epa-sdwis",
+      "name": "EPA drinking-water systems and compliance data",
+      "provider": "US Environmental Protection Agency",
+      "category": "water",
+      "coverage": "United States public water systems",
+      "kind": "periodic",
+      "access": "open",
+      "formats": [
+        "Downloads",
+        "Search portal"
+      ],
+      "url": "https://www.epa.gov/waterdata/safe-drinking-water-information-system",
+      "documentation_url": "https://echo.epa.gov/tools/data-downloads/sdwa-download-summary",
+      "endpoint_url": null,
+      "update_frequency": "Periodic reporting; ECHO download documentation describes quarterly refreshes.",
+      "license_notes": "Public EPA releases; consult data dictionaries and completeness caveats.",
+      "security_use": "Identify water systems and review reported compliance history.",
+      "limitations": "Historical compliance records do not establish current water safety or report active outages.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://echo.epa.gov/tools/data-downloads/sdwa-download-summary",
+        "https://www.epa.gov/waterdata/safe-drinking-water-information-system"
+      ]
+    },
+    {
+      "id": "ioda",
+      "name": "IODA internet outage detection",
+      "provider": "Georgia Tech Internet Intelligence Lab",
+      "category": "connectivity",
+      "coverage": "Global country, region and autonomous-system observations",
+      "kind": "live-feed",
+      "access": "open",
+      "formats": [
+        "JSON",
+        "Dashboard"
+      ],
+      "url": "https://ioda.inetintel.cc.gatech.edu/",
+      "documentation_url": "https://api.ioda.inetintel.cc.gatech.edu/v2/",
+      "endpoint_url": null,
+      "update_frequency": "Signal-dependent observation windows; check series timestamps.",
+      "license_notes": "Public research interface; verify current data-reuse terms before production redistribution.",
+      "security_use": "Regional communications disruption and business-continuity context.",
+      "limitations": "Inferred internet anomalies do not prove a cause or establish connectivity at a specific site.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://api.ioda.inetintel.cc.gatech.edu/v2/",
+        "https://ioda.inetintel.cc.gatech.edu/resources?tab=glossary"
+      ]
+    },
+    {
+      "id": "cloudflare-radar",
+      "name": "Cloudflare Radar outages and traffic anomalies",
+      "provider": "Cloudflare",
+      "category": "connectivity",
+      "coverage": "Global; country, region and network coverage varies",
+      "kind": "live-feed",
+      "access": "registration",
+      "formats": [
+        "JSON",
+        "Dashboard"
+      ],
+      "url": "https://radar.cloudflare.com/",
+      "documentation_url": "https://developers.cloudflare.com/radar/investigate/outages/",
+      "endpoint_url": null,
+      "update_frequency": "Outage annotations and anomaly updates; inspect reported times.",
+      "license_notes": "API token with Radar read permission; follow Cloudflare terms and attribution requirements.",
+      "security_use": "Corroborate regional internet disruptions affecting offices and services.",
+      "limitations": "Cloudflare observations are not a complete view of every network or individual connection.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://developers.cloudflare.com/radar/investigate/outages/",
+        "https://developers.cloudflare.com/radar/get-started/first-request/"
+      ]
+    },
+    {
+      "id": "openstreetmap",
+      "name": "OpenStreetMap",
+      "provider": "OpenStreetMap contributors / OpenStreetMap Foundation",
+      "category": "context",
+      "coverage": "Global community mapping; completeness varies",
+      "kind": "reference",
+      "access": "open",
+      "formats": [
+        "OSM PBF",
+        "OSM XML",
+        "Map data"
+      ],
+      "url": "https://www.openstreetmap.org/",
+      "documentation_url": "https://www.openstreetmap.org/copyright",
+      "endpoint_url": null,
+      "update_frequency": "Continuously edited; extracts have their own snapshot dates.",
+      "license_notes": "ODbL database license; attribution and applicable share-alike terms. Tile-server policies are separate.",
+      "security_use": "Road, building and place context for situational-awareness maps.",
+      "limitations": "Map features are not a live incident or verified critical-infrastructure inventory.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.openstreetmap.org/copyright"
+      ]
+    },
+    {
+      "id": "overture",
+      "name": "Overture Maps",
+      "provider": "Overture Maps Foundation and contributors",
+      "category": "context",
+      "coverage": "Global, theme-dependent coverage",
+      "kind": "reference",
+      "access": "open",
+      "formats": [
+        "GeoParquet",
+        "GeoJSON"
+      ],
+      "url": "https://overturemaps.org/",
+      "documentation_url": "https://docs.overturemaps.org/getting-data/",
+      "endpoint_url": null,
+      "update_frequency": "Versioned releases; pin the release used.",
+      "license_notes": "Licensing and attribution vary by theme and source; inspect current attribution documentation.",
+      "security_use": "Buildings, transport and place context for facility exposure analysis.",
+      "limitations": "Feature presence, geometry and business attributes can be incomplete or outdated.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://docs.overturemaps.org/getting-data/",
+        "https://docs.overturemaps.org/attribution/"
+      ]
+    },
+    {
+      "id": "hdx",
+      "name": "Humanitarian Data Exchange",
+      "provider": "UN OCHA Centre for Humanitarian Data / contributing organizations",
+      "category": "context",
+      "coverage": "Global, with humanitarian-response focus",
+      "kind": "catalog",
+      "access": "mixed",
+      "formats": [
+        "CKAN API",
+        "Dataset downloads",
+        "Tabular Data Endpoints"
+      ],
+      "url": "https://data.humdata.org/",
+      "documentation_url": "https://centre.humdata.org/ufaqs/about-the-humanitarian-data-exchange-api/",
+      "endpoint_url": null,
+      "update_frequency": "Dataset-specific; inspect source and last update.",
+      "license_notes": "Dataset-specific licenses and access conditions; tabular endpoints require an HDX API token.",
+      "security_use": "Find administrative boundaries, infrastructure and humanitarian baseline data.",
+      "limitations": "Some datasets require access approval; country and dataset coverage varies. Portal fetch returned 403 in this review.",
+      "reviewed_on": "2026-09-20",
+      "review_status": "partial-review",
+      "evidence_urls": [
+        "https://centre.humdata.org/ufaqs/about-the-humanitarian-data-exchange-api/",
+        "https://centre.humdata.org/ufaqs/data-licenses/",
+        "https://centre.humdata.org/new-api-access-on-hdx-tabular-data-endpoints/"
+      ]
+    }
+  ]
+}

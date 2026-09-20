@@ -1,0 +1,22 @@
+# Local environments and secrets
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pem
+*.key
+
+# Private working data and downloaded provider content
+local/
+data/
+downloads/
+reports/
+
+# Editor / operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

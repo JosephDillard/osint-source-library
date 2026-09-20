@@ -1,0 +1,541 @@
+{
+  "purpose": "Point-in-time HTTP reachability check of landing and documentation URLs. Does not validate contents, data freshness, API integration, or usage rights. Errors may reflect access controls or transient conditions.",
+  "results": [
+    {
+      "url": "https://511ny.org/",
+      "checked_at": "2026-09-20T23:31:56+00:00",
+      "status": 200,
+      "final_url": "https://511ny.org/",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://acleddata.com/",
+      "checked_at": "2026-09-20T23:31:56+00:00",
+      "status": 200,
+      "final_url": "https://acleddata.com/",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://acleddata.com/acled-api-documentation",
+      "checked_at": "2026-09-20T23:31:56+00:00",
+      "status": 200,
+      "final_url": "https://acleddata.com/acled-api-documentation",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://api.ioda.inetintel.cc.gatech.edu/v2/",
+      "checked_at": "2026-09-20T23:31:56+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://api.water.noaa.gov/about/api",
+      "checked_at": "2026-09-20T23:31:56+00:00",
+      "status": 200,
+      "final_url": "https://api.water.noaa.gov/about/api",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://api.waterdata.usgs.gov/",
+      "checked_at": "2026-09-20T23:31:56+00:00",
+      "status": 200,
+      "final_url": "https://api.waterdata.usgs.gov/",
+      "content_type": "text/html",
+      "result": "reachable"
+    },
+    {
+      "url": "https://api.waterdata.usgs.gov/docs/ogcapi",
+      "checked_at": "2026-09-20T23:31:57+00:00",
+      "status": 200,
+      "final_url": "https://api.waterdata.usgs.gov/docs/ogcapi",
+      "content_type": "text/html",
+      "result": "reachable"
+    },
+    {
+      "url": "https://apidoc.reliefweb.int/",
+      "checked_at": "2026-09-20T23:31:57+00:00",
+      "status": 200,
+      "final_url": "https://apidoc.reliefweb.int/",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://aviationweather.gov/",
+      "checked_at": "2026-09-20T23:31:57+00:00",
+      "status": 200,
+      "final_url": "https://aviationweather.gov/",
+      "content_type": "text/html",
+      "result": "reachable"
+    },
+    {
+      "url": "https://aviationweather.gov/data/api/",
+      "checked_at": "2026-09-20T23:31:57+00:00",
+      "status": 200,
+      "final_url": "https://aviationweather.gov/data/api/",
+      "content_type": "text/html",
+      "result": "reachable"
+    },
+    {
+      "url": "https://cde.ucr.cjis.gov/",
+      "checked_at": "2026-09-20T23:31:57+00:00",
+      "status": 200,
+      "final_url": "https://cde.ucr.cjis.gov/",
+      "content_type": "text/html",
+      "result": "reachable"
+    },
+    {
+      "url": "https://centre.humdata.org/ufaqs/about-the-humanitarian-data-exchange-api/",
+      "checked_at": "2026-09-20T23:31:57+00:00",
+      "status": 200,
+      "final_url": "https://centre.humdata.org/ufaqs/about-the-humanitarian-data-exchange-api/",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://coast.noaa.gov/digitalcoast/data/vesseltraffic.html",
+      "checked_at": "2026-09-20T23:31:57+00:00",
+      "status": 200,
+      "final_url": "https://coast.noaa.gov/digitalcoast/data/vesseltraffic.html",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2",
+      "checked_at": "2026-09-20T23:31:57+00:00",
+      "status": 200,
+      "final_url": "https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://data.cityofchicago.org/api/views/ijzp-q8t2.json",
+      "checked_at": "2026-09-20T23:31:57+00:00",
+      "status": 200,
+      "final_url": "https://data.cityofchicago.org/api/views/ijzp-q8t2.json",
+      "content_type": "application/json; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://data.cityofnewyork.us/City-Government/NYC-Permitted-Event-Information/tvpp-9vvx",
+      "checked_at": "2026-09-20T23:31:57+00:00",
+      "status": 200,
+      "final_url": "https://data.cityofnewyork.us/City-Government/NYC-Permitted-Event-Information/tvpp-9vvx",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Current-Year-To-Date-/5uac-w243",
+      "checked_at": "2026-09-20T23:31:57+00:00",
+      "status": 200,
+      "final_url": "https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Current-Year-To-Date-/5uac-w243",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://data.cityofnewyork.us/api/views/5uac-w243.json",
+      "checked_at": "2026-09-20T23:31:57+00:00",
+      "status": 200,
+      "final_url": "https://data.cityofnewyork.us/api/views/5uac-w243.json",
+      "content_type": "application/json; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://data.cityofnewyork.us/api/views/tvpp-9vvx.json",
+      "checked_at": "2026-09-20T23:31:57+00:00",
+      "status": 200,
+      "final_url": "https://data.cityofnewyork.us/api/views/tvpp-9vvx.json",
+      "content_type": "application/json; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://data.gov/",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 200,
+      "final_url": "https://data.gov/",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://data.humdata.org/",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 202,
+      "final_url": "https://data.humdata.org/",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://developers.cloudflare.com/radar/investigate/outages/",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 200,
+      "final_url": "https://developers.cloudflare.com/radar/investigate/outages/",
+      "content_type": "text/html",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.airnowapi.org/webservices",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 200,
+      "final_url": "https://docs.airnowapi.org/webservices",
+      "content_type": "text/html;charset=ISO-8859-1",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.overturemaps.org/getting-data/",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 200,
+      "final_url": "https://docs.overturemaps.org/getting-data/",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://doi.ccs.ornl.gov/dataset/ccec86f0-e144-5de8-aee0-fb26028b26e1",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 200,
+      "final_url": "https://doi.ccs.ornl.gov/dataset/ccec86f0-e144-5de8-aee0-fb26028b26e1",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://dot.ca.gov/travel",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 200,
+      "final_url": "https://dot.ca.gov/travel",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://drivetexas.org/",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 200,
+      "final_url": "https://drivetexas.org/",
+      "content_type": "text/html",
+      "result": "reachable"
+    },
+    {
+      "url": "https://earthquake.usgs.gov/",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 200,
+      "final_url": "https://earthquake.usgs.gov/",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 200,
+      "final_url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://echo.epa.gov/tools/data-downloads/sdwa-download-summary",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 200,
+      "final_url": "https://echo.epa.gov/tools/data-downloads/sdwa-download-summary",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://firms.modaps.eosdis.nasa.gov/",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 200,
+      "final_url": "https://firms.modaps.eosdis.nasa.gov/",
+      "content_type": "text/html",
+      "result": "reachable"
+    },
+    {
+      "url": "https://firms.modaps.eosdis.nasa.gov/api/area/",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 200,
+      "final_url": "https://firms.modaps.eosdis.nasa.gov/api/area/",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://gdeltproject.org/data.html",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 200,
+      "final_url": "https://gdeltproject.org/data.html",
+      "content_type": "text/html",
+      "result": "reachable"
+    },
+    {
+      "url": "https://ioda.inetintel.cc.gatech.edu/",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://marinecadastre.gov/ais/",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 200,
+      "final_url": "https://hub.marinecadastre.gov/pages/vesseltraffic",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://msi.nga.mil/",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 200,
+      "final_url": "https://msi.nga.mil/home",
+      "content_type": "text/html;charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://msi.nga.mil/NavWarnings",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 200,
+      "final_url": "https://msi.nga.mil/NavWarnings",
+      "content_type": "text/html;charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://nasstatus.faa.gov/",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 200,
+      "final_url": "https://nasstatus.faa.gov/",
+      "content_type": "text/html;charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://opensky-network.org/",
+      "checked_at": "2026-09-20T23:31:58+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://openskynetwork.github.io/opensky-api/rest.html",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 200,
+      "final_url": "https://openskynetwork.github.io/opensky-api/rest.html",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://overturemaps.org/",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 200,
+      "final_url": "https://overturemaps.org/",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://poweroutage.us/",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://poweroutage.us/use-our-data",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://quickmap.dot.ca.gov/",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 200,
+      "final_url": "https://quickmap.dot.ca.gov/",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://radar.cloudflare.com/",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://reliefweb.int/",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 202,
+      "final_url": "https://reliefweb.int/",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://servicedocs.marinetraffic.com/",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 200,
+      "final_url": "https://servicedocs.marinetraffic.com/",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://water.noaa.gov/",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 200,
+      "final_url": "https://water.noaa.gov/",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.511ny.org/developers/help",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 200,
+      "final_url": "https://www.511ny.org/developers/help",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.airnow.gov/",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 200,
+      "final_url": "https://www.airnow.gov/",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.austintexas.gov/services/view-and-report-power-outages",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 200,
+      "final_url": "https://www.austintexas.gov/services/view-and-report-power-outages",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.dcwater.com/service-alerts",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 200,
+      "final_url": "https://www.dcwater.com/service-alerts",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.epa.gov/waterdata/safe-drinking-water-information-system",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 200,
+      "final_url": "https://www.epa.gov/waterdata/safe-drinking-water-information-system",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.federalregister.gov/",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 200,
+      "final_url": "https://unblock.federalregister.gov/",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.federalregister.gov/developers/documentation/api/v1",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 200,
+      "final_url": "https://unblock.federalregister.gov/",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.fema.gov/about/openfema",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.fema.gov/about/openfema/api",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.gdacs.org/",
+      "checked_at": "2026-09-20T23:31:59+00:00",
+      "status": 200,
+      "final_url": "https://www.gdacs.org/",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.gdacs.org/gdacsapi/swagger/index.html",
+      "checked_at": "2026-09-20T23:32:00+00:00",
+      "status": 200,
+      "final_url": "https://www.gdacs.org/gdacsapi/swagger/index.html",
+      "content_type": "text/html;charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.gdeltproject.org/",
+      "checked_at": "2026-09-20T23:32:00+00:00",
+      "status": 200,
+      "final_url": "https://gdeltproject.org:443/",
+      "content_type": "text/html",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.marinetraffic.com/",
+      "checked_at": "2026-09-20T23:32:00+00:00",
+      "status": 200,
+      "final_url": "https://www.marinetraffic.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.nhc.noaa.gov/",
+      "checked_at": "2026-09-20T23:32:00+00:00",
+      "status": 200,
+      "final_url": "https://www.nhc.noaa.gov/",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.nhc.noaa.gov/gis",
+      "checked_at": "2026-09-20T23:32:00+00:00",
+      "status": 200,
+      "final_url": "https://www.nhc.noaa.gov/gis/",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.openstreetmap.org/",
+      "checked_at": "2026-09-20T23:32:00+00:00",
+      "status": 200,
+      "final_url": "https://www.openstreetmap.org/",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.openstreetmap.org/copyright",
+      "checked_at": "2026-09-20T23:32:00+00:00",
+      "status": 200,
+      "final_url": "https://www.openstreetmap.org/copyright",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.txdot.gov/about/newsroom/stories/be-your-own-traffic-reporter.html",
+      "checked_at": "2026-09-20T23:32:00+00:00",
+      "status": 200,
+      "final_url": "https://www.txdot.gov/about/newsroom/stories/be-your-own-traffic-reporter.html",
+      "content_type": "text/html;charset=utf-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.weather.gov/",
+      "checked_at": "2026-09-20T23:32:00+00:00",
+      "status": 200,
+      "final_url": "https://www.weather.gov/",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.weather.gov/documentation/services-web-api",
+      "checked_at": "2026-09-20T23:32:00+00:00",
+      "status": 200,
+      "final_url": "https://www.weather.gov/documentation/services-web-api",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable"
+    }
+  ]
+}
