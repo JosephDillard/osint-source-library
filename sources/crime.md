@@ -4,6 +4,24 @@
 
 [All categories](../LIBRARY.md) | [How to use this library](../docs/getting-started.md)
 
+<a id="base-operations"></a>
+
+## Base Operations local crime and unrest intelligence
+
+**[Visit source](https://www.baseoperations.com/)** | [Provider documentation](https://www.baseoperations.com/product/api)
+
+- **Provider:** Base Operations
+- **Coverage:** Global; confirm geographic and language coverage for the operating areas.
+- **Type / access:** `periodic` / `commercial`
+- **Formats:** REST API, JSON, CSV, Web platform
+- **Updates:** API page reports monthly crime updates and biweekly unrest updates; clarify the exact biweekly schedule with the provider.
+- **Security use:** Compare local risk around offices, hotels and travel destinations; support baseline site assessments.
+- **License / terms:** Commercial subscription; confirm feed entitlement, internal GIS display, retention, redistribution and AI use in the applicable agreement. Pricing and account access have not been tested.
+- **Limitations:** Periodic context rather than emergency dispatch. Confirm whether the purchased API exposes individual incidents or only scores and aggregate statistics; local coverage varies.
+- **Review:** 2026-09-21 — `provider-documentation-reviewed`
+- **Evidence:** [Provider reference 1](https://www.baseoperations.com/) · [Provider reference 2](https://www.baseoperations.com/product/api) · [Provider reference 3](https://www.baseoperations.com/terms)
+- **Catalog ID:** `base-operations`
+
 <a id="chicago-crime"></a>
 
 ## Chicago reported crimes

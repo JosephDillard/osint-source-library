@@ -16,10 +16,10 @@
 - **Formats:** JSON, Dashboard
 - **Updates:** Outage annotations and anomaly updates; inspect reported times.
 - **Security use:** Corroborate regional internet disruptions affecting offices and services.
-- **License / terms:** API token with Radar read permission; follow Cloudflare terms and attribution requirements.
-- **Limitations:** Cloudflare observations are not a complete view of every network or individual connection.
-- **Review:** 2026-09-20 — `provider-documentation-reviewed`
-- **Evidence:** [Provider reference 1](https://developers.cloudflare.com/radar/investigate/outages/) · [Provider reference 2](https://developers.cloudflare.com/radar/get-started/first-request/)
+- **License / terms:** Radar API documentation states CC BY-NC 4.0. Confirm rights for corporate operational use before ingestion; a free API token alone does not resolve permitted use.
+- **Limitations:** Regional/network observations do not establish individual-site impact or a cyberattack cause. Verify serving-provider status and business consequences.
+- **Review:** 2026-09-21 — `provider-documentation-reviewed`
+- **Evidence:** [Provider reference 1](https://developers.cloudflare.com/radar/investigate/outages/) · [Provider reference 2](https://developers.cloudflare.com/radar/get-started/first-request/) · [Provider reference 3](https://developers.cloudflare.com/radar/)
 - **Catalog ID:** `cloudflare-radar`
 
 <a id="ioda"></a>

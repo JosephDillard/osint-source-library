@@ -72,7 +72,7 @@
 - **Security use:** Weather alerts around facilities, outdoor operations and travel corridors.
 - **License / terms:** Documentation permits free use for any purpose; identify the application with a User-Agent.
 - **Limitations:** Some alerts use forecast zones without direct polygon geometry; an alert does not confirm damage.
-- **Review:** 2026-09-20 — `provider-documentation-reviewed`
+- **Review:** 2026-09-21 — `provider-documentation-reviewed`
 - **API entrypoint / example:** [Open endpoint](https://api.weather.gov/alerts/active). Required parameters, credentials and pagination may still apply.
 - **Evidence:** [Provider reference 1](https://www.weather.gov/documentation/services-web-api)
 - **Catalog ID:** `nws-alerts`

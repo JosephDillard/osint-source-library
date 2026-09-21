@@ -2,7 +2,9 @@
 
 A curated **open-source intelligence (OSINT)** library of public data, feeds and geospatial sources for **physical security, protective services, business continuity and government situational awareness**. U.S. first, with global sources.
 
-Start with the **[source library](LIBRARY.md)**. It covers crime, public events and protests, weather, natural hazards, air traffic, sea traffic, roads, government information, power outages, water systems, internet disruptions and geographic context.
+Start with the **[source library](LIBRARY.md)**. It covers crime, public events and protests, weather, natural hazards, air traffic, sea traffic, roads, government information, power outages, water systems, internet disruptions, geographic context, commercial event intelligence, travel risk and protective intelligence.
+
+Cybersecurity coverage is limited to major events: consequential breaches and incidents affecting people, business operations, essential services or critical providers. Routine vulnerability, malware and scanning feeds are outside this collection's scope. See the [major-event criteria](docs/getting-started.md#major-cybersecurity-events).
 
 The collection prioritizes the United States and includes global sources. The **[city library](CITIES.md)** adds the three largest places in every state: 150 profiles with emergency-management, public-safety, water and electric-utility references.
 
@@ -13,6 +15,7 @@ The collection prioritizes the United States and includes global sources. The **
 - **[Machine-readable catalog](catalog/sources.json)** — the editable source of truth.
 - **[Machine-readable city catalog](catalog/cities.json)** — city populations, Census FIPS IDs, source records and provider links.
 - **[Getting started](docs/getting-started.md)** — a practical source selection workflow.
+- **[Expanded service shortlist](docs/service-shortlist.md)** — 18 candidates, evaluation priorities, API/ETL access and integration questions.
 - **[Coverage and gaps](docs/coverage.md)** — what the collection covers and where local research is needed.
 - **[Data model](docs/data-model.md)** — field definitions and review status.
 - **[Roadmap](ROADMAP.md)** — a path from a links library to a useful intelligence capability.
@@ -61,7 +64,7 @@ Repository instructions for coding agents are in [AGENTS.md](AGENTS.md).
 
 This first version is a research and source-discovery library. Use it to identify relevant sources for authorized facilities, routes and operating areas, then verify freshness and geographic precision before relying on an observation.
 
-The [review notes](docs/review-notes.md) describe the September 20, 2026 review and its limits. Some provider sites require registration, block automated retrieval or expose only public dashboards.
+The [review notes](docs/review-notes.md) describe the September 20, 2026 initial review and September 21 service expansion, including their limits. Some provider sites require registration, block automated retrieval or expose only public dashboards.
 
 ## Relationship to other projects
 

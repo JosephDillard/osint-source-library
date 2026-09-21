@@ -1,4 +1,19 @@
-# Initial source review
+# Source reviews
+
+## Service expansion — 2026-09-21
+
+The [expanded shortlist](service-shortlist.md) contains 18 services and public sources. Eight were already cataloged; ten commercial services were added, bringing the national/global catalog to 47 sources across 15 categories. Existing records were improved where the new review supported a change. Individual review dates remain authoritative; the catalog date does not imply every source was re-reviewed.
+
+- Added Factal, Samdesk, Dataminr for Corporate Security, Seerist, Riskline, Base Operations, Crisis24 Horizon, AlertMedia, Everbridge Risk Intelligence and Ontic.
+- Recorded documented API, GIS and export capabilities separately from outbound integration questions. Commercial accounts, sample payloads and native GIS compatibility were not tested.
+- Clarified that API or licensed export/ETL access is sufficient; a native GIS connector is not a prerequisite.
+- Limited cybersecurity to major consequential breaches and incidents. Connectivity measurements do not establish a cyberattack by themselves.
+- Corrected Cloudflare Radar licensing notes to reflect [CC BY-NC 4.0](https://developers.cloudflare.com/radar/). An API token does not resolve corporate operational-use rights.
+- Retained Base Operations as periodic risk context, reflecting its [published update cadence](https://www.baseoperations.com/product/api), rather than an emergency alert feed.
+
+Commercial capabilities are based on public provider material. Listing a service does not establish procurement approval or rights to its underlying sources. Contract terms, prices and delivery commitments remain to be confirmed. This expansion did not refresh the separate HTTP availability snapshot or city catalog.
+
+## Initial review — 2026-09-20
 
 Review date: **2026-09-20**.
 

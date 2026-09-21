@@ -34,6 +34,10 @@ For a local source, name the service territory or jurisdiction. Keep overlapping
 
 For protests and public events, describe access, disruption and safety relevance without treating attendance or lawful assembly as evidence of a threat. Catalog event-level sources rather than personal dossiers.
 
+Keep cybersecurity focused on [major events](docs/getting-started.md#major-cybersecurity-events), including consequential breaches and disruptions affecting people, operations or critical providers. Do not add routine vulnerability, exposed-service or account-monitoring feeds for their own sake.
+
+Supported API, feed and licensed export/ETL access are all acceptable. Distinguish an inbound integration from an outbound data service; a vendor's integration claim alone does not establish export rights or a usable event feed.
+
 ## Report a broken or changed source
 
 Use the source-request issue template to identify the source ID, link, observed date and specific failure or correction. Do not attach credentials, personal information or proprietary operational records.

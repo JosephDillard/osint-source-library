@@ -1,6 +1,6 @@
 {
   "catalog_version": 1,
-  "review_date": "2026-09-20",
+  "review_date": "2026-09-21",
   "categories": {
     "weather": "Weather, flooding & air quality",
     "hazards": "Natural hazards & disasters",
@@ -13,7 +13,10 @@
     "power": "Power outages & grid resilience",
     "water": "Water outages & water systems",
     "connectivity": "Internet & communications disruptions",
-    "context": "Maps, infrastructure & geographic context"
+    "context": "Maps, infrastructure & geographic context",
+    "risk-intelligence": "Critical events & risk intelligence",
+    "travel-risk": "Travel risk & assistance",
+    "protective-intelligence": "Protective intelligence & investigations"
   },
   "sources": [
     {
@@ -37,7 +40,7 @@
       "license_notes": "Documentation permits free use for any purpose; identify the application with a User-Agent.",
       "security_use": "Weather alerts around facilities, outdoor operations and travel corridors.",
       "limitations": "Some alerts use forecast zones without direct polygon geometry; an alert does not confirm damage.",
-      "reviewed_on": "2026-09-20",
+      "reviewed_on": "2026-09-21",
       "review_status": "provider-documentation-reviewed",
       "evidence_urls": [
         "https://www.weather.gov/documentation/services-web-api"
@@ -143,7 +146,7 @@
       "license_notes": "Public USGS data; retain source attribution and revision timestamps.",
       "security_use": "Seismic awareness and initial screening of potentially exposed facilities.",
       "limitations": "Magnitude and distance alone do not establish site damage; use appropriate shaking products.",
-      "reviewed_on": "2026-09-20",
+      "reviewed_on": "2026-09-21",
       "review_status": "provider-documentation-reviewed",
       "evidence_urls": [
         "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
@@ -159,6 +162,7 @@
       "access": "registration",
       "formats": [
         "CSV",
+        "KML",
         "WMS",
         "WFS"
       ],
@@ -169,10 +173,11 @@
       "license_notes": "Free MAP_KEY for API use; follow NASA/FIRMS attribution and transaction limits.",
       "security_use": "Wildfire awareness around sites, routes and utility corridors.",
       "limitations": "Thermal detections can represent industrial heat; points are not fire perimeters or confirmed impact.",
-      "reviewed_on": "2026-09-20",
+      "reviewed_on": "2026-09-21",
       "review_status": "provider-documentation-reviewed",
       "evidence_urls": [
-        "https://firms.modaps.eosdis.nasa.gov/api/area/"
+        "https://firms.modaps.eosdis.nasa.gov/api/area/",
+        "https://firms.modaps.eosdis.nasa.gov/api/"
       ]
     },
     {
@@ -185,22 +190,22 @@
       "access": "open",
       "formats": [
         "GeoJSON",
-        "XML",
+        "RSS/XML",
         "KML"
       ],
       "url": "https://www.gdacs.org/",
       "documentation_url": "https://www.gdacs.org/gdacsapi/swagger/index.html",
       "endpoint_url": null,
-      "update_frequency": "Event updates and feed schedules; verify timestamps.",
+      "update_frequency": "Published RSS feed reference specifies six-minute refreshes; inspect each event's timestamp and selected product schedule.",
       "license_notes": "API quickstart describes free data access; check attribution and individual product terms.",
       "security_use": "International disaster awareness and regional exposure screening.",
       "limitations": "Modelled alert levels are screening signals; local impacts require confirmation.",
-      "reviewed_on": "2026-09-20",
+      "reviewed_on": "2026-09-21",
       "review_status": "provider-documentation-reviewed",
       "evidence_urls": [
         "https://www.gdacs.org/gdacsapi/swagger/index.html",
         "https://gdacs.org/Documents/2025/GDACS_API_quickstart_v1.pdf",
-        "https://data.gdacs.org/feed_reference.aspx"
+        "https://gdacs.org/feed_reference.aspx"
       ]
     },
     {
@@ -298,13 +303,14 @@
       "endpoint_url": null,
       "update_frequency": "Some GDELT 2.0 datasets update every 15 minutes; product windows vary.",
       "license_notes": "Provider describes database as free and open; underlying news articles retain publisher rights.",
-      "security_use": "Discover reports of protests, disruption and other emerging events.",
+      "security_use": "Discover reports of public events, disruption and major corporate incidents, including cyber events with significant business consequences.",
       "limitations": "Machine-extracted events and place mentions need corroboration, deduplication and geolocation review.",
-      "reviewed_on": "2026-09-20",
+      "reviewed_on": "2026-09-21",
       "review_status": "provider-documentation-reviewed",
       "evidence_urls": [
         "https://gdeltproject.org/data.html",
-        "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/"
+        "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+        "https://www.gdeltproject.org/"
       ]
     },
     {
@@ -679,16 +685,17 @@
         "JSON"
       ],
       "url": "https://reliefweb.int/",
-      "documentation_url": "https://apidoc.reliefweb.int/",
+      "documentation_url": "https://apidoc.reliefweb.int/parameters",
       "endpoint_url": "https://api.reliefweb.int/v2/reports",
       "update_frequency": "Continuously curated reports; publication lag varies.",
       "license_notes": "No API fee; pre-approved appname required since November 2025. Original publishers retain content rights.",
       "security_use": "Humanitarian situation reports and international operational context.",
       "limitations": "Reports can reference broad areas and older events; distinguish reporting time from event time.",
-      "reviewed_on": "2026-09-20",
+      "reviewed_on": "2026-09-21",
       "review_status": "provider-documentation-reviewed",
       "evidence_urls": [
-        "https://apidoc.reliefweb.int/"
+        "https://apidoc.reliefweb.int/",
+        "https://apidoc.reliefweb.int/parameters"
       ]
     },
     {
@@ -886,14 +893,15 @@
       "documentation_url": "https://developers.cloudflare.com/radar/investigate/outages/",
       "endpoint_url": null,
       "update_frequency": "Outage annotations and anomaly updates; inspect reported times.",
-      "license_notes": "API token with Radar read permission; follow Cloudflare terms and attribution requirements.",
+      "license_notes": "Radar API documentation states CC BY-NC 4.0. Confirm rights for corporate operational use before ingestion; a free API token alone does not resolve permitted use.",
       "security_use": "Corroborate regional internet disruptions affecting offices and services.",
-      "limitations": "Cloudflare observations are not a complete view of every network or individual connection.",
-      "reviewed_on": "2026-09-20",
+      "limitations": "Regional/network observations do not establish individual-site impact or a cyberattack cause. Verify serving-provider status and business consequences.",
+      "reviewed_on": "2026-09-21",
       "review_status": "provider-documentation-reviewed",
       "evidence_urls": [
         "https://developers.cloudflare.com/radar/investigate/outages/",
-        "https://developers.cloudflare.com/radar/get-started/first-request/"
+        "https://developers.cloudflare.com/radar/get-started/first-request/",
+        "https://developers.cloudflare.com/radar/"
       ]
     },
     {
@@ -974,6 +982,284 @@
         "https://centre.humdata.org/ufaqs/about-the-humanitarian-data-exchange-api/",
         "https://centre.humdata.org/ufaqs/data-licenses/",
         "https://centre.humdata.org/new-api-access-on-hdx-tabular-data-endpoints/"
+      ]
+    },
+    {
+      "id": "factal",
+      "name": "Factal verified event intelligence",
+      "provider": "Factal",
+      "category": "risk-intelligence",
+      "coverage": "Global; confirm geographic and language coverage for the operating areas.",
+      "kind": "live-feed",
+      "access": "commercial",
+      "formats": [
+        "API",
+        "ArcGIS feature layer",
+        "Web platform"
+      ],
+      "url": "https://www.factal.com/",
+      "documentation_url": "https://www.factal.com/partners/",
+      "endpoint_url": null,
+      "update_frequency": "Ongoing critical-event alerts and revisions; delivery latency and service commitments require confirmation.",
+      "license_notes": "Commercial subscription; confirm feed entitlement, internal GIS display, retention, redistribution and AI use in the applicable agreement. Pricing and account access have not been tested.",
+      "security_use": "Verified event reporting around facilities, travelers and critical providers; first-comparison candidate for an ArcGIS incident feed.",
+      "limitations": "Provider documents an ArcGIS feature layer and API. Credentials, schema, compatibility with the target ArcGIS deployment and contract scope remain untested.",
+      "reviewed_on": "2026-09-21",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.factal.com/",
+        "https://www.factal.com/partners/",
+        "https://www.factal.com/terms/"
+      ]
+    },
+    {
+      "id": "samdesk",
+      "name": "Samdesk incident detection and situational awareness",
+      "provider": "Samdesk",
+      "category": "risk-intelligence",
+      "coverage": "Global; confirm geographic and language coverage for the operating areas.",
+      "kind": "live-feed",
+      "access": "commercial",
+      "formats": [
+        "API",
+        "ArcGIS integration",
+        "Web platform"
+      ],
+      "url": "https://www.samdesk.io/",
+      "documentation_url": "https://www.samdesk.io/faq",
+      "endpoint_url": null,
+      "update_frequency": "Continuous incident detection and updates; exact delivery latency is not established here.",
+      "license_notes": "Commercial subscription; confirm feed entitlement, internal GIS display, retention, redistribution and AI use in the applicable agreement. Pricing and account access have not been tested.",
+      "security_use": "Identify emerging incidents near facilities, travel routes and executives; first-comparison candidate for operational alerts.",
+      "limitations": "Published alert fields can include severity, location, source links, confidence and timestamps. Verify actual payloads, supported ArcGIS deployment and feed rights.",
+      "reviewed_on": "2026-09-21",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.samdesk.io/",
+        "https://www.samdesk.io/faq",
+        "https://www.samdesk.io/tos"
+      ]
+    },
+    {
+      "id": "dataminr-corporate-security",
+      "name": "Dataminr for Corporate Security",
+      "provider": "Dataminr",
+      "category": "risk-intelligence",
+      "coverage": "Global; confirm geographic and language coverage for the operating areas.",
+      "kind": "live-feed",
+      "access": "commercial",
+      "formats": [
+        "API",
+        "SDK",
+        "Web platform"
+      ],
+      "url": "https://www.dataminr.com/",
+      "documentation_url": "https://www.dataminr.com/resources/developer-portal/",
+      "endpoint_url": null,
+      "update_frequency": "Ongoing event detection; independently measured latency and delivery guarantees are not established.",
+      "license_notes": "Commercial subscription; confirm feed entitlement, internal GIS display, retention, redistribution and AI use in the applicable agreement. Pricing and account access have not been tested.",
+      "security_use": "Early awareness of significant incidents affecting personnel, sites, events and operations; first-comparison candidate.",
+      "limitations": "Select Corporate Security coverage. API availability is documented, but product entitlements, payloads and noise levels need a representative pilot.",
+      "reviewed_on": "2026-09-21",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.dataminr.com/",
+        "https://www.dataminr.com/resources/developer-portal/",
+        "https://www.dataminr.com/terms-of-use/"
+      ]
+    },
+    {
+      "id": "seerist",
+      "name": "Seerist event and risk intelligence",
+      "provider": "Seerist",
+      "category": "risk-intelligence",
+      "coverage": "Global; confirm geographic and language coverage for the operating areas.",
+      "kind": "mixed",
+      "access": "commercial",
+      "formats": [
+        "REST API",
+        "JSON",
+        "Server-Sent Events",
+        "Web platform"
+      ],
+      "url": "https://www.seerist.com/",
+      "documentation_url": "https://www.seerist.com/platform/api",
+      "endpoint_url": "https://api.seerist.com/v1/events",
+      "update_frequency": "Live event streaming and historical retrieval are advertised; product-specific schedules require confirmation.",
+      "license_notes": "Commercial subscription; confirm feed entitlement, internal GIS display, retention, redistribution and AI use in the applicable agreement. Pricing and account access have not been tested.",
+      "security_use": "Combine incident awareness with geographic risk context and historical analysis.",
+      "limitations": "Documentation describes severity, provenance and geographic filters. Published example endpoint has not been authenticated or integration-tested.",
+      "reviewed_on": "2026-09-21",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.seerist.com/",
+        "https://www.seerist.com/platform/api"
+      ]
+    },
+    {
+      "id": "riskline",
+      "name": "Riskline travel intelligence and alerts",
+      "provider": "Riskline",
+      "category": "travel-risk",
+      "coverage": "Global; confirm geographic and language coverage for the operating areas.",
+      "kind": "mixed",
+      "access": "commercial",
+      "formats": [
+        "API",
+        "Web portal",
+        "Reports"
+      ],
+      "url": "https://riskline.com/",
+      "documentation_url": "https://riskline.com/products/alerts/",
+      "endpoint_url": null,
+      "update_frequency": "Analysts monitor continuously; alert timing and destination-report revisions vary by product.",
+      "license_notes": "Commercial subscription; confirm feed entitlement, internal GIS display, retention, redistribution and AI use in the applicable agreement. Pricing and account access have not been tested.",
+      "security_use": "Assess employee and executive travel exposure, affected airports, routes and destination conditions.",
+      "limitations": "Alerts can include coordinates and affected-area radii. Treat these as reported impact estimates; inspect coverage, update semantics and account terms.",
+      "reviewed_on": "2026-09-21",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://riskline.com/",
+        "https://riskline.com/products/alerts/",
+        "https://riskline.readme.io/reference/apis-overview"
+      ]
+    },
+    {
+      "id": "base-operations",
+      "name": "Base Operations local crime and unrest intelligence",
+      "provider": "Base Operations",
+      "category": "crime",
+      "coverage": "Global; confirm geographic and language coverage for the operating areas.",
+      "kind": "periodic",
+      "access": "commercial",
+      "formats": [
+        "REST API",
+        "JSON",
+        "CSV",
+        "Web platform"
+      ],
+      "url": "https://www.baseoperations.com/",
+      "documentation_url": "https://www.baseoperations.com/product/api",
+      "endpoint_url": null,
+      "update_frequency": "API page reports monthly crime updates and biweekly unrest updates; clarify the exact biweekly schedule with the provider.",
+      "license_notes": "Commercial subscription; confirm feed entitlement, internal GIS display, retention, redistribution and AI use in the applicable agreement. Pricing and account access have not been tested.",
+      "security_use": "Compare local risk around offices, hotels and travel destinations; support baseline site assessments.",
+      "limitations": "Periodic context rather than emergency dispatch. Confirm whether the purchased API exposes individual incidents or only scores and aggregate statistics; local coverage varies.",
+      "reviewed_on": "2026-09-21",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.baseoperations.com/",
+        "https://www.baseoperations.com/product/api",
+        "https://www.baseoperations.com/terms"
+      ]
+    },
+    {
+      "id": "crisis24-horizon",
+      "name": "Crisis24 Horizon",
+      "provider": "Crisis24 / GardaWorld",
+      "category": "travel-risk",
+      "coverage": "Global; confirm geographic and language coverage for the operating areas.",
+      "kind": "mixed",
+      "access": "commercial",
+      "formats": [
+        "Web platform",
+        "Alerts",
+        "Reports"
+      ],
+      "url": "https://www.crisis24.com/platforms/crisis24-horizon",
+      "documentation_url": "https://www.crisis24.com/platforms/crisis24-horizon",
+      "endpoint_url": null,
+      "update_frequency": "Ongoing risk alerts and periodic location assessments; contractual schedules need confirmation.",
+      "license_notes": "Commercial subscription; confirm feed entitlement, internal GIS display, retention, redistribution and AI use in the applicable agreement. Pricing and account access have not been tested.",
+      "security_use": "Combine travel and site risk awareness with employee communications and security or medical assistance.",
+      "limitations": "Outbound intelligence API/export access was not established by the reviewed page. Inbound integrations do not establish a usable ETL feed; confirm delivery and rights.",
+      "reviewed_on": "2026-09-21",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.crisis24.com/platforms/crisis24-horizon",
+        "https://www.crisis24.com/"
+      ]
+    },
+    {
+      "id": "alertmedia",
+      "name": "AlertMedia risk intelligence",
+      "provider": "AlertMedia",
+      "category": "risk-intelligence",
+      "coverage": "Global; confirm geographic and language coverage for the operating areas.",
+      "kind": "mixed",
+      "access": "commercial",
+      "formats": [
+        "Web platform",
+        "Alerts",
+        "API capabilities"
+      ],
+      "url": "https://www.alertmedia.com/products/threat-intelligence-and-warnings/",
+      "documentation_url": "https://www.alertmedia.com/products/threat-intelligence-and-warnings/",
+      "endpoint_url": null,
+      "update_frequency": "Ongoing threat signals, analyst reporting and weather updates; measure latency in a pilot.",
+      "license_notes": "Commercial subscription; confirm feed entitlement, internal GIS display, retention, redistribution and AI use in the applicable agreement. Pricing and account access have not been tested.",
+      "security_use": "Assess hazards affecting employees and facilities, with communications and incident response workflows.",
+      "limitations": "API customization and incoming feed integration are advertised. Outbound incident fields, export entitlement and ETL support must be confirmed separately.",
+      "reviewed_on": "2026-09-21",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.alertmedia.com/products/threat-intelligence-and-warnings/",
+        "https://www.alertmedia.com/"
+      ]
+    },
+    {
+      "id": "everbridge-risk-intelligence",
+      "name": "Everbridge Risk Intelligence",
+      "provider": "Everbridge",
+      "category": "risk-intelligence",
+      "coverage": "Global; confirm geographic and language coverage for the operating areas.",
+      "kind": "mixed",
+      "access": "commercial",
+      "formats": [
+        "Web platform",
+        "Alerts",
+        "GIS integrations"
+      ],
+      "url": "https://www.everbridge.com/products/risk-intelligence/",
+      "documentation_url": "https://www.everbridge.com/products/risk-intelligence/",
+      "endpoint_url": null,
+      "update_frequency": "Near-real-time alert delivery is advertised; underlying source cadence and contractual latency vary.",
+      "license_notes": "Commercial subscription; confirm feed entitlement, internal GIS display, retention, redistribution and AI use in the applicable agreement. Pricing and account access have not been tested.",
+      "security_use": "Identify weather, unrest, transport and infrastructure disruptions and coordinate continuity response.",
+      "limitations": "GIS integration is advertised; an outbound event-feed contract and supported payloads need confirmation. Check source overlap before buying multiple aggregators.",
+      "reviewed_on": "2026-09-21",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.everbridge.com/products/risk-intelligence/",
+        "https://www.factal.com/partners/"
+      ]
+    },
+    {
+      "id": "ontic",
+      "name": "Ontic protective intelligence and investigations",
+      "provider": "Ontic",
+      "category": "protective-intelligence",
+      "coverage": "Global; confirm geographic and language coverage for the operating areas.",
+      "kind": "mixed",
+      "access": "commercial",
+      "formats": [
+        "Web platform",
+        "Case-management workflows",
+        "Integrations"
+      ],
+      "url": "https://ontic.co/",
+      "documentation_url": "https://ontic.co/",
+      "endpoint_url": null,
+      "update_frequency": "Depends on connected intelligence sources and case updates; no single public refresh commitment established.",
+      "license_notes": "Commercial subscription; confirm feed entitlement, internal GIS display, retention, redistribution and AI use in the applicable agreement. Pricing and account access have not been tested.",
+      "security_use": "Support executive protection, assessment of reported threats, investigations and incident follow-up.",
+      "limitations": "Evaluate for workflow needs. Outbound GIS/ETL access is not established here, and integrated data providers may impose separate rights and duplication concerns.",
+      "reviewed_on": "2026-09-21",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://ontic.co/",
+        "https://ontic.co/legal/msa/",
+        "https://www.factal.com/partners/"
       ]
     }
   ]

@@ -13,13 +13,13 @@
 - **Provider:** NASA / LANCE
 - **Coverage:** Global for MODIS/VIIRS; some products restricted to US/Canada
 - **Type / access:** `live-feed` / `registration`
-- **Formats:** CSV, WMS, WFS
+- **Formats:** CSV, KML, WMS, WFS
 - **Updates:** Satellite overpass and processing dependent; NRT, RT and URT availability varies.
 - **Security use:** Wildfire awareness around sites, routes and utility corridors.
 - **License / terms:** Free MAP_KEY for API use; follow NASA/FIRMS attribution and transaction limits.
 - **Limitations:** Thermal detections can represent industrial heat; points are not fire perimeters or confirmed impact.
-- **Review:** 2026-09-20 — `provider-documentation-reviewed`
-- **Evidence:** [Provider reference 1](https://firms.modaps.eosdis.nasa.gov/api/area/)
+- **Review:** 2026-09-21 — `provider-documentation-reviewed`
+- **Evidence:** [Provider reference 1](https://firms.modaps.eosdis.nasa.gov/api/area/) · [Provider reference 2](https://firms.modaps.eosdis.nasa.gov/api/)
 - **Catalog ID:** `nasa-firms`
 
 <a id="gdacs"></a>
@@ -31,13 +31,13 @@
 - **Provider:** United Nations / European Commission partnership
 - **Coverage:** Global
 - **Type / access:** `live-feed` / `open`
-- **Formats:** GeoJSON, XML, KML
-- **Updates:** Event updates and feed schedules; verify timestamps.
+- **Formats:** GeoJSON, RSS/XML, KML
+- **Updates:** Published RSS feed reference specifies six-minute refreshes; inspect each event's timestamp and selected product schedule.
 - **Security use:** International disaster awareness and regional exposure screening.
 - **License / terms:** API quickstart describes free data access; check attribution and individual product terms.
 - **Limitations:** Modelled alert levels are screening signals; local impacts require confirmation.
-- **Review:** 2026-09-20 — `provider-documentation-reviewed`
-- **Evidence:** [Provider reference 1](https://www.gdacs.org/gdacsapi/swagger/index.html) · [Provider reference 2](https://gdacs.org/Documents/2025/GDACS_API_quickstart_v1.pdf) · [Provider reference 3](https://data.gdacs.org/feed_reference.aspx)
+- **Review:** 2026-09-21 — `provider-documentation-reviewed`
+- **Evidence:** [Provider reference 1](https://www.gdacs.org/gdacsapi/swagger/index.html) · [Provider reference 2](https://gdacs.org/Documents/2025/GDACS_API_quickstart_v1.pdf) · [Provider reference 3](https://gdacs.org/feed_reference.aspx)
 - **Catalog ID:** `gdacs`
 
 <a id="usgs-earthquakes"></a>
@@ -54,7 +54,7 @@
 - **Security use:** Seismic awareness and initial screening of potentially exposed facilities.
 - **License / terms:** Public USGS data; retain source attribution and revision timestamps.
 - **Limitations:** Magnitude and distance alone do not establish site damage; use appropriate shaking products.
-- **Review:** 2026-09-20 — `provider-documentation-reviewed`
+- **Review:** 2026-09-21 — `provider-documentation-reviewed`
 - **API entrypoint / example:** [Open endpoint](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson). Required parameters, credentials and pagination may still apply.
 - **Evidence:** [Provider reference 1](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
 - **Catalog ID:** `usgs-earthquakes`

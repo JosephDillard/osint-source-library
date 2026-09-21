@@ -64,7 +64,7 @@
 
 ## ReliefWeb reports and disasters API
 
-**[Visit source](https://reliefweb.int/)** | [Provider documentation](https://apidoc.reliefweb.int/)
+**[Visit source](https://reliefweb.int/)** | [Provider documentation](https://apidoc.reliefweb.int/parameters)
 
 - **Provider:** UN OCHA / ReliefWeb
 - **Coverage:** Global humanitarian emergencies
@@ -74,7 +74,7 @@
 - **Security use:** Humanitarian situation reports and international operational context.
 - **License / terms:** No API fee; pre-approved appname required since November 2025. Original publishers retain content rights.
 - **Limitations:** Reports can reference broad areas and older events; distinguish reporting time from event time.
-- **Review:** 2026-09-20 — `provider-documentation-reviewed`
+- **Review:** 2026-09-21 — `provider-documentation-reviewed`
 - **API entrypoint / example:** [Open endpoint](https://api.reliefweb.int/v2/reports). Required parameters, credentials and pagination may still apply.
-- **Evidence:** [Provider reference 1](https://apidoc.reliefweb.int/)
+- **Evidence:** [Provider reference 1](https://apidoc.reliefweb.int/) · [Provider reference 2](https://apidoc.reliefweb.int/parameters)
 - **Catalog ID:** `reliefweb`

@@ -15,6 +15,10 @@ The collection is US-focused with global hazard, event, aviation, maritime, conn
 | Water | DC Water outage example, USGS/EPA context and water-service references across 150 places | Replace general department/quality pages with direct outage and boil-water notices where available |
 | Connectivity | IODA and Cloudflare Radar | Serving-carrier status and direct, authorized service-health checks |
 | Geographic context | OSM, Overture and HDX | Authoritative local boundaries, licensed asset inventories and verified facility locations |
+| Critical events and risk intelligence | Factal, Samdesk, Dataminr, Seerist, AlertMedia and Everbridge | Compare event quality, geographic precision, duplicate sources, feed entitlement and actual delivery latency |
+| Travel risk and assistance | Riskline and Crisis24 Horizon | Destination coverage, traveler exposure, assistance scope and supported outbound data access |
+| Protective intelligence | Ontic | Establish workflow need, authorized access and available exports; this catalog does not collect personal dossiers |
+| Major cybersecurity events | Broad event/news services and connectivity indicators | Corroborate consequential breaches and operational impact with affected organizations or authorities; an internet outage alone does not establish a cyberattack |
 
 ## Local coverage and remaining gaps
 
@@ -34,6 +38,8 @@ Use a provider documentation link and record registration requirements. If a sou
 
 ## Sources that need special access review
 
-OpenSky, ACLED, MarineTraffic and PowerOutage.us have licensing or approval considerations relevant to operational use. ReliefWeb requires a pre-approved application name. NASA FIRMS, AirNow, 511NY and Cloudflare APIs require credentials or enrollment.
+OpenSky, ACLED, MarineTraffic and PowerOutage.us have licensing or approval considerations relevant to operational use. ReliefWeb requires a pre-approved application name. NASA FIRMS, AirNow, 511NY and Cloudflare APIs require credentials or enrollment. Cloudflare Radar documents CC BY-NC 4.0 terms; confirm corporate operational-use rights separately from API access.
+
+The [expanded shortlist](service-shortlist.md) adds commercial alternatives and permitted ETL paths. Native GIS connectors are useful but not required. Outbound access is not established for every platform, and procurement should confirm retention, internal display, redistribution and any intended AI use.
 
 These notes aid source selection; current publisher terms remain authoritative. Pricing and account entitlements have not been negotiated or tested.

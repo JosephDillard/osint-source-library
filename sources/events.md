@@ -33,11 +33,11 @@
 - **Type / access:** `live-feed` / `open`
 - **Formats:** CSV, JSON, BigQuery
 - **Updates:** Some GDELT 2.0 datasets update every 15 minutes; product windows vary.
-- **Security use:** Discover reports of protests, disruption and other emerging events.
+- **Security use:** Discover reports of public events, disruption and major corporate incidents, including cyber events with significant business consequences.
 - **License / terms:** Provider describes database as free and open; underlying news articles retain publisher rights.
 - **Limitations:** Machine-extracted events and place mentions need corroboration, deduplication and geolocation review.
-- **Review:** 2026-09-20 — `provider-documentation-reviewed`
-- **Evidence:** [Provider reference 1](https://gdeltproject.org/data.html) · [Provider reference 2](https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/)
+- **Review:** 2026-09-21 — `provider-documentation-reviewed`
+- **Evidence:** [Provider reference 1](https://gdeltproject.org/data.html) · [Provider reference 2](https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/) · [Provider reference 3](https://www.gdeltproject.org/)
 - **Catalog ID:** `gdelt`
 
 <a id="nyc-permitted-events"></a>
