@@ -75,3 +75,7 @@ This standalone catalog can inform **Open GEOINT Watch**, **Geospatial Data Gate
 Original code, tests, software configuration and code examples use [MIT](LICENSE). Original catalog descriptions and prose documentation use [CC BY 4.0](LICENSE-CONTENT). See [licensing and attribution](LICENSING.md) for the exact scope, attribution guidance and earlier MIT revisions.
 
 Third-party datasets, articles, maps, software and API services retain their own terms. These repository licenses do not grant additional rights to that material.
+
+## Repository guidance and copyright
+
+Repository-specific coding and validation instructions are in [AGENTS.md](AGENTS.md). See [COPYRIGHT.md](COPYRIGHT.md) for ownership, licensing scope, and third-party notices. The [licensing guide](LICENSING.md) explains the MIT software / CC BY 4.0 content split.
