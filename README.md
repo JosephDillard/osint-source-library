@@ -1,6 +1,6 @@
-# Geospatial Intelligence
+# OSINT Source Library
 
-A curated library of public data, feeds and reference sources for **physical security, protective services, business continuity and government situational awareness**.
+A curated **open-source intelligence (OSINT)** library of public data, feeds and geospatial sources for **physical security, protective services, business continuity and government situational awareness**. U.S. first, with global sources.
 
 Start with the **[source library](LIBRARY.md)**. It covers crime, public events and protests, weather, natural hazards, air traffic, sea traffic, roads, government information, power outages, water systems, internet disruptions and geographic context.
 

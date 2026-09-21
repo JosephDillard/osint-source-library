@@ -293,7 +293,7 @@ def render(data, report):
 def check_url(url):
     row = {'url': url, 'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds')}
     try:
-        request = Request(url, headers={'User-Agent': 'GeospatialIntelligenceLibrary/0.2 (public-source-directory)'})
+        request = Request(url, headers={'User-Agent': 'OSINTSourceLibrary/0.2 (public-source-directory)'})
         with urlopen(request, timeout=12) as response:
             row.update(status=response.status, final_url=response.url, content_type=response.headers.get('Content-Type', ''))
             body = response.read(400000).decode('utf-8', 'replace')
