@@ -55,6 +55,8 @@ python tools/cities.py build --check
 
 Edit `catalog/sources.json` for national/global sources or `catalog/cities.json` for city references, then rebuild the corresponding Markdown library. See [CONTRIBUTING.md](CONTRIBUTING.md). Validation checks catalog structure and generated files; it does not certify remote availability or licensing.
 
+Repository instructions for coding agents are in [AGENTS.md](AGENTS.md).
+
 ## Initial scope
 
 This first version is a research and source-discovery library. Use it to identify relevant sources for authorized facilities, routes and operating areas, then verify freshness and geographic precision before relying on an observation.
