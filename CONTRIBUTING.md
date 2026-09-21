@@ -18,6 +18,8 @@ Commit the JSON and regenerated Markdown together. The CI workflow checks struct
 
 ## Review status
 
+The labels below apply to the national/global catalog. City references have their own narrower [review methods](docs/city-methodology.md#what-a-source-entry-establishes).
+
 - `provider-documentation-reviewed`: publisher documentation or substantive provider material was reviewed; no claim of an authenticated integration test.
 - `provider-metadata-reviewed`: the publisher's structured dataset metadata was inspected.
 - `partial-review`: only part of the entry could be checked; record the limitation.
@@ -35,3 +37,21 @@ For protests and public events, describe access, disruption and safety relevance
 ## Report a broken or changed source
 
 Use the source-request issue template to identify the source ID, link, observed date and specific failure or correction. Do not attach credentials, personal information or proprietary operational records.
+
+## City source packs
+
+Edit `catalog/cities.json`. Preserve stable FIPS city IDs and source IDs. Each city must reference at least one source in all four categories. Shared agencies and utilities can be referenced by several cities; do not duplicate the same source just to add another city. Separate providers can share a regional outage portal.
+
+Keep population provenance, vintage and geography explicit. Do not replace place populations with metro or consolidated-county totals. The Hawaii exception must remain visible until an intentional methodology change.
+
+Every reference needs a publisher URL, evidence URL, resource type, review method, date and notes. Do not label a page as a working API or assume a utility covers all city addresses. If a new source URL is added, refresh the snapshot for that URL:
+
+```powershell
+python tools/cities.py check-links --missing-only
+python tools/cities.py validate
+python tools/cities.py build
+python tools/cities.py build --check
+python -m unittest discover -s tests
+```
+
+`check-links` without the flag refreshes all source URLs. It changes HTTP timestamps only; content review dates require actual review. Commit the catalog, snapshot, `CITIES.md`, and generated `cities/` pages together. CI performs offline validation and generation checks; it does not contact providers.

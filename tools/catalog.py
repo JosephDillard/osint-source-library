@@ -145,6 +145,7 @@ def render(data):
         "# Source library", "", GENERATED, "",
         f"**{len(sources)} sources across {len(data['categories'])} categories.** Catalog review: {data['review_date']}.", "",
         "Browse a category for source cards with documentation, access, limitations and evidence.",
+        "For local agencies and utilities, browse the [three largest places in every state](CITIES.md).",
         "Access labels describe how to reach the source; they do not grant reuse rights. See the [access guide](README.md#access-labels).",
         "Review status describes evidence inspected, not a successful integration test.", "",
         "| Category | Sources |", "| --- | ---: |",

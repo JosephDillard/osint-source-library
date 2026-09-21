@@ -1,0 +1,4449 @@
+{
+  "report_version": 1,
+  "method": "GET, default TLS verification, 12-second timeout, up to 400000 response bytes. Reachability only; scripts, subscriptions and APIs not tested.",
+  "checks": [
+    {
+      "url": "http://charlestonwvpolice.org",
+      "checked_at": "2026-09-20T23:56:44+00:00",
+      "status": 200,
+      "final_url": "https://charlestonwvpolice.org/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Charleston Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "http://www.cityutilities.net",
+      "checked_at": "2026-09-20T23:56:44+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "http://www.slcpd.com/",
+      "checked_at": "2026-09-20T23:56:44+00:00",
+      "status": 200,
+      "final_url": "https://police.slc.gov/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "SLCPD",
+      "result": "reachable"
+    },
+    {
+      "url": "http://www.wcem.org",
+      "checked_at": "2026-09-20T23:56:44+00:00",
+      "status": 200,
+      "final_url": "https://wcem.org/",
+      "content_type": "text/html;charset=utf-8",
+      "title": "Warren County Emergency Management",
+      "result": "reachable"
+    },
+    {
+      "url": "https://a858-nycnotify.nyc.gov/notifynyc/",
+      "checked_at": "2026-09-20T23:56:44+00:00",
+      "status": 200,
+      "final_url": "https://a858-nycnotify.nyc.gov/notifynyc/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Home | Notify NYC",
+      "result": "reachable"
+    },
+    {
+      "url": "https://adacounty.id.gov/emergencymanagement/",
+      "checked_at": "2026-09-20T23:56:44+00:00",
+      "status": 200,
+      "final_url": "https://adacounty.id.gov/emergencymanagement/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Emergency Management &amp; Community Resilience",
+      "result": "reachable"
+    },
+    {
+      "url": "https://alaskapolice.us/",
+      "checked_at": "2026-09-20T23:56:44+00:00",
+      "status": 200,
+      "final_url": "https://alaskapolice.us/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Fairbanks Police Department | Protect Our Way of Life",
+      "result": "reachable"
+    },
+    {
+      "url": "https://amwater.com/wvaw/about-us/",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://amwater.com/wvaw/about-us/",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "About Us",
+      "result": "reachable"
+    },
+    {
+      "url": "https://billingsmt.gov/2882/Police",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://billingsmt.gov/2882/Police",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police | City of Billings, MT - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://buffalowater.org/",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://buffalowater.org/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Buffalo Water",
+      "result": "reachable"
+    },
+    {
+      "url": "https://capitalelec.com/outage-center",
+      "checked_at": "2026-09-21T00:02:10+00:00",
+      "status": 200,
+      "final_url": "https://capitalelec.com/outage-center",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outage Center | Capital Electric Cooperative, Inc",
+      "result": "reachable"
+    },
+    {
+      "url": "https://carkw.com/",
+      "checked_at": "2026-09-21T00:02:10+00:00",
+      "status": 200,
+      "final_url": "https://carkw.com/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Home | Central Arkansas Water",
+      "result": "reachable"
+    },
+    {
+      "url": "https://cedar-rapids.org/local_government/departments_g_-_v/police/index.php",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://cedar-rapids.org/local_government/departments_g_-_v/police/index.php",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Cedar Rapids Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://cedar-rapids.org/residents/utilities/index.php",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://cedar-rapids.org/residents/utilities/index.php",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Utilities",
+      "result": "reachable"
+    },
+    {
+      "url": "https://ci.missoula.mt.us/2460/Public-Safety",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://ci.missoula.mt.us/2460/Public-Safety",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Public Safety | Missoula, MT - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://city.milwaukee.gov/emhs/mkealert",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://city.milwaukee.gov/police/Shares/Contact-Us",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://city.milwaukee.gov/water",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://cityofchesapeake.net/727/Police-Department",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://cityofchesapeake.net/727/Police-Department",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police Department | Chesapeake, VA",
+      "result": "reachable"
+    },
+    {
+      "url": "https://cityoffrederickmd.gov/99/Frederick-Police-Department",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://cityoffrederickmd.gov/99/Frederick-Police-Department",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Frederick Police Department | The City of Frederick, MD - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://cityofhuntington.com/city-government/city-departments/police-1/",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://cityofhuntington.com/city-government/city-departments/police-1/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "result": "reachable"
+    },
+    {
+      "url": "https://cityofhuntington.com/residents/utilities/",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://cityofhuntington.com/residents/utilities/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Utilities | Residents | City of Huntington",
+      "result": "reachable"
+    },
+    {
+      "url": "https://cityoftulsa.org/residents/public-safety/",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://cityoftulsa.org/residents/public-safety/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "City of Tulsa",
+      "result": "reachable"
+    },
+    {
+      "url": "https://cityoftulsa.org/residents/utilities-and-e-services/",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://cityoftulsa.org/residents/utilities-and-e-services/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "City of Tulsa",
+      "result": "reachable"
+    },
+    {
+      "url": "https://coloradosprings.gov/police-department",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://coloradosprings.gov/police-department",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Colorado Springs Police Department | City of Colorado Springs",
+      "result": "reachable"
+    },
+    {
+      "url": "https://columbiapd.net",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://columbiapd.net",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Home &#8211; City of Columbia Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://columbiascwater.net",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://columbiascwater.net",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Home - City of Columbia Water",
+      "result": "reachable"
+    },
+    {
+      "url": "https://columbusga.gov/homeland",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://columbusga.gov/homeland",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Homeland Security & Emergency Management | Home",
+      "result": "reachable"
+    },
+    {
+      "url": "https://columbusga.gov/police",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://columbusga.gov/police",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Columbus GA Police Department | Home",
+      "result": "reachable"
+    },
+    {
+      "url": "https://concordnh.gov/477/Fire-Department",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://concordnh.gov/1989/Fire-Department",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Fire Department | Concord, NH - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://concordnh.gov/807/Police",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://concordnh.gov/1997/Police-Department",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police Department | Concord, NH - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://cranstonri.gov/departments/emergency-services/cranston-police-department/",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://cranstonri.gov/departments/emergency-services/cranston-police-department/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Cranston Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://cranstonri.gov/departments/emergency-services/fire-department/",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://cranstonri.gov/departments/emergency-services/fire-department/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Fire Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://dallascityhall.com/departments/officeemergencymanagement/Pages/Dallas-Alert.aspx",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://dallascityhall.com/departments/waterutilities/Pages/default.aspx",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://dallaspolice.net/about/Pages/Message-from-the-Chief.aspx",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://denvergov.org/Public-Safety/Police-Department",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Police-Department",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police Department - City and County of Denver",
+      "result": "reachable"
+    },
+    {
+      "url": "https://detroitmi.gov/departments/detroit-water-and-sewerage-department",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://detroitmi.gov/departments/detroit-water-and-sewerage-department",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Detroit Water and Sewerage Department | City of Detroit",
+      "result": "reachable"
+    },
+    {
+      "url": "https://detroitmi.gov/departments/emergency-management-homeland-security/emergency-alerts",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://detroitmi.gov/departments/emergency-management-homeland-security/emergency-alerts",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Emergency Alerts | City of Detroit",
+      "result": "reachable"
+    },
+    {
+      "url": "https://detroitmi.gov/index.php/departments/police-department",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://detroitmi.gov/departments/police-department",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Police Department | City of Detroit",
+      "result": "reachable"
+    },
+    {
+      "url": "https://doverpolice.org",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://doverpolice.org",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "City of Dover Police Department &#8211; Proudly Serving the Capital of Delaware Since 1925",
+      "result": "reachable"
+    },
+    {
+      "url": "https://ebill.jea.com/drinkingwater",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'ebill.jea.com'. (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://em.columbiasc.gov",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://em.columbiasc.gov",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Home - Resiliency Knowledge Center",
+      "result": "reachable"
+    },
+    {
+      "url": "https://emergency.lacity.gov/alerts",
+      "checked_at": "2026-09-20T23:56:45+00:00",
+      "status": 200,
+      "final_url": "https://emergency.lacity.gov/alerts",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Emergency Alerts | Emergency Management Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://evansvillepolice.com/",
+      "checked_at": "2026-09-20T23:56:46+00:00",
+      "status": 200,
+      "final_url": "https://evansvillepolice.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Evansville Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://ewsu.com/",
+      "checked_at": "2026-09-20T23:56:46+00:00",
+      "status": 200,
+      "final_url": "https://ewsu.com/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Evansville",
+      "result": "reachable"
+    },
+    {
+      "url": "https://fargond.gov/live/emergency-preparedness",
+      "checked_at": "2026-09-20T23:56:46+00:00",
+      "status": 200,
+      "final_url": "https://fargond.gov/city-government/departments/emergency-management",
+      "content_type": "text/html; charset=utf-8",
+      "title": "The City of Fargo - Emergency Management",
+      "result": "reachable"
+    },
+    {
+      "url": "https://fargond.gov/live/police-fire",
+      "checked_at": "2026-09-20T23:56:46+00:00",
+      "status": 200,
+      "final_url": "https://fargond.gov/live/police-fire",
+      "content_type": "text/html; charset=utf-8",
+      "title": "The City of Fargo - Police &amp; Fire",
+      "result": "reachable"
+    },
+    {
+      "url": "https://fargond.gov/live/utility-services",
+      "checked_at": "2026-09-20T23:56:46+00:00",
+      "status": 200,
+      "final_url": "https://fargond.gov/city-government/departments/auditors/utility-billing-department",
+      "content_type": "text/html; charset=utf-8",
+      "title": "The City of Fargo - Utility Billing Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://fayetteville-ar.gov/4081/Police-Department",
+      "checked_at": "2026-09-20T23:56:46+00:00",
+      "status": 200,
+      "final_url": "https://fayetteville-ar.gov/4081/Police-Department",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police Department | Fayetteville, AR - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://greatfallsmt.gov/248/Police",
+      "checked_at": "2026-09-20T23:56:46+00:00",
+      "status": 200,
+      "final_url": "https://greatfallsmt.gov/248/Police",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police | Great Falls, MT",
+      "result": "reachable"
+    },
+    {
+      "url": "https://greatfallsmt.gov/359/Utilities-Information",
+      "checked_at": "2026-09-20T23:56:46+00:00",
+      "status": 200,
+      "final_url": "https://greatfallsmt.gov/359/Utilities-Information",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Utilities Information | Great Falls, MT",
+      "result": "reachable"
+    },
+    {
+      "url": "https://greatfallsmt.gov/AlertCenter.aspx",
+      "checked_at": "2026-09-20T23:56:46+00:00",
+      "status": 200,
+      "final_url": "https://greatfallsmt.gov/AlertCenter.aspx",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Alert Center • Great Falls, MT • CivicEngage",
+      "result": "reachable"
+    },
+    {
+      "url": "https://greenecountymo.gov/oem/cst.php",
+      "checked_at": "2026-09-20T23:56:46+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://greenmountainpower.com/outages",
+      "checked_at": "2026-09-21T00:02:10+00:00",
+      "status": 200,
+      "final_url": "https://greenmountainpower.com/outages/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outage Center - Green Mountain Power",
+      "result": "reachable"
+    },
+    {
+      "url": "https://gulfport-ms.gov/government/policedepartments/police/index.php",
+      "checked_at": "2026-09-20T23:56:46+00:00",
+      "status": 200,
+      "final_url": "https://gulfport-ms.gov/government/policedepartments/police/index.php",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Gulfport, MS",
+      "result": "reachable"
+    },
+    {
+      "url": "https://gulfport-ms.gov/residents/boil_water_road_closure_notices.php",
+      "checked_at": "2026-09-21T00:02:10+00:00",
+      "status": 200,
+      "final_url": "https://gulfport-ms.gov/residents/boil_water_road_closure_notices.php",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Gulfport, MS",
+      "result": "reachable"
+    },
+    {
+      "url": "https://harrison2.co.harrison.ms.us/directory/?department=Emergency+Management+%2F+Homeland+Security",
+      "checked_at": "2026-09-21T00:02:10+00:00",
+      "status": 200,
+      "final_url": "https://harrison2.co.harrison.ms.us/directory/?department=Emergency+Management+%2F+Homeland+Security",
+      "content_type": "text/html",
+      "title": "Harrison County! Online Services and Information",
+      "result": "reachable"
+    },
+    {
+      "url": "https://houstonoem.org/about-us/",
+      "checked_at": "2026-09-20T23:56:46+00:00",
+      "status": 200,
+      "final_url": "https://houstonoem.org/about-us/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "About Us - Houston OEM",
+      "result": "reachable"
+    },
+    {
+      "url": "https://info.citizensenergygroup.com/water/quality/reports",
+      "checked_at": "2026-09-20T23:56:46+00:00",
+      "status": 200,
+      "final_url": "https://info.citizensenergygroup.com/water/quality/reports",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Indianapolis Area Drinking Water Report | Citizens Energy Group",
+      "result": "reachable"
+    },
+    {
+      "url": "https://jacksonms.gov/residents/police-fire-emergency/",
+      "checked_at": "2026-09-20T23:56:46+00:00",
+      "status": 200,
+      "final_url": "https://jacksonms.gov/residents/police-fire-emergency/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Police, Fire, Emergency - City of Jackson",
+      "result": "reachable"
+    },
+    {
+      "url": "https://juneau.org/emergency",
+      "checked_at": "2026-09-20T23:56:47+00:00",
+      "status": 200,
+      "final_url": "https://juneau.org/emergency",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Emergency Management &#8211; City and Borough of Juneau",
+      "result": "reachable"
+    },
+    {
+      "url": "https://juneau.org/engineering-public-works/utilities-division",
+      "checked_at": "2026-09-20T23:56:47+00:00",
+      "status": 200,
+      "final_url": "https://juneau.org/engineering-public-works/utilities-division",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Utilities Division &#8211; City and Borough of Juneau",
+      "result": "reachable"
+    },
+    {
+      "url": "https://juneau.org/police/",
+      "checked_at": "2026-09-20T23:56:47+00:00",
+      "status": 200,
+      "final_url": "https://juneau.org/police",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "JPD &#8211; Homepage &#8211; City and Borough of Juneau",
+      "result": "reachable"
+    },
+    {
+      "url": "https://jxnwater.com/",
+      "checked_at": "2026-09-20T23:56:47+00:00",
+      "status": 200,
+      "final_url": "https://jxnwater.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "JXN Water - Jackson Mississippi Water System",
+      "result": "reachable"
+    },
+    {
+      "url": "https://kcpolice.org/",
+      "checked_at": "2026-09-21T00:05:39+00:00",
+      "status": 200,
+      "final_url": "https://kcpolice.org/",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable",
+      "title": "Home | Kansas City Missouri Police Department"
+    },
+    {
+      "url": "https://knoxvilletnpolice.gov/",
+      "checked_at": "2026-09-20T23:56:47+00:00",
+      "status": 200,
+      "final_url": "https://knoxvilletnpolice.gov/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Knoxville Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://lacity.gov/directory/police-department",
+      "checked_at": "2026-09-20T23:56:47+00:00",
+      "status": 200,
+      "final_url": "https://lacity.gov/directory/police-department",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Police Department | City of Los Angeles",
+      "result": "reachable"
+    },
+    {
+      "url": "https://lascruces.gov/resident/resident-resources/utilities-link-utilities/",
+      "checked_at": "2026-09-20T23:56:47+00:00",
+      "status": 200,
+      "final_url": "https://lascruces.gov/property/utilities/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Utilities - The City of Las Cruces",
+      "result": "reachable"
+    },
+    {
+      "url": "https://lascruces.gov/safety/alerts/",
+      "checked_at": "2026-09-20T23:56:47+00:00",
+      "status": 200,
+      "final_url": "https://lascruces.gov/safety/alerts/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Sign Up For - The City of Las Cruces",
+      "result": "reachable"
+    },
+    {
+      "url": "https://lascruces.gov/safety/police-department/",
+      "checked_at": "2026-09-20T23:56:47+00:00",
+      "status": 200,
+      "final_url": "https://lascruces.gov/safety/police-department/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Police Department - The City of Las Cruces",
+      "result": "reachable"
+    },
+    {
+      "url": "https://lewistonmaine.gov/195/Water-Sewer-Division",
+      "checked_at": "2026-09-20T23:56:47+00:00",
+      "status": 200,
+      "final_url": "https://lewistonmaine.gov/195/Water-Sewer-Division",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water &amp; Sewer Division - Water Distribution | Lewiston, ME - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://lge-ku.com/outages",
+      "checked_at": "2026-09-21T00:02:10+00:00",
+      "status": 200,
+      "final_url": "https://lge-ku.com/outages",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outages | LG&E and KU",
+      "result": "reachable"
+    },
+    {
+      "url": "https://littlerock.gov/government/city-managers-office/divisions/emergency-management/",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 200,
+      "final_url": "https://littlerock.gov/government/city-managers-office/divisions/emergency-management/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Emergency Management - City of Little Rock",
+      "result": "reachable"
+    },
+    {
+      "url": "https://littlerock.gov/residents/police-department/",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 200,
+      "final_url": "https://littlerock.gov/residents/police-department/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Police Department - City of Little Rock",
+      "result": "reachable"
+    },
+    {
+      "url": "https://louisvilleky.gov/government/emergency-services/emergency-management-agency-ema",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://louisvillewater.com/",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 200,
+      "final_url": "https://louisvillewater.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Home | Louisville Water Company",
+      "result": "reachable"
+    },
+    {
+      "url": "https://memphistn.gov/office-of-emergency-management/",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 200,
+      "final_url": "https://memphistn.gov/office-of-emergency-management/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Office of Emergency Management - The City of Memphis",
+      "result": "reachable"
+    },
+    {
+      "url": "https://memphistn.gov/police/",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 200,
+      "final_url": "https://memphistn.gov/police/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Police - The City of Memphis",
+      "result": "reachable"
+    },
+    {
+      "url": "https://meridiancity.org/police/",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://meridiancity.org/public-works/water/",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://mobilecountyema.gov/",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://mub.org/",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 200,
+      "final_url": "https://mub.org/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Home Morgantown Utility Board",
+      "result": "reachable"
+    },
+    {
+      "url": "https://my.spokanecity.org/emergencymanagement/alerts/",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 200,
+      "final_url": "https://my.spokanecity.org/emergencymanagement/alerts/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency Alerts - City of Spokane, Washington",
+      "result": "reachable"
+    },
+    {
+      "url": "https://my.spokanecity.org/police/",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 200,
+      "final_url": "https://my.spokanecity.org/police/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police Department - City of Spokane, Washington",
+      "result": "reachable"
+    },
+    {
+      "url": "https://my.spokanecity.org/publicworks/",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 200,
+      "final_url": "https://my.spokanecity.org/publicworks/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Public Works and Utilities - City of Spokane, Washington",
+      "result": "reachable"
+    },
+    {
+      "url": "https://mywater.veolia.us/idaho",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://nashuanh.genasys.com/portal/en",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 200,
+      "final_url": "https://nashuanh.genasys.com/portal/en",
+      "content_type": "text/html",
+      "title": "Registration Portal",
+      "result": "reachable"
+    },
+    {
+      "url": "https://nema.nebraska.gov/social-media-and-partner-agency-links.php",
+      "checked_at": "2026-09-21T00:02:10+00:00",
+      "status": 200,
+      "final_url": "https://nema.nebraska.gov/social-media-and-partner-agency-links.php",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "SOCIAL MEDIA & PARTNER AGENCY LINKS | NEBRASKA EMERGENCY MANAGEMENT AGENCY",
+      "result": "reachable"
+    },
+    {
+      "url": "https://nola.gov/nopd/",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://northcentralelectric.com/report-outage/",
+      "checked_at": "2026-09-21T00:02:10+00:00",
+      "status": 200,
+      "final_url": "https://northcentralelectric.com/report-outage/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Northcentral Electric Cooperative",
+      "result": "reachable"
+    },
+    {
+      "url": "https://northcharleston.org/business/utilities_and_infrastructure.php",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 200,
+      "final_url": "https://northcharleston.org/business/utilities_and_infrastructure.php",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Welcome to City of North Charleston",
+      "result": "reachable"
+    },
+    {
+      "url": "https://northcharleston.org/community/residents/emergency_preparedness.php",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 200,
+      "final_url": "https://northcharleston.org/community/residents/emergency_preparedness.php",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Welcome to City of North Charleston",
+      "result": "reachable"
+    },
+    {
+      "url": "https://oem.virginiabeach.gov",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 200,
+      "final_url": "https://oem.virginiabeach.gov",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Emergency Management | City of Virginia Beach",
+      "result": "reachable"
+    },
+    {
+      "url": "https://okcoop.org/outage-center/",
+      "checked_at": "2026-09-21T00:02:10+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://outage-map.unitil.com/",
+      "checked_at": "2026-09-21T00:02:10+00:00",
+      "status": 200,
+      "final_url": "https://outage-map.unitil.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outage Map",
+      "result": "reachable"
+    },
+    {
+      "url": "https://outage.dteenergy.com/",
+      "checked_at": "2026-09-21T00:02:10+00:00",
+      "status": 200,
+      "final_url": "https://outage.dteenergy.com/",
+      "content_type": "text/html",
+      "title": "Outage Center | DTE Energy",
+      "result": "reachable"
+    },
+    {
+      "url": "https://outage.kwh.com/",
+      "checked_at": "2026-09-21T00:02:10+00:00",
+      "status": 200,
+      "final_url": "https://outage.kwh.com/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Web Outage Viewer",
+      "result": "reachable"
+    },
+    {
+      "url": "https://outage.sdge.com/",
+      "checked_at": "2026-09-21T00:02:10+00:00",
+      "status": 200,
+      "final_url": "https://outage.sdge.com/",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "SDG&E Outage Map",
+      "result": "reachable"
+    },
+    {
+      "url": "https://outage.tecoenergy.com/",
+      "checked_at": "2026-09-21T00:02:10+00:00",
+      "status": 200,
+      "final_url": "https://outage.tecoenergy.com/",
+      "content_type": "text/html",
+      "title": "Outage Map",
+      "result": "reachable"
+    },
+    {
+      "url": "https://outagecenter.pseg.com/external/default.html",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://outagecenter.pseg.com/external/default.html",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "PSE&G NJ Outage Map",
+      "result": "reachable"
+    },
+    {
+      "url": "https://outagemap.ameren.com/external/default.html",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://outagemap.ameren.com/external/default.html",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "Outage Map | Ameren",
+      "result": "reachable"
+    },
+    {
+      "url": "https://outagemap.bge.com/report/",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://outagemap.bge.com/report/",
+      "content_type": "text/html",
+      "title": "Outage Map",
+      "result": "reachable"
+    },
+    {
+      "url": "https://outagemap.coned.com/external/default.html",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://outagemap.coned.com/external/default.html",
+      "content_type": "text/html",
+      "title": "",
+      "result": "reachable"
+    },
+    {
+      "url": "https://outagemap.myavista.com",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://outages.coastelectric.coop",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://outages.coastelectric.coop",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outage Map",
+      "result": "reachable"
+    },
+    {
+      "url": "https://outages.newarkde.gov/Outages/Home/OutageMap",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://outages.newarkde.gov/Outages/Home/OutageMap",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Outage Map",
+      "result": "reachable"
+    },
+    {
+      "url": "https://pennichuck.com/water_system/pww-core-nashua/",
+      "checked_at": "2026-09-20T23:56:48+00:00",
+      "status": 200,
+      "final_url": "https://pennichuck.com/water_system/pww-core-nashua/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "PWW Core &#8211; Nashua &#8211; Pennichuck",
+      "result": "reachable"
+    },
+    {
+      "url": "https://pgealerts.alerts.pge.com/",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://pgealerts.alerts.pge.com/",
+      "content_type": "text/html",
+      "title": "PG&E Outage Center",
+      "result": "reachable"
+    },
+    {
+      "url": "https://police.boston.gov/",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 200,
+      "final_url": "https://police.boston.gov/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Boston Police Department &#8211; Boston Police",
+      "result": "reachable"
+    },
+    {
+      "url": "https://police.cityofomaha.org/",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://police.northcharleston.org",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 200,
+      "final_url": "https://police.northcharleston.org",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Welcome to City of North Charleston",
+      "result": "reachable"
+    },
+    {
+      "url": "https://police.portlandmaine.gov/",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://police.virginiabeach.gov/",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 200,
+      "final_url": "https://police.virginiabeach.gov/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Police | City of Virginia Beach",
+      "result": "reachable"
+    },
+    {
+      "url": "https://portlandgeneral.com/outages",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://portlandgeneral.com/outages",
+      "content_type": "text/html",
+      "title": "Oregon Power Outages and PGE Outage Map | PGE",
+      "result": "reachable"
+    },
+    {
+      "url": "https://portlandmaine.gov/emergency-management?contentId=ad9ce5d8-885b-4d01-bb89-29e418eadacc",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://ppd.providenceri.gov",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 200,
+      "final_url": "https://ppd.providenceri.gov",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Providence Police Department - Providence Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://pproem.com/",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://pproem.com/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Pikes Peak Regional Office of Emergency Management | Pikes Peak Regional Emergency Management",
+      "result": "reachable"
+    },
+    {
+      "url": "https://providenceri.gov/pema",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 200,
+      "final_url": "https://www.providenceri.gov/pema/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "City of Providence Providence Emergency Management Agency - City of Providence",
+      "result": "reachable"
+    },
+    {
+      "url": "https://pu.virginiabeach.gov",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 200,
+      "final_url": "https://pu.virginiabeach.gov",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Public Utilities | City of Virginia Beach",
+      "result": "reachable"
+    },
+    {
+      "url": "https://publicsafety.aurora.il.us/Police/Staff-and-Contact",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://raleighnc.gov/fire/services/alerts",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://raleighnc.gov/police",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://raleighnc.gov/water-and-sewer/services/raleigh-water-reports",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://ready.nola.gov/home/",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://rrnm.gov/17/Police",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 200,
+      "final_url": "https://rrnm.gov/17/Police",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police Department | The Official Site of Rio Rancho, NM",
+      "result": "reachable"
+    },
+    {
+      "url": "https://rrnm.gov/2793/Utilities",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 200,
+      "final_url": "https://rrnm.gov/2793/Utilities",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Utilities Department | The Official Site of Rio Rancho, NM",
+      "result": "reachable"
+    },
+    {
+      "url": "https://rva.gov/emergency-management",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 200,
+      "final_url": "https://rva.gov/emergency-management",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Emergency Management | Richmond",
+      "result": "reachable"
+    },
+    {
+      "url": "https://rva.gov/police",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 200,
+      "final_url": "https://rva.gov/police",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Police | Richmond",
+      "result": "reachable"
+    },
+    {
+      "url": "https://rva.gov/public-utilities/water-utility",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 200,
+      "final_url": "https://rva.gov/public-utilities/water-utility",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Water Utility | Richmond",
+      "result": "reachable"
+    },
+    {
+      "url": "https://seattle.gov/police/information-and-data",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 200,
+      "final_url": "https://seattle.gov/police/information-and-data",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Information & Data - Police | seattle.gov",
+      "result": "reachable"
+    },
+    {
+      "url": "https://sebastiancountyar.gov/Departments/County-Judge/Emergency-Mngt-EMS-Rescue",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 200,
+      "final_url": "https://sebastiancountyar.gov/Departments/County-Judge/Emergency-Mngt-EMS-Rescue",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Sebastian County Government > Departments > County Judge > Emergency Mngt/EMS/Rescue",
+      "result": "reachable"
+    },
+    {
+      "url": "https://secure.comed.com/Outages/ReportAnOutage/Pages/ReportAnOutage.aspx",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://secure.comed.com/Outages/ReportAnOutage/Pages/ReportAnOutage.aspx",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Report an Outage Online | ComEd - An Exelon Company",
+      "result": "reachable"
+    },
+    {
+      "url": "https://secure.delmarva.com/FaceBook/Pages/outagemap.aspx",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://secure.delmarva.com/FaceBook/Pages/outagemap.aspx",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Outage Map | Delmarva Power - An Exelon Company",
+      "result": "reachable"
+    },
+    {
+      "url": "https://shreveportla.gov/422/Police",
+      "checked_at": "2026-09-20T23:56:49+00:00",
+      "status": 200,
+      "final_url": "https://shreveportla.gov/3272/Police",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police | Shreveport, LA - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://shreveportla.gov/AlertCenter.aspx",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 200,
+      "final_url": "https://shreveportla.gov/AlertCenter.aspx",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Alert Center • Shreveport, LA • CivicEngage",
+      "result": "reachable"
+    },
+    {
+      "url": "https://southaven.org/207/Water-System",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 200,
+      "final_url": "https://southaven.org/207/Water-System",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water System | Southaven, MS",
+      "result": "reachable"
+    },
+    {
+      "url": "https://southburlingtonvt.gov/166/Police",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 200,
+      "final_url": "https://southburlingtonvt.gov/166/Police",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police | South Burlington, VT",
+      "result": "reachable"
+    },
+    {
+      "url": "https://southburlingtonvt.gov/AlertCenter.aspx",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 200,
+      "final_url": "https://southburlingtonvt.gov/AlertCenter.aspx",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Alert Center • South Burlington, VT • CivicEngage",
+      "result": "reachable"
+    },
+    {
+      "url": "https://southeasternelectric.outagemap.coop/",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://southeasternelectric.outagemap.coop/",
+      "content_type": "text/html",
+      "title": "Loading Map",
+      "result": "reachable"
+    },
+    {
+      "url": "https://tacoma.gov/government/departments/fire/emergency-management-program-feed/",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 200,
+      "final_url": "https://tacoma.gov/government/departments/fire/emergency-management-program-feed/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Emergency Preparedness | City of Tacoma",
+      "result": "reachable"
+    },
+    {
+      "url": "https://tacoma.gov/government/departments/police/",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://tacoma.gov/government/departments/police/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Tacoma Police Department | City of Tacoma",
+      "result": "reachable"
+    },
+    {
+      "url": "https://tacoma.gov/services/utilities/",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 200,
+      "final_url": "https://tacoma.gov/services/utilities/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Utility Services &amp; Resource Guide | City of Tacoma",
+      "result": "reachable"
+    },
+    {
+      "url": "https://tools.idahopower.com/outage",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://tools.idahopower.com/outage",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Outage Map - Idaho Power",
+      "result": "reachable"
+    },
+    {
+      "url": "https://tracker.centerpointenergy.com/map",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://tracker.centerpointenergy.com/map/",
+      "content_type": "text/html",
+      "title": "DataCapable | Event Map",
+      "result": "reachable"
+    },
+    {
+      "url": "https://utilities.cityoffortwayne.org/drinking-water/",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 200,
+      "final_url": "https://utilities.cityoffortwayne.org/drinking-water/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Drinking Water | Fort Wayne City Utilities",
+      "result": "reachable"
+    },
+    {
+      "url": "https://vem.vermont.gov/vtalert",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 200,
+      "final_url": "https://vem.vermont.gov/vtalert",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Vermont Alert | Vermont Emergency Management",
+      "result": "reachable"
+    },
+    {
+      "url": "https://water.newarknj.gov/",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 200,
+      "final_url": "https://water.newarknj.gov/",
+      "content_type": "text/html;charset=utf-8",
+      "title": "Newark Water &amp; Sewer Utilities | City of Newark, NJ | Linking People and Water",
+      "result": "reachable"
+    },
+    {
+      "url": "https://waterandsewer.org/",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 200,
+      "final_url": "https://waterandsewer.org/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Home - Springfield Water and Sewer Commission",
+      "result": "reachable"
+    },
+    {
+      "url": "https://waterone.org/",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 200,
+      "final_url": "https://waterone.org/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "WaterOne | Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.abcwua.org/your-drinking-water/",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 200,
+      "final_url": "https://www.abcwua.org/your-drinking-water/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Your Drinking Water - Overview - Albuquerque Bernalillo County Water Utility Authority",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.aberdeen.sd.us/176/Utilities",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.aberdeen.sd.us/21/Police",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.aberdeen.sd.us/alertcenter.aspx",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.aelp.com/Energy-Conservation/Outage-Updates",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://www.aelp.com/Energy-Conservation/Outage-Updates",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Outage Updates | Energy & Conservation | Alaska Electric Light & Power",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.aepohio.com/outages/",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://www.aepohio.com/outages/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Outages",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.aesindiana.com/outages",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://www.aesindiana.com/outages",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outages | AES Indiana",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.akwater.com/",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 200,
+      "final_url": "https://www.mywater.us/alaska",
+      "content_type": "text/html; charset=utf-8",
+      "title": "College &amp; Golden Heart Utilities | Home",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.alabamapower.com/residential/outages-and-storm-center.html",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://www.alabamapower.com/residential/outages-and-storm-center.html",
+      "content_type": "text/html;charset=utf-8",
+      "title": "Outages and Storm Center",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.allencounty.in.gov/194/Get-Prepared",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.allentownpa.gov/en-us/Government/Departments/Fire-Emergency-Services/Emergency-Management-Agency-EMA",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 200,
+      "final_url": "https://www.allentownpa.gov/en-us/Government/Departments/Fire-Emergency-Services/Emergency-Management-Agency-EMA",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency Management Agency (EMA)",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.allentownpa.gov/en-us/Government/Departments/Police",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 200,
+      "final_url": "https://www.allentownpa.gov/en-us/Government/Departments/Police",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.alliantenergy.com/customer-service/help-center/power-outages",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.anchoragepolice.com/",
+      "checked_at": "2026-09-20T23:56:50+00:00",
+      "status": 200,
+      "final_url": "https://www.anchoragepolice.com/",
+      "content_type": "text/html;charset=utf-8",
+      "title": "Anchorage Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.appalachianpower.com/outages/",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://www.appalachianpower.com/outages/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Outages",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.aps.com/en/Utility/Outage/Outage-Center/Report-Outage",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://www.aps.com/en/Utility/Outage/Outage-Center/Report-Outage",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Outage Center | APS",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.aquarionwater.com/about/communities-we-serve",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 200,
+      "final_url": "https://www.aquarionwater.com/about/communities-we-serve",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Communities We Serve | Aquarion Water",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.atlantaga.gov/government/departments/police",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.atlantaga.gov/government/departments/watershed-management",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.atlantaga.gov/government/mayor-s-office/executive-offices/office-of-emergency-preparedness/",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.augustaga.gov/2620/Utilities",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 200,
+      "final_url": "https://www.augustaga.gov/3178/Utilities",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Utilities | Augusta, GA - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.augustaga.gov/294/Sheriff",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 200,
+      "final_url": "https://www.augustaga.gov/294/Sheriff",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Sheriff | Augusta, GA - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.augustaga.gov/3371/Emergency-Management",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 200,
+      "final_url": "https://www.augustaga.gov/3371/Emergency-Management",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency Management Agency | Augusta, GA - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.aurora.il.us/City-Services/Water-and-Sewer/Water/Water-Production/Water-Quality-Reports",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.aurora.il.us/Government-and-Engagement/News/Emergency-Alerts",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.auroragov.org/city_hall/departments/police",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 200,
+      "final_url": "https://www.auroragov.org/cms/one.aspx?pageId=16394210",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police - City of Aurora",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.auroragov.org/residents/public_safety/office_of_emergency_management",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 200,
+      "final_url": "https://www.auroragov.org/residents/public_safety/office_of_emergency_management",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Office of Emergency Management - City of Aurora",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.auroragov.org/residents/water",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 200,
+      "final_url": "https://www.auroragov.org/residents/water",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Aurora Water - City of Aurora",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.awwu.biz/",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.baltimorecity.gov/health/our-work/emergency-preparedness-response",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 200,
+      "final_url": "https://www.baltimorecity.gov/health/emergency-preparedness-response",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Emergency Preparedness &amp; Response | Baltimore City",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.baltimorecity.gov/publicworks",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 200,
+      "final_url": "https://www.baltimorecity.gov/publicworks",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Baltimore City Department of Public Works | Baltimore City",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.baltimorepolice.org",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 200,
+      "final_url": "https://www.baltimorepolice.org",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Homepage | Baltimore Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bangormaine.gov/362/Police-Department",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 200,
+      "final_url": "https://www.bangormaine.gov/362/Police-Department",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police Department | Bangor, ME",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bangormaine.gov/636/Alerts-Notifications",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 200,
+      "final_url": "https://www.bangormaine.gov/636/Alerts-Notifications",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Alerts &amp; Notifications | Bangor, ME",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bangorwater.org/",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 200,
+      "final_url": "https://www.bangorwater.org/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Homepage Bangor Water District",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bellevue.net/232/Our-Department",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.bgky.org/police",
+      "checked_at": "2026-09-20T23:56:51+00:00",
+      "status": 200,
+      "final_url": "https://www.bgky.org/police",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Bowling Green Police Department - Bowling Green, Kentucky - Official Municipal Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bgmu.com/",
+      "checked_at": "2026-09-20T23:56:52+00:00",
+      "status": 200,
+      "final_url": "https://www.bgmu.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "BGMU - Bowling Green Municipal Utilities",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bgmu.com/outage-text-system/",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://www.bgmu.com/outage-text-system/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outage Text System - BGMU",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.billingsmt.gov/AlertCenter.aspx",
+      "checked_at": "2026-09-20T23:56:52+00:00",
+      "status": 200,
+      "final_url": "https://www.billingsmt.gov/AlertCenter.aspx",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Alert Center • Billings • CivicEngage",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.billingsmtpublicworks.gov/249/Drinking-Water",
+      "checked_at": "2026-09-20T23:56:52+00:00",
+      "status": 200,
+      "final_url": "https://www.billingsmtpublicworks.gov/249/Drinking-Water",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Drinking Water | Billings Public Works, MT",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.birminghamal.gov/government/city-council/residents/utilities-city-birmingham",
+      "checked_at": "2026-09-20T23:56:52+00:00",
+      "status": 200,
+      "final_url": "https://www.birminghamal.gov/government/city-council/residents/utilities-city-birmingham",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Utilities In The City of Birmingham | City of Birmingham, Alabama",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.birminghamal.gov/government/city-departments/birmingham-police-department/about-birmingham-police-department",
+      "checked_at": "2026-09-20T23:56:52+00:00",
+      "status": 200,
+      "final_url": "https://www.birminghamal.gov/government/city-departments/birmingham-police-department/about-birmingham-police-department",
+      "content_type": "text/html; charset=utf-8",
+      "title": "About Birmingham Police Department | City of Birmingham, Alabama",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bismarcknd.gov/200/Water",
+      "checked_at": "2026-09-20T23:56:52+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.bismarcknd.gov/2176/Receive-AlertsWarnings",
+      "checked_at": "2026-09-20T23:56:52+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.bismarcknd.gov/police",
+      "checked_at": "2026-09-20T23:56:52+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.blackhillsenergy.com/outages",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://www.blackhillsenergy.com/outages",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outages | Black Hills Energy",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.boardofwatersupply.com/news-events/news-updates/news-releases/",
+      "checked_at": "2026-09-20T23:56:52+00:00",
+      "status": 200,
+      "final_url": "https://www.boardofwatersupply.com/news-events/news-updates/news-releases/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "News Releases",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.boston.gov/departments/emergency-management/city-boston-alerts-and-notifications",
+      "checked_at": "2026-09-20T23:56:52+00:00",
+      "status": 200,
+      "final_url": "https://www.boston.gov/departments/emergency-management/city-boston-alerts-and-notifications",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "AlertBoston | Boston.gov",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bpu.com/",
+      "checked_at": "2026-09-20T23:56:52+00:00",
+      "status": 200,
+      "final_url": "https://www.bpu.com/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Kansas City Board of Public Utilities | BPU",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bpu.com/ResourcesServices/OutagesSafety.aspx",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://www.bpu.com/ResourcesServices/OutagesSafety.aspx",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Outages & Safety",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bridgeportct.gov/government/departments/emergency-management-homeland-security",
+      "checked_at": "2026-09-20T23:56:52+00:00",
+      "status": 200,
+      "final_url": "https://www.bridgeportct.gov/government/departments/emergency-management-homeland-security",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Emergency Management &amp; Homeland Security | City of Bridgeport",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bridgeportct.gov/government/departments/police-department/police-department-phone-numbers",
+      "checked_at": "2026-09-20T23:56:52+00:00",
+      "status": 200,
+      "final_url": "https://www.bridgeportct.gov/government/departments/police-department/police-department-phone-numbers",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Police Department Phone Numbers | City of Bridgeport",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.brla.gov/2706/Police-Department",
+      "checked_at": "2026-09-20T23:56:52+00:00",
+      "status": 200,
+      "final_url": "https://www.brla.gov/3405/Police-Department",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police Department | Baton Rouge, LA",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.brla.gov/AlertCenter.aspx",
+      "checked_at": "2026-09-20T23:56:52+00:00",
+      "status": 200,
+      "final_url": "https://www.brla.gov/AlertCenter.aspx",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Alert Center • Baton Rouge, LA • CivicEngage",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.brwater.com/",
+      "checked_at": "2026-09-20T23:56:52+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.buffalony.gov/AlertCenter.aspx",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.buffalony.gov/m/directory/department?did=15",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.burlingtonelectric.com/report-a-problem/",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://www.burlingtonelectric.com/report-a-problem/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Report A Problem – Burlington Electric Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.burlingtonvt.gov/btv-alerts",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 200,
+      "final_url": "https://www.burlingtonvt.gov/btv-alerts",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Sign up for Urgent Alerts | Burlington, VT",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.burlingtonvt.gov/police",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 200,
+      "final_url": "https://www.burlingtonvt.gov/police",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police Department | Burlington, VT",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.burlingtonvt.gov/water",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 200,
+      "final_url": "https://www.burlingtonvt.gov/water",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water Resources | Burlington, VT",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bwsc.org/environment-education/water-sewer-and-stormwater/water-system",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 200,
+      "final_url": "https://www.bwsc.org/environment-education/water-sewer-and-stormwater/water-system",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water System | Boston Water and Sewer Commission",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cabq.gov/office-of-emergency-management/abq-alert-2/abq-alert",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 200,
+      "final_url": "https://www.cabq.gov/office-of-emergency-management/abq-alert-2/abq-alert",
+      "content_type": "text/html;charset=utf-8",
+      "title": "ABQ Alert — City of Albuquerque",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cabq.gov/police/our-department/area-commands",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 200,
+      "final_url": "https://www.cabq.gov/police/our-department/area-commands",
+      "content_type": "text/html;charset=utf-8",
+      "title": "Area Commands — City of Albuquerque",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.campbellcountywy.gov/198/Emergency-Management",
+      "checked_at": "2026-09-21T00:05:39+00:00",
+      "status": 200,
+      "final_url": "https://www.campbellcountywy.gov/198/Emergency-Management",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable",
+      "title": "Emergency Management | Campbell County, WY - Official Website"
+    },
+    {
+      "url": "https://www.casperwy.gov/community/police/index.php",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 200,
+      "final_url": "https://www.casperwy.gov/community/police/index.php",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Casper, WY",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.casperwy.gov/services/utilities/index.php",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 200,
+      "final_url": "https://www.casperwy.gov/services/utilities/index.php",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Utilities",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cedar-rapids.org/emergency-preparedness",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 200,
+      "final_url": "https://www.cedar-rapids.org/emergency-preparedness/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Neighborhood P.A.C.T.",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.charleston-sc.gov/2908/Emergency-Management",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 200,
+      "final_url": "https://www.charleston-sc.gov/2908/Emergency-Management",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency Management Division | Charleston, SC - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.charleston-sc.gov/303/Police-Department",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 200,
+      "final_url": "https://www.charleston-sc.gov/303/Police-Department",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Charleston Police Department&#160; | Charleston, SC - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.charlestonwater.com/163/Water-System",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 200,
+      "final_url": "https://www.charlestonwater.com/163/Water-System",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water System | Charleston Water System, SC - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.charlestonwv.gov/node/140",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 200,
+      "final_url": "https://www.charlestonwv.gov/node/140",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Emergency Info | City of Charleston",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.charlottenc.gov/Public-Safety/Emergency-Management/Stay-Informed",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.charlottenc.gov/cmpd/Home",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.charlottenc.gov/water/Home",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.cheyennebopu.org/Water",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.cheyennepd.org/Your-CPD/Contact",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.chicago.gov/city/en/depts/cpd.html",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 200,
+      "final_url": "https://www.chicago.gov/city/en/depts/cpd.html",
+      "content_type": "text/html",
+      "title": "City of Chicago :: Police",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.chicago.gov/city/en/depts/oem.html",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 200,
+      "final_url": "https://www.chicago.gov/city/en/depts/oem.html",
+      "content_type": "text/html",
+      "title": "City of Chicago :: Emergency Management & Communications",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.chicago.gov/city/en/depts/water.html",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 200,
+      "final_url": "https://www.chicago.gov/city/en/depts/water.html",
+      "content_type": "text/html",
+      "title": "City of Chicago :: Water Management",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.chugachelectric.com/your-cooperative/outages",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://www.chugachelectric.com/your-cooperative/outages",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outages | Chugach Electric Association Inc.",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.ci.missoula.mt.us/2242/Water-Quality",
+      "checked_at": "2026-09-20T23:56:53+00:00",
+      "status": 200,
+      "final_url": "https://www.ci.missoula.mt.us/2242/Water-Quality",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water Quality | Missoula, MT - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cincinnati-oh.gov/ecc/alerts/",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.cincinnati-oh.gov/ecc/alerts/",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "CincyAlert - Emergency Communications Center",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cincinnati-oh.gov/police/",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.cincinnati-oh.gov/police/",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "Police - Police",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cincinnati-oh.gov/water/",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://www.cincinnati-oh.gov/water/",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "Greater Cincinnati Water Works - GCWW",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cityofboise.org/departments/police/",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.cityofboise.org/departments/police/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police | City of Boise",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cityofchesapeake.net/335/Emergency-Management",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.cityofchesapeake.net/335/Emergency-Management",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency Management | Chesapeake, VA",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cityofchesapeake.net/870/Customer-Service",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.cityofchesapeake.net/870/Customer-Service",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Customer Service | Chesapeake, VA",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cityofdover.gov/WaterandWastewater",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://www.cityofdover.gov/WaterandWastewater",
+      "content_type": "text/html; charset=utf-8",
+      "title": "City of Dover Delaware - Water and Wastewater",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cityofdover.gov/emergency-management",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.cityofdover.gov/emergency-management",
+      "content_type": "text/html; charset=utf-8",
+      "title": "City of Dover Delaware - Emergency Management",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cityofdover.gov/outages",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 200,
+      "final_url": "https://www.cityofdover.gov/outages",
+      "content_type": "text/html; charset=utf-8",
+      "title": "City of Dover Delaware - Electric Outages",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cityoffortwayne.in.gov/m/directory/department?did=70",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.cityoffrederickmd.gov/1669/Emergency-Management",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.cityoffrederickmd.gov/1669/Emergency-Management",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency Management | The City of Frederick, MD - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cityoffrederickmd.gov/69/Water-Sewer",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.cityoffrederickmd.gov/69/Water-Sewer",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water &amp; Sewer | The City of Frederick, MD - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cityofhenderson.com/government/departments/emergency-management/additional-resources",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.cityofhenderson.com/government/departments/police/",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.cityofhenderson.com/government/departments/utility-services/water-quality/water-quality-report",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.cityofhuntington.com/heads-up-emergency",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.cityofhuntington.com/heads-up-emergency",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Heads Up! Emergency | City of Huntington",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cityofmadison.com/police",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.cityofmadison.com/police",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Police | City of Madison, WI",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cityofmadison.com/water",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.cityofmadison.com/water",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Water Utility | City of Madison, WI",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cityofmobile.gov/residents/utilities/",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.cityofmobile.gov/residents/utilities/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Utilities : City of Mobile, Alabama",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cityofnampa.us/1451/Police",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.cityofnampa.us/292/Water-Irrigation-Division",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.cityofnampa.us/AlertCenter.aspx",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.cityofnorthlasvegas.com/residents/emergency-management",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.cityofnorthlasvegas.com/residents/police",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.cityofnorthlasvegas.com/residents/water/water-quality",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.cityofsalem.net/community/household/water-utilities/salem-s-drinking-water/understanding-salem-s-drinking-water",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.cityofsalem.net/community/safety/emergencies-disaster-preparedness",
+      "checked_at": "2026-09-21T00:05:39+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.cityofsalem.net/community/safety/police",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.cityoftulsa.org/publicsafety",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.cityoftulsa.org/publicsafety",
+      "content_type": "text/html; charset=utf-8",
+      "title": "City of Tulsa",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cityofwarren.org/departments/police-department/",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.cityofwarren.org/departments/police-department/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Police Department - City of Warren",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cityofwarren.org/departments/water-and-sewer-system/",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.cityofwarren.org/departments/water-and-sewer-system/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Water and Sewer System - City of Warren",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cityofwarren.org/how_do_i/warrencan/",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.cityofwarren.org/how_do_i/warrencan/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Warren CAN (Warren Community Alert Network) - City of Warren",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cityutilities.net/",
+      "checked_at": "2026-09-21T00:02:11+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.clevelandohio.gov/city-hall/departments/public-safety/divisions/office-emergency-management",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.clevelandohio.gov/city-hall/departments/public-safety/divisions/office-emergency-management",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Office of Emergency Management | City of Cleveland Ohio",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.clevelandohio.gov/city-hall/departments/public-safety/divisions/police",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.clevelandohio.gov/city-hall/departments/public-safety/divisions/police",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Division of Police | City of Cleveland Ohio",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.clevelandohio.gov/city-hall/departments/public-utilities",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 200,
+      "final_url": "https://www.clevelandohio.gov/city-hall/departments/public-utilities",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Department of Public Utilities | City of Cleveland Ohio",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cmpco.com/",
+      "checked_at": "2026-09-21T00:02:12+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "The read operation timed out"
+    },
+    {
+      "url": "https://www.columbus.gov/Services/Columbus-Water-Power/About-Columbus-Water-Power/The-Division-of-Water/Water-Facts",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.columbus.gov/Services/Public-Safety/Police",
+      "checked_at": "2026-09-20T23:56:54+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.concordnh.gov/549/Water",
+      "checked_at": "2026-09-20T23:56:55+00:00",
+      "status": 200,
+      "final_url": "https://www.concordnh.gov/549/Water",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water Treatment &amp; Distribution | Concord, NH - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.consumersenergy.com/outagemap",
+      "checked_at": "2026-09-21T00:02:12+00:00",
+      "status": 200,
+      "final_url": "https://www.consumersenergy.com/outagemap",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Consumers Energy Outage Map",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cpsenergy.com/en/customer-support/outage-center.html",
+      "checked_at": "2026-09-21T00:02:12+00:00",
+      "status": 200,
+      "final_url": "https://www.cpsenergy.com/en/customer-support/outage-center.html",
+      "content_type": "text/html;charset=utf-8",
+      "title": "Outage Center",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.csu.org/safety/water-outages?hsLang=en",
+      "checked_at": "2026-09-21T00:02:12+00:00",
+      "status": 200,
+      "final_url": "https://www.csu.org/safety/water-outages",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Water outages",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.csu.org/storm-center?hsLang=en",
+      "checked_at": "2026-09-21T00:02:12+00:00",
+      "status": 200,
+      "final_url": "https://www.csu.org/storm-center",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Storm center",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cwwga.org/",
+      "checked_at": "2026-09-20T23:56:55+00:00",
+      "status": 200,
+      "final_url": "https://www.cwwga.org/",
+      "content_type": "text/html",
+      "title": "Columbus Water Works",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.davenportiowa.com/services/news",
+      "checked_at": "2026-09-20T23:56:55+00:00",
+      "status": 200,
+      "final_url": "https://www.davenportiowa.com/services/news",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Alerts & apps - City of Davenport",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.davenportiowa.com/services/police_services",
+      "checked_at": "2026-09-20T23:56:55+00:00",
+      "status": 200,
+      "final_url": "https://www.davenportiowa.com/services/police_services",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police Services - City of Davenport",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.davenportiowa.com/services/public_works/water",
+      "checked_at": "2026-09-20T23:56:55+00:00",
+      "status": 200,
+      "final_url": "https://www.davenportiowa.com/services/public_works/water",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water - City of Davenport",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.denvergov.org/oem",
+      "checked_at": "2026-09-20T23:56:55+00:00",
+      "status": 200,
+      "final_url": "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Office-of-Emergency-Management",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Office of Emergency Management - City and County of Denver",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.denverwater.org/",
+      "checked_at": "2026-09-21T00:02:12+00:00",
+      "status": 200,
+      "final_url": "https://www.denverwater.org/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Home | Denver Water",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.dominionenergy.com/",
+      "checked_at": "2026-09-21T00:02:12+00:00",
+      "status": 200,
+      "final_url": "https://www.dominionenergy.com/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Home | Dominion Energy",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.dsm.city/departments/police/index.php",
+      "checked_at": "2026-09-20T23:56:55+00:00",
+      "status": 200,
+      "final_url": "https://www.dsm.city/departments/police/index.php",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Des Moines Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.dsm.city/departments/public_works/water/index.php",
+      "checked_at": "2026-09-20T23:56:55+00:00",
+      "status": 200,
+      "final_url": "https://www.dsm.city/departments/public_works/water/index.php",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Water",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.duke-energy.com/outages",
+      "checked_at": "2026-09-21T00:02:12+00:00",
+      "status": 200,
+      "final_url": "https://www.duke-energy.com/outages",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Power Outage Information - Duke Energy",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.duquesnelight.com/outages-safety/current-outages?showMyOutages=true",
+      "checked_at": "2026-09-21T00:02:12+00:00",
+      "status": 200,
+      "final_url": "https://www.duquesnelight.com/outages-safety/current-outages?showMyOutages=true",
+      "content_type": "text/html",
+      "title": "",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.entergy.com/viewoutages",
+      "checked_at": "2026-09-21T00:02:12+00:00",
+      "status": 200,
+      "final_url": "https://www.entergy.com/viewoutages",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Entergy Outage Map - Entergy",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.epelectric.com/outage-center",
+      "checked_at": "2026-09-21T00:02:12+00:00",
+      "status": 200,
+      "final_url": "https://www.epelectric.com/outage-center",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outage Center",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.eugene-or.gov/592/About-Eugene-Police",
+      "checked_at": "2026-09-20T23:56:55+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.eugene-or.gov/AlertCenter.aspx",
+      "checked_at": "2026-09-20T23:56:55+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.evergy.com/outages/outage-map",
+      "checked_at": "2026-09-21T00:02:12+00:00",
+      "status": 200,
+      "final_url": "https://www.evergy.com/outages/outage-map",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Power Outage Map - Evergy",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.eversource.com/residential/outages",
+      "checked_at": "2026-09-21T00:02:12+00:00",
+      "status": 200,
+      "final_url": "https://www.eversource.com/residential/outages",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Outages & Storms | Eversource",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.eweb.org/outages-and-safety/water-outages",
+      "checked_at": "2026-09-21T00:02:12+00:00",
+      "status": 200,
+      "final_url": "https://www.eweb.org/outages-and-safety/water-outages",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water Outages | EWEB",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.eweb.org/poweroutage",
+      "checked_at": "2026-09-21T00:02:12+00:00",
+      "status": 200,
+      "final_url": "https://www.eweb.org/poweroutage",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Learn how to report your power outage and other helpful information | EWEB",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.fayetteville-ar.gov/1368/Setting-up-New-Water-Sewer-Services",
+      "checked_at": "2026-09-20T23:56:55+00:00",
+      "status": 200,
+      "final_url": "https://www.fayetteville-ar.gov/1368/New-Water-and-Sewer-Services",
+      "content_type": "text/html; charset=utf-8",
+      "title": "New Water and Sewer Services | Fayetteville, AR - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.fayetteville-ar.gov/1735/Alerts-and-Notifications",
+      "checked_at": "2026-09-20T23:56:55+00:00",
+      "status": 200,
+      "final_url": "https://www.fayetteville-ar.gov/1735/Alerts-and-Notifications",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Alerts and Notifications | Fayetteville, AR - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.firstenergycorp.com/outages_help/outages-map.html",
+      "checked_at": "2026-09-21T00:02:12+00:00",
+      "status": 200,
+      "final_url": "https://www.firstenergycorp.com/outages_help/outages-map.html",
+      "content_type": "text/html;charset=utf-8",
+      "title": "Outages Map",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.fnsb.gov/1111/Emergency-Operations-Plans-Documents",
+      "checked_at": "2026-09-20T23:56:55+00:00",
+      "status": 200,
+      "final_url": "https://www.fnsb.gov/1111/Emergency-Operations-Plans-Documents",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency Operations Plans &amp; Documents | Fairbanks North Star Borough, AK",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.fortsmithar.gov/government/departments/police",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.fortsmithwater.org/water/",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 200,
+      "final_url": "https://www.fortsmithwater.org/water/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water|City of Fort Smith Utility Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.fpl.com/storm/map-faq.html",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.fpl.com/storm/map-faq.html",
+      "content_type": "text/html;charset=utf-8",
+      "title": "FPL | Storm | Power Tracker FAQs",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.franklincountyohio.gov/Agency-Directory/Emergency-Management-and-Homeland-Security",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.gaithersburgmd.gov/government/departments/gaithersburg-police-department",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.gaithersburgmd.gov/services/police-services/alert-gaithersburg",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.georgiapower.com/about/outages.html",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.georgiapower.com/about/outages.html",
+      "content_type": "text/html;charset=utf-8",
+      "title": "Report an Outage & Track Restoration | Georgia Power",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.gillettewy.gov/Departments/Gillette-Police-Department",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.gillettewy.gov/Departments/Utilities",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.gillettewy.gov/Departments/Utilities/Water",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.grandforksgov.com/government/city-departments/emergency-management",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.grandforksgov.com/government/city-departments/police-department/about-us",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.grandforksgov.com/government/city-departments/public-works/public-works-water/drinking-water-quality",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.grandrapidsmi.gov/departments/emergency-management/",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 200,
+      "final_url": "https://www.grandrapidsmi.gov/departments/emergency-management/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency Management | City of Grand Rapids, Michigan",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.grandrapidsmi.gov/living-in-gr/public-safety/",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 200,
+      "final_url": "https://www.grandrapidsmi.gov/living-in-gr/public-safety/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Public Safety | City of Grand Rapids, Michigan",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.grandrapidsmi.gov/living-in-gr/water-and-sewer-services/",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 200,
+      "final_url": "https://www.grandrapidsmi.gov/living-in-gr/water-and-sewer-services/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water and Sewer Services | City of Grand Rapids, Michigan",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.greenbaywi.gov/616/Utilities",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.greenbaywi.gov/AlertCenter.aspx",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.greenbaywi.gov/m/directory/department?did=43",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.greensboro-nc.gov/departments/fire/emergency-management",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.greensboro-nc.gov/departments/police/about-gpd/office-of-chief-of-police",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.greensboro-nc.gov/departments/water-resources/water-system",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.gvea.com/safety/outages/",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.gvea.com/safety/outages/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outages – Golden Valley Electric Assn",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.hawaiianelectric.com/safety-and-outages/power-outages/oahu-outage-map",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.hawaiianelectric.com/safety-and-outages/power-outages/oahu-outage-map",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Oahu Outage Map | Hawaiian Electric",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.honolulu.gov/dem/",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 200,
+      "final_url": "https://www.honolulu.gov/dem/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Home | Department of Emergency Management",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.honolulupd.org/",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 200,
+      "final_url": "https://www.honolulupd.org/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Home - Honolulu Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.houstonpublicworks.org/houston-water",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 200,
+      "final_url": "https://www.houstonpublicworks.org/houston-water",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Houston Water | City of Houston - Houston Public Works",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.houstontx.gov/police/",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 200,
+      "final_url": "https://www.houstontx.gov/police/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Houston Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.hsvutil.org/outagemap/index.php#outagemap_start",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.hsvutil.org/outagemap/index.php#outagemap_start",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Power Outage Map",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.huntsvilleal.gov/government/media-center/city-notifications/",
+      "checked_at": "2026-09-20T23:56:56+00:00",
+      "status": 200,
+      "final_url": "https://www.huntsvilleal.gov/government/media-center/city-notifications/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "City Alerts - City of Huntsville",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.huntsvilleal.gov/residents/public-safety/",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.huntsvilleal.gov/residents/public-safety/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Public Safety - City of Huntsville",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.huntsvilleal.gov/residents/water-sewer/",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.huntsvilleal.gov/residents/water-sewer/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Water &amp; Sewer - City of Huntsville",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.in.gov/dhs/emergency-management-and-preparedness/",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.in.gov/dhs/emergency-management-and-preparedness/",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "DHS: Emergency Management",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.indianamichiganpower.com/outages/",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.indianamichiganpower.com/outages/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Outages",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.indy.gov/agency/emergency-management",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.indy.gov/agency/emergency-management",
+      "content_type": "text/html; charset=utf-8",
+      "title": "indy.gov",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.indy.gov/agency/indianapolis-metropolitan-police-department",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.indy.gov/agency/indianapolis-metropolitan-police-department",
+      "content_type": "text/html; charset=utf-8",
+      "title": "indy.gov",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.jacksonville.gov/categories/mobile-apps/jaxready",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.jacksonville.gov/categories/mobile-apps/jaxready",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Jacksonville.gov - JaxReady",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.jaxsheriff.org/",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.jaxsheriff.org/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "www.jaxsheriff.org - Jacksonville Sheriff&#39;s Office (JSO) Homepage",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.jcmua.com/",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://jcmua.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Jersey City Municipal Utilities Authority &#8211; Operating both the sewerage and water systems of Jersey City, NJ",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.jea.com/outage_center/outagemap_reporting/",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.jea.com/outage_center/outagemap_reporting/",
+      "content_type": "text/html",
+      "title": "",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.jeffcoema.org/",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.jerseycitynj.gov/cityhall/public_safety",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.jerseycitynj.gov/cityhall/public_safety",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Public Safety - City of Jersey City",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.jerseycitynj.gov/cityhall/public_safety/OEM",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.jerseycitynj.gov/cityhall/public_safety/OEM",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Office of Emergency Management - City of Jersey City",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.kckpd.org/Department",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.kcmo.gov/city-hall/departments/city-manager-s-office/office-of-emergency-management",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.kcwater.us/water-quality/",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.kcwater.us/water-quality/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Water Quality &#8211; KC Water",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.knoxvilletn.gov/cms/One.aspx?pageId=229089&portalId=109562",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.knoxvilletn.gov/cms/One.aspx?pageId=229089&portalId=109562",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Knoxville-Knox Co. Emergency Management Agency - City of Knoxville",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.knoxvilletn.gov/residents/utilities",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.knoxvilletn.gov/residents/utilities",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Utilities - City of Knoxville",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.kub.org/outage-center",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.kub.org/outage-center",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "KUB",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.ladwp.com/outages",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.ladwp.com/outages",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outages | Los Angeles Department of Water and Power",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.ladwp.com/residential-services/power-outage-water-trouble",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.ladwp.com/residential-services/power-outage-water-trouble",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Power Outage / Water Trouble | Los Angeles Department of Water and Power",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.lancaster.ne.gov/492/Emergency-Management",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.laramiecountywy.gov/County-Government/County-Departments/Emergency-Management",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.lasvegasnevada.gov/Government/Public-Safety-Services",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.lasvegasnevada.gov/Government/Public-Safety-Services",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Public Safety Services",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.lasvegasnevada.gov/Government/Public-Safety-Services/Emergency-Management",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.lasvegasnevada.gov/Government/Public-Safety-Services/Emergency-Management",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency Management",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.lehighcountyauthority.org/drinking-water/about-your-water/municipality/",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.lehighcountyauthority.org/drinking-water/about-your-water/municipality/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Your Drinking Water | Lehigh County Authority",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.les.com/outage-center",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.les.com/outage-center",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outage center | Lincoln Electric System",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.lewistonmaine.gov/141/Welcome",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.lewistonmaine.gov/141/Welcome",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Welcome to the Lewiston Police Department | Lewiston, ME - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.lewistonmaine.gov/alertcenter",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.lewistonmaine.gov/AlertCenter.aspx",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Alert Center • Lewiston, ME • CivicEngage",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.lexingtonky.gov/government/departments-programs/public-safety/police",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.lexingtonky.gov/government/departments-programs/public-safety/police",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police | City of Lexington, Kentucky",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.lexingtonky.gov/government/utility-franchises",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.lexingtonky.gov/government/utility-franchises",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Utility franchises | City of Lexington, Kentucky",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.lexingtonky.gov/living/lexcall-311/lexcall-311-alerts",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.lexingtonky.gov/living/lexcall-311/lexcall-311-alerts",
+      "content_type": "text/html; charset=utf-8",
+      "title": "LexCall 311 Alerts | City of Lexington, Kentucky",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.lincoln.ne.gov/City/Departments/LTU/Utilities/LWS/Water-Quality",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.lincoln.ne.gov/City/Departments/Police",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.louisville-police.org/",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.lmpd.gov/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Louisville Metro PD, KY | Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.lvvwd.com/",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.lvvwd.com/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Las Vegas Valley Water District Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.madison.gov/fire/emergency-management",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.madison.gov/fire/emergency-management",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Emergency Management | Fire | City of Madison, WI",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.manchesternh.gov/Departments/Fire/Emergency-Management",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.manchesternh.gov/Departments/Fire/Emergency-Management",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency Management",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.manchesternh.gov/Departments/Police",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.manchesternh.gov/Departments/Police",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.manchesternh.gov/Departments/Water-Works",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 200,
+      "final_url": "https://www.manchesternh.gov/Departments/Water-Works",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water Works",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.mesaaz.gov/Public-Safety/Emergencies",
+      "checked_at": "2026-09-20T23:56:57+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.mesaaz.gov/Public-Safety/Mesa-Police",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.mesaaz.gov/Utilities/Power-Outage",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.mesaaz.gov/Utilities/Water-Wastewater",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.mge.com/landing-pages/power-outage-information",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://www.miami.gov/My-Government/Departments/Emergency-Management",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.miami.gov/My-Government/Departments/Police-Department",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.miamidade.gov/global/water/home.page",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 200,
+      "final_url": "https://www.miamidade.gov/global/water/home.page",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "Water and Sewer Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.midamericanenergy.com/OutageWatch",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.midamericanenergy.com/OutageWatch/",
+      "content_type": "text/html",
+      "title": "MEC Outage Watch",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.minneapolismn.gov/government/departments/emergency-management/",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 200,
+      "final_url": "https://www.minneapolismn.gov/government/departments/emergency-management/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Emergency Management - City of Minneapolis",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.minneapolismn.gov/resident-services/public-safety/",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 200,
+      "final_url": "https://www.minneapolismn.gov/resident-services/public-safety/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Public Safety - City of Minneapolis",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.minneapolismn.gov/resident-services/utility-services/water/",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 200,
+      "final_url": "https://www.minneapolismn.gov/resident-services/utility-services/water/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Water - City of Minneapolis",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.mississippipower.com/residential/power-outages---storm-center.html",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.mississippipower.com/residential/power-outages---storm-center.html",
+      "content_type": "text/html;charset=utf-8",
+      "title": "Power Outages & Storm Center",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.missoulacounty.gov/departments/office-of-emergency-management/",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.missoulacounty.gov/departments/office-of-emergency-management/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Office of Emergency Management | Missoula County, MT",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.mlgw.com/",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 200,
+      "final_url": "https://www.mlgw.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Welcome to MLGW",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.mlgw.com/residential/outagemap",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.mlgw.com/residential/outagemap",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Memphis Light, Gas and Water - Outage Map",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.mobilepd.org",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 200,
+      "final_url": "https://www.mobilepd.org",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Mobile Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.montana-dakota.com/safety-education/outage-and-storm-information/",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.montana-dakota.com/safety-education/outage-and-storm-information/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outage and Storm Information - Montana-Dakota Utilities Company",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.morgantownpd.com/",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 200,
+      "final_url": "https://www.morgantownpd.com/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police Department | Morgantown, WV",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.morgantownwv.gov/AlertCenter.aspx?CID=Emergency-Alerts-4",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 200,
+      "final_url": "https://www.morgantownwv.gov/AlertCenter.aspx?CID=Emergency-Alerts-4",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Alert Center • Emergency Alerts",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.mudomaha.com/",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 200,
+      "final_url": "https://www.mudomaha.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Home - Metropolitan Utilities District",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.mudomaha.com/about-us/",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 200,
+      "final_url": "https://www.mudomaha.com/about-us/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "About Us - Metropolitan Utilities District",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.muni.org/Departments/OEM/Pages/default.aspx",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 200,
+      "final_url": "https://www.muni.org/Departments/OEM/Pages/default.aspx",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency Management Office of Emergency Management",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.mytpu.org/outages-safety/power-outages/",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 200,
+      "final_url": "https://www.mytpu.org/outages-safety/power-outages/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Power Outages - Tacoma Public Utilities",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.naperville.il.us/services/electric-utility/electrical-safety/power-outages/",
+      "checked_at": "2026-09-21T00:02:13+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.naperville.il.us/services/naperville-fire-department/emergency-preparedness/be-informed/",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.naperville.il.us/services/naperville-police-department/",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.naperville.il.us/services/water-utility/your-water-service/",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.nashuanh.gov/1608/Police-Department",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 200,
+      "final_url": "https://www.nashuanh.gov/1608/Police-Department",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police Department | Nashua, NH",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.nashville.gov/departments/emergency-management",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 200,
+      "final_url": "https://www.nashville.gov/departments/emergency-management",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Office of Emergency Management | Nashville.gov",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.nashville.gov/departments/water/about-us/contact-us",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 200,
+      "final_url": "https://www.nashville.gov/departments/water/about-us/contact-us",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Contact Water Services | Nashville.gov",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.nashville.gov/services?keyword=police-fire-ems&departments=All",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 200,
+      "final_url": "https://www.nashville.gov/services?keyword=police-fire-ems&departments=All",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Services | Nashville.gov",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.nationalgridus.com/regionalized/Outage-Central/",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.nationalgridus.com/Default.aspx?r.u=%2fOutage-Central%2f%3f",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Natural Gas & Electricity | National Grid",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.natronacounty-wy.gov/122/Emergency-Management",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.nespower.com/outages/",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.nespower.com/outages/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Outages | NES",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.newarkde.gov/1303/Drinking-Water",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 200,
+      "final_url": "https://www.newarkde.gov/1303/Drinking-Water",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Drinking Water | Newark, DE - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.newarkde.gov/17/Police",
+      "checked_at": "2026-09-20T23:56:58+00:00",
+      "status": 200,
+      "final_url": "https://www.newarkde.gov/17/Police",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Welcome to the Newark Delaware Police Department | Newark, DE - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.newarkde.gov/AlertCenter.aspx",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.newarkde.gov/AlertCenter.aspx",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Alert Center • Newark • CivicEngage",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.newarknj.gov/AlertCenter.aspx",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.newarkpublicsafety.org/npd/",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.newhavenct.gov/government/departments-divisions/new-haven-police-department",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.newhavenct.gov/government/departments-divisions/office-of-emergency-management/resources-information-links",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.njoag.gov/ppd/",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.njoag.gov/ppd/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Paterson Police Department - Home - New Jersey Office of Attorney General",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.nodakelectric.com/outages",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.nodakelectric.com/outages",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outages | Nodak Electric Cooperative, Inc",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.normanok.gov/alertnorman",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.normanok.gov/alertnorman",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "AlertNorman - Emergency Notification System | City of Norman, OK",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.normanok.gov/businesses/utilities",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.normanok.gov/businesses/utilities",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Utilities | City of Norman, OK",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.normanok.gov/public-safety/police-department",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.normanok.gov/public-safety/police-department",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Norman Police Department | City of Norman, OK",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.northwesternenergy.com/outages/outage-map",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://www.nvenergy.com/outages/list-view",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://www.nyc.gov/site/dep/water/drinking-water.page",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.nyc.gov/site/dep/water/drinking-water.page",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "Drinking Water - DEP",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.nyc.gov/site/nypd/",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.nyc.gov/site/nypd/",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "New York Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.oge.com/web/portal/label_ord/outages/report-outage/outage-center",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.oge.com/web/portal/label_ord/outages/report-outage/outage-center",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "OG&E - Outage Center",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.okc.gov/News-articles/Oklahoma-City-releases-2025-Drinking-Water-Quality-Report",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.okc.gov/Services/Public-Safety/Emergency-Preparedness",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.okc.gov/Services/Public-Safety/Police",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.oncor.com/us/en/home/outage-weather.html",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://www.opkansas.gov/city-government/departments/police-department/",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.opkansas.gov/police-department-0",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police Department | Overland Park, KS - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.opkansas.gov/emergency-management",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.opkansas.gov/emergency-management",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency Management | Overland Park, KS - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.oppd.com/",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://www.ozarksecc.com/outages",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.ozarksecc.com/outages",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Ozarks Electric Outage Center",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.pacificpower.net/outage",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.pacificpower.net/outages-safety.html",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outages & Safety",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.patersonnj.gov/egov/apps/services/index.egov?view=detail%3Bid%3D66",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.patersonnj.gov/egov/apps/services/index.egov?view=detail%3Bid%3D66",
+      "content_type": "text/html; charset=ISO-8859-1",
+      "title": "Services Index / Services by Department / New Jersey",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.peco.com/",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.peco.com/",
+      "content_type": "text/html",
+      "title": "",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.pennco.org/law_public_safety/emergency_management/index.php",
+      "checked_at": "2026-09-21T00:05:39+00:00",
+      "status": 200,
+      "final_url": "https://www.pennco.org/law_public_safety/emergency_management/index.php",
+      "content_type": "text/html; charset=UTF-8",
+      "result": "reachable",
+      "title": "Pennington County, SD"
+    },
+    {
+      "url": "https://www.pepco.com/Outages/ExperiencingAnOutage/Pages/ViewOutageMap.aspx",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.pepco.com/Outages/ExperiencingAnOutage/Pages/ViewOutageMap.aspx",
+      "content_type": "text/html",
+      "title": "",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.pgh2o.com/",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.pgh2o.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Pittsburgh Water",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.phila.gov/departments/philadelphia-police-department/",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.phila.gov/departments/philadelphia-police-department/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Philadelphia Police Department | Homepage | City of Philadelphia",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.phila.gov/services/safety-emergency-preparedness/",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.phila.gov/services/safety-emergency-preparedness/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Safety &#038; emergency preparedness | Services | City of Philadelphia",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.phila.gov/services/water-gas-utilities/",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.phila.gov/services/water-gas-utilities/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Water, gas &#038; utilities | Services | City of Philadelphia",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.phoenix.gov/administration/departments/emergency/be-informed/alerts-warnings.html",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.phoenix.gov/administration/departments/emergency/be-informed/alerts-warnings.html",
+      "content_type": "text/html;charset=utf-8",
+      "title": "Alerts and Warnings | City of Phoenix",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.phoenix.gov/administration/departments/police.html",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.phoenix.gov/administration/departments/police.html",
+      "content_type": "text/html;charset=utf-8",
+      "title": "Police Department | City of Phoenix",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.phoenix.gov/residents/water-sewer.html",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.phoenix.gov/residents/water-sewer.html",
+      "content_type": "text/html;charset=utf-8",
+      "title": "Water and Sewer | City of Phoenix",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.pittsburghpa.gov/Safety/Police",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.pittsburghpa.gov/Safety/Public-Safety/Emergency-Management-and-Homeland-Security",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.pnm.com/outage",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.pnm.com/outage",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "Outage Center | Report an Electric Outage | PNM",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.polkcountyiowa.gov/emergency-management/be-prepared/polk-county-alert-iowa/",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.polkcountyiowa.gov/emergency-management/be-prepared/polk-county-smart-911/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Polk County SMART 911 - Polk County Iowa",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.portland.gov/emergency",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.portland.gov/emergency",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency: Prepare. Respond. Recover. | Portland.gov",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.portland.gov/police-and-safety",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.portland.gov/police-and-safety",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police and safety | Portland.gov",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.portland.gov/water/drinking-water-quality",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.portland.gov/water/drinking-water-quality",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Drinking water quality | Portland.gov",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.pplelectric.com/site/Outages-and-Issues",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.pplelectric.com/site/Outages-and-Issues",
+      "content_type": "text/html; charset=utf-8",
+      "title": "PPL Electric Utilities",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.provwater.com/",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.psoklahoma.com/outages/",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.psoklahoma.com/outages/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Outages",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.pvwc.com/",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.pvwc.com/Home",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Home - Passaic Valley Water Commission",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.pwd.org/water/",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.pwd.org/water/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Water - Portland Water District",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.rcgov.org/departments/police-department.html",
+      "checked_at": "2026-09-20T23:56:59+00:00",
+      "status": 200,
+      "final_url": "https://www.rcgov.org/departments/police-department.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police Department | Rapid City South Dakota",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.rcgov.org/departments/public-works/water-division.html",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 200,
+      "final_url": "https://www.rcgov.org/departments/public-works/water-division.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water Division | Rapid City South Dakota",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.rienergy.com/site/outages-and-safety/outages-and-safety",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.rienergy.com/site/outages-and-safety/outages-and-safety",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Rhode Island Energy",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.rochestermn.gov/home-property-utilities/water-services/",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 200,
+      "final_url": "https://www.rochestermn.gov/home-property-utilities/water-services/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water Services | City of Rochester",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.rochestermn.gov/law-emergency-services/emergency-management/",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 200,
+      "final_url": "https://www.rochestermn.gov/law-emergency-services/emergency-management/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency Management | City of Rochester",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.rochestermn.gov/law-emergency-services/police/",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 200,
+      "final_url": "https://www.rochestermn.gov/law-emergency-services/police/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police | City of Rochester",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.rockymountainpower.net/outages",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.rockymountainpower.net/outages-safety.html",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outages & Safety",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.rpu.org/construction-outages-safety/outages/",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.rpu.org/construction-outages-safety/outages/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Outages | Rochester Public Utilities",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.rrnm.gov/4365/Rio-Rancho-Emergency-Communications-Cent",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 200,
+      "final_url": "https://www.rrnm.gov/4365/Rio-Rancho-Emergency-Communications-Cent",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Rio Rancho Emergency Communications Center | The Official Site of Rio Rancho, NM",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.rutlandcity.org/departments/department-of-public-works/divisions/water-distribution/",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.rutlandcity.org/departments/department-of-public-works/divisions/water-distribution/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Water Distribution – The City of Rutland, Vermont",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.rutlandcity.org/departments/police-department/",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 200,
+      "final_url": "https://www.rutlandcity.org/departments/police-department/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Police Department &#8211; The City of Rutland, Vermont",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.rwater.com/",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 200,
+      "final_url": "https://www.rwater.com/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Regional Water Authority",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.sa.gov/Directory/Departments/SAPD/Contact",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.salemelectric.com/outages-safety/outagemapreport/",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.salemelectric.com/outages-safety/outagemapreport/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outage Map – Salem Electric",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.sandiego.gov/oes/informed",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 200,
+      "final_url": "https://www.sandiego.gov/oes/informed",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Stay Informed | City of San Diego Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.sandiego.gov/police",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 200,
+      "final_url": "https://www.sandiego.gov/police",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Police | City of San Diego Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.sandiego.gov/publicutilities/customerservices",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 200,
+      "final_url": "https://www.sandiego.gov/public-utilities/customer-support",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Water/Wastewater Customer Support | City of San Diego Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.sanjoseca.gov/your-government/departments-offices/environmental-services/water-utilities/drinking-water/customer-service",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.sanjoseca.gov/your-government/departments-offices/office-of-the-city-manager/emergency-management/be-informed/emergency-contacts",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.saoemprepare.com/",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://www.sarpy.gov/476/Emergency-Management",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 200,
+      "final_url": "https://www.sarpy.gov/476/Emergency-Management",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency Management | Sarpy County, NE",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.saws.org/",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 200,
+      "final_url": "https://www.saws.org/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Home - San Antonio Water System",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.seattle.gov/city-light/outages",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.seattle.gov/city-light/outages",
+      "content_type": "text/html; charset=utf-8",
+      "title": "View and Report Outages - City Light | seattle.gov",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.seattle.gov/emergency-management/prepare/alert-seattle",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 200,
+      "final_url": "https://www.seattle.gov/emergency-management/prepare/alert-seattle",
+      "content_type": "text/html; charset=utf-8",
+      "title": "AlertSeattle - Emergency Alerts - Emergency Management | seattle.gov",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.seattle.gov/utilities/your-services/water",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 200,
+      "final_url": "https://www.seattle.gov/utilities/your-services/water",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water - Utilities | seattle.gov",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.shreveportla.gov/131/4089/Water-Sewerage",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.shreveportla.gov/131/4089/Water-Sewerage",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water & Sewerage | Shreveport, LA - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.siouxfalls.gov/health-safety/fire/about/emergency-management",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.siouxfalls.gov/health-safety/police",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.siouxfalls.gov/resident-services/utilities-billing/water",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.sjpd.org/home",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.slc.gov/em",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 200,
+      "final_url": "https://www.slc.gov/em/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Emergency Management | (801) 799-3600",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.slc.gov/utilities",
+      "checked_at": "2026-09-20T23:57:00+00:00",
+      "status": 200,
+      "final_url": "https://www.slc.gov/utilities/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Public Utilities | Customer Service: (801) 483-6900 | Report Emergency: (801) 483-6700",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.southaven.org/alertcenter.aspx?CID=1",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.southaven.org/alertcenter.aspx?CID=1",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Alert Center • City of Southaven • CivicEngage",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.southavenpolice.org/",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.southavenpolice.org/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Southaven Police, MS | Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.southburlingtonvt.gov/394/Water-Division",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.southburlingtonvt.gov/394/Water-Division",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water Division | South Burlington, VT",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.springfield-ma.gov/police/about/about-springfield-police-department",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.springfield-ma.gov/police/about/about-springfield-police-department",
+      "content_type": "text/html; charset=utf-8",
+      "title": "About Springfield Police Department - Springfield Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.springfield-ma.gov/police/resources/emergency-alert-program",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.springfield-ma.gov/police/resources/emergency-alert-program",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency Alert Program - Springfield Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.springfieldmo.gov/171/Police",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.springfieldmo.gov/5631/Police",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police | Springfield, MO - Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.srpnet.com/customer-service/safety/outages-storm",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.stamfordct.gov/government/public-safety-health-welfare/emergency-operations-center",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.stamfordct.gov/government/public-safety-health-welfare/police-department/about",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.stlouis-mo.gov/government/departments/public-safety/emergency-management/index.cfm",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.stlouis-mo.gov/government/departments/public-safety/emergency-management/index.cfm",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "City Emergency Management Agency",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.stlouis-mo.gov/government/departments/public-safety/police/index.cfm",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.stlouis-mo.gov/government/departments/public-safety/police/index.cfm",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "St. Louis Metropolitan Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.stlouis-mo.gov/services/topic.cfm?id=19&name=transportation-infrastructure-and-utilities",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.stlouis-mo.gov/services/topic.cfm?id=19&name=transportation-infrastructure-and-utilities",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "Transportation, Infrastructure, and Utilities | Explore Topics",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.stpaul.gov/departments/emergency-management",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.stpaul.gov/departments/emergency-management",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency Management | Saint Paul Minnesota",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.stpaul.gov/departments/police",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.stpaul.gov/departments/police",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police | Saint Paul Minnesota",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.stpaul.gov/departments/saint-paul-regional-water-services",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.stpaul.gov/departments/saint-paul-regional-water-services",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Saint Paul Regional Water Services | Saint Paul Minnesota",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.swbno.org/DrinkingWater",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.swbno.org/DrinkingWater",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Drinking Water - Sewerage &amp; Water Board of New Orleans",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.swepco.com/outages/",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.swepco.com/outages/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Outages",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.tampa.gov/emergency-management",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.tampa.gov/emergency-management",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Office of Emergency Management | City of Tampa",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.tampa.gov/police",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.tampa.gov/police",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Tampa Police | City of Tampa",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.tampa.gov/water/about-us",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.tampa.gov/water/about-us",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "About Us - Water | City of Tampa",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.tep.com/outages/",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": 200,
+      "final_url": "https://www.tep.com/outages/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outages – Tucson Electric Power",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.tucsonaz.gov/Departments/Police",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.tucsonaz.gov/Departments/Water/Customer-Service",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.tucsonaz.gov/Government/Office-of-the-City-Manager/Tucson-Emergency-Management-Program",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.uinet.com/en/outages/reportviewoutage/viewoutagelist",
+      "checked_at": "2026-09-21T00:02:14+00:00",
+      "status": null,
+      "result": "request-error",
+      "detail": "The read operation timed out"
+    },
+    {
+      "url": "https://www.versantpower.com/outages-restoration/live-outage-map",
+      "checked_at": "2026-09-21T00:02:15+00:00",
+      "status": 200,
+      "final_url": "https://kubra.io/stormcenter/views/05bfafbb-0ad1-4ff1-8287-d32fd1ed7fce",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "Versant Power Outage Map",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.warwickpd.org/",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.warwickpd.org/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Warwick Police Department",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.warwickri.gov/467/Water-Division",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.warwickri.gov/AlertCenter.aspx",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.we-energies.com/OutageSummary/view/outagegrid",
+      "checked_at": "2026-09-21T00:02:15+00:00",
+      "status": 200,
+      "final_url": "https://www.we-energies.com/OutageSummary/view/outagegrid",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Outage Map | We Energies",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.westjordan.utah.gov/emergency-preparedness/",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.westjordan.utah.gov/emergency-preparedness/",
+      "content_type": "text/html",
+      "title": "Emergency Preparedness - West Jordan City",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.westjordan.utah.gov/police/",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.westjordan.utah.gov/police/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "West Jordan Police Department - Police",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.westjordan.utah.gov/public-works/water/",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.westjordan.utah.gov/public-works/water/",
+      "content_type": "text/html",
+      "title": "Water - West Jordan City",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.wichita.gov/814/Public-Water-Supply",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.wichita.gov/AlertCenter.aspx",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.wichita.gov/WPD",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.wilmingtonde.gov/government/city-departments/department-of-police",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.wilmingtonde.gov/government/city-departments/office-of-emergency-management",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.wilmingtondewater.gov/",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.wilmingtondewater.gov/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Wilmington Water Utility | Official Website",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.wisconsinpublicservice.com/outagesummary/view/outagegrid",
+      "checked_at": "2026-09-21T00:02:15+00:00",
+      "status": 200,
+      "final_url": "https://www.wisconsinpublicservice.com/outagesummary/view/outagegrid",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Outage Map | Wisconsin Public Service",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.worcesterma.gov/emergency-communications/emergency-management/preparedness",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.worcesterma.gov/emergency-communications/emergency-management/preparedness",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Emergency Preparedness | City of Worcester",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.worcesterma.gov/police",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.worcesterma.gov/police",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police | City of Worcester",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.worcesterma.gov/water-sewer",
+      "checked_at": "2026-09-20T23:57:01+00:00",
+      "status": 200,
+      "final_url": "https://www.worcesterma.gov/water-sewer",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Water &amp; Sewer Operations | City of Worcester",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.wrecc.com/report-outage/",
+      "checked_at": "2026-09-21T00:02:15+00:00",
+      "status": 200,
+      "final_url": "https://www.wrecc.com/report-outage/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Outage Information Center - WRECC",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.wsscwater.com/",
+      "checked_at": "2026-09-20T23:57:02+00:00",
+      "status": 200,
+      "final_url": "https://www.wsscwater.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Homepage | WSSC Water: Delivering the Essential",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.wvc-ut.gov/19/Public-Works",
+      "checked_at": "2026-09-21T00:05:39+00:00",
+      "status": 200,
+      "final_url": "https://www.wvc-ut.gov/19/Public-Works",
+      "content_type": "text/html; charset=utf-8",
+      "result": "reachable",
+      "title": "Public Works | West Valley City, UT - Official Site"
+    },
+    {
+      "url": "https://www.wvc-ut.gov/24/Police-Department",
+      "checked_at": "2026-09-20T23:57:02+00:00",
+      "status": 200,
+      "final_url": "https://www.wvc-ut.gov/1970/Police-Department",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Police Department | West Valley City, UT - Official Site",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.wvc-ut.gov/AlertCenter.aspx",
+      "checked_at": "2026-09-20T23:57:02+00:00",
+      "status": 200,
+      "final_url": "https://www.wvc-ut.gov/AlertCenter.aspx",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Alert Center • West Valley City • CivicEngage",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.wycokck.org/Departments/Emergency-Management",
+      "checked_at": "2026-09-20T23:57:02+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.xcelenergy.com/storm_center",
+      "checked_at": "2026-09-21T00:02:15+00:00",
+      "status": 200,
+      "final_url": "https://www.xcelenergy.com/storm_center",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Storm Center | Xcel Energy",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.yonkersny.gov/439/Police-Department",
+      "checked_at": "2026-09-20T23:57:02+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.yonkersny.gov/912/Water-Bureau",
+      "checked_at": "2026-09-21T00:02:15+00:00",
+      "status": 403,
+      "result": "http-error"
+    },
+    {
+      "url": "https://www.yonkersny.gov/AlertCenter.aspx",
+      "checked_at": "2026-09-20T23:57:02+00:00",
+      "status": 403,
+      "result": "http-error"
+    }
+  ]
+}

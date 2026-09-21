@@ -7,7 +7,8 @@
 - [x] Coverage, timing, limitations, evidence links and review dates.
 - [x] Local search, validation and deterministic Markdown generation.
 - [x] Contribution guidance and CI catalog checks.
-- [ ] Add source packs for the user's selected cities, countries and operating areas.
+- [x] Add source packs for three largest places in each of the 50 states, with the Hawaii CDP exception documented.
+- [ ] Extend city profiles with dedicated fire/EMS, public-health, transit, event-permit and closure sources.
 
 ## Phase 2 — Evaluate and prioritize
 
@@ -15,7 +16,8 @@
 - Rank sources by relevance, geographic precision, freshness and maintenance effort.
 - Define what constitutes actionable evidence for each decision.
 - Record test queries, sample schemas and outage behavior without committing secrets.
-- Add local utility, transit, emergency-management and public-health sources.
+- Confirm facility-level electric and water providers and replace general reference pages with documented notice feeds where available.
+- Add dedicated transit, fire/EMS and public-health sources and expand to additional countries and operating areas.
 
 ## Phase 3 — Collect selected feeds
 

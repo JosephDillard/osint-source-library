@@ -4,18 +4,22 @@ A curated library of public data, feeds and reference sources for **physical sec
 
 Start with the **[source library](LIBRARY.md)**. It covers crime, public events and protests, weather, natural hazards, air traffic, sea traffic, roads, government information, power outages, water systems, internet disruptions and geographic context.
 
-The initial collection prioritizes the United States and includes global sources. Local entries illustrate the utility, transport and public-safety sources to add for each operating area.
+The collection prioritizes the United States and includes global sources. The **[city library](CITIES.md)** adds the three largest places in every state: 150 profiles with emergency-management, public-safety, water and electric-utility references.
 
 ## Browse the library
 
 - **[Source directory](LIBRARY.md)** — categories, source links, access conditions and detailed source cards.
+- **[Cities in all 50 states](CITIES.md)** — three ranked places per state, with local agency and utility references.
 - **[Machine-readable catalog](catalog/sources.json)** — the editable source of truth.
+- **[Machine-readable city catalog](catalog/cities.json)** — city populations, Census FIPS IDs, source records and provider links.
 - **[Getting started](docs/getting-started.md)** — a practical source selection workflow.
 - **[Coverage and gaps](docs/coverage.md)** — what the collection covers and where local research is needed.
 - **[Data model](docs/data-model.md)** — field definitions and review status.
 - **[Roadmap](ROADMAP.md)** — a path from a links library to a useful intelligence capability.
 
-Each record includes the provider, geography, type of data, access requirements, formats, update timing, licensing notes, security uses, limitations, evidence links and review date.
+Each national/global record includes the provider, geography, type of data, access requirements, formats, update timing, licensing notes, security uses, limitations, evidence links and review date.
+
+The city directory uses a lighter reference schema. Its rankings use Census Vintage 2025 incorporated-place populations; Hawaii uses 2020 Census CDPs. Utility territories still need confirmation by address, and many agency links are reference pages rather than live feeds. See the [city methodology](docs/city-methodology.md).
 
 ## Access labels
 
@@ -42,9 +46,14 @@ python tools/catalog.py search --access open --kind live-feed
 python tools/catalog.py validate
 python tools/catalog.py build
 python tools/catalog.py build --check
+python tools/cities.py search --state TX
+python tools/cities.py search "Kansas City" --category public-safety
+python tools/cities.py validate
+python tools/cities.py build
+python tools/cities.py build --check
 ```
 
-Edit `catalog/sources.json`, then rebuild the Markdown library. See [CONTRIBUTING.md](CONTRIBUTING.md). Validation checks catalog structure and generated files; it does not certify remote availability or licensing.
+Edit `catalog/sources.json` for national/global sources or `catalog/cities.json` for city references, then rebuild the corresponding Markdown library. See [CONTRIBUTING.md](CONTRIBUTING.md). Validation checks catalog structure and generated files; it does not certify remote availability or licensing.
 
 ## Initial scope
 

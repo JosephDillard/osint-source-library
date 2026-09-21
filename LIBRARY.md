@@ -5,6 +5,7 @@
 **37 sources across 12 categories.** Catalog review: 2026-09-20.
 
 Browse a category for source cards with documentation, access, limitations and evidence.
+For local agencies and utilities, browse the [three largest places in every state](CITIES.md).
 Access labels describe how to reach the source; they do not grant reuse rights. See the [access guide](README.md#access-labels).
 Review status describes evidence inspected, not a successful integration test.
 

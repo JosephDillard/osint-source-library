@@ -20,3 +20,9 @@ jobs:
         run: python tools/catalog.py validate
       - name: Check generated library
         run: python tools/catalog.py build --check
+      - name: Validate city coverage and source references
+        run: python tools/cities.py validate
+      - name: Check generated city pages
+        run: python tools/cities.py build --check
+      - name: Check catalog validation behavior
+        run: python -m unittest discover -s tests

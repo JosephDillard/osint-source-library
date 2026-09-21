@@ -1,6 +1,6 @@
 # Catalog data model
 
-`catalog/sources.json` is the single editable source. `LIBRARY.md` and `sources/*.md` are generated views.
+`catalog/sources.json` is the editable national/global source catalog. `LIBRARY.md` and `sources/*.md` are generated views. The separate city catalog is described below.
 
 ## Catalog fields
 
@@ -40,3 +40,27 @@ The dependency-free helper checks required and unexpected fields, types, categor
 It also flags common credential query parameters in stored links. That check is intentionally limited; reviewers must still ensure that no secret, personal data or proprietary material is committed.
 
 `build --check` detects missing or stale generated Markdown, including obsolete category files. It does not make network calls or interpret third-party licenses.
+
+## City catalog
+
+`catalog/cities.json` contains `catalog_version`, `reviewed_on`, `methodology`, `categories`, `sources` and `cities`. The methodology preserves population-source URLs, source-file SHA-256, selection rules and the Hawaii exception.
+
+Each city records its display name, original Census name, state name/abbreviation/FIPS, place FIPS, rank, population, population date/source, geography type, municipal URL and coverage notes. Its stable `id` is `SS-PPPPP`, the state and place FIPS separated by a hyphen. `sources` maps each of the four category IDs to a nonempty list of source IDs. All city records set `address_coverage_verified` to `false`.
+
+Each city source has these fields:
+
+| Field | Meaning |
+| --- | --- |
+| `id`, `name` | Stable identifier and readable publisher/reference name |
+| `category` | `emergency`, `public-safety`, `water` or `power` |
+| `url`, `evidence_url` | Source entry point and official supporting reference |
+| `resource_type` | Web reference, alert page, registration portal, outage reference or provider portal |
+| `review_method` | Official-directory link, publisher search evidence or publisher reference |
+| `review_note` | Reference limitations, access uncertainty and geographic caveats |
+| `reviewed_on` | Date of reference review, separate from HTTP retrieval |
+
+Shared sources are reused by ID. Distinct electric providers can share the same regional outage URL. API availability, cadence and reuse rights have not been established by this reference schema; use the national/global schema when documenting an integration-ready dataset.
+
+`catalog/city-link-check.json` is a timestamped HTTP snapshot keyed by unique source URL. It stores a result, status and, when available, final URL, content type, page title or error detail. The [city methodology](city-methodology.md) defines what these checks establish.
+
+`python tools/cities.py validate` checks all 50 states, exactly three ranks per state, descending populations, geography/date rules, source references and complete snapshot coverage. `build --check` verifies `CITIES.md`, the 50 state pages and `cities/SOURCES.md`. `tools/rank_cities.py` separately reproduces the 147 annual-estimate selections from the Census CSV.
