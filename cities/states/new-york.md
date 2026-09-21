@@ -2,6 +2,8 @@
 
 <!-- Generated from catalog/cities.json and catalog/city-link-check.json; run python tools/cities.py build. -->
 
+Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](../../LICENSE-CONTENT). [Scope and attribution](../../LICENSING.md). Provider material retains its own terms.
+
 [All states](../../CITIES.md) · [Source details](../SOURCES.md) · [Methodology](../../docs/city-methodology.md)
 
 Rank uses incorporated-place population as of July 1, 2025 (Census Vintage 2025).

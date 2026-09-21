@@ -5,7 +5,7 @@
 ## Catalog fields
 
 - `catalog_version`: integer format version; currently 1.
-- `review_date`: date of this catalog review, not an operational freshness guarantee.
+- `review_date`: UTC calendar date of this catalog review, not an operational freshness guarantee. Date validation uses the current UTC date so local time zones do not reject same-day UTC reviews.
 - `categories`: mapping from stable category ID to readable label.
 - `sources`: list of source records.
 
@@ -27,7 +27,7 @@
 | `license_notes` | Reuse requirements and unresolved terms; this is not legal clearance |
 | `security_use` | Concrete defensive or continuity use |
 | `limitations` | Timing, coverage, interpretation and integration constraints |
-| `reviewed_on` | Actual date the record's supporting material was reviewed |
+| `reviewed_on` | UTC calendar date the record's supporting material was reviewed |
 | `review_status` | Documentation reviewed, metadata reviewed or partial review |
 | `evidence_urls` | Primary-source links supporting the record |
 

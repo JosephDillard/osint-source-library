@@ -234,6 +234,7 @@ def render(data, report):
         grouped[city['state']].append(city)
     refs = sum(len(v) for c in data['cities'] for v in c['sources'].values())
     index = ['# Cities and local sources', '', GENERATED, '',
+        'Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](LICENSE-CONTENT). [Scope and attribution](LICENSING.md). Provider material retains its own terms.', '',
         f"**150 places · 50 states · {len(sources)} source records · {refs} city-to-source references.** Reviewed {data['reviewed_on']}.", '',
         '[National and global library](LIBRARY.md) · [Source details](cities/SOURCES.md) · [Selection and review method](docs/city-methodology.md)', '',
         'The three largest incorporated places in each state, ranked by Census Vintage 2025 population (July 1, 2025). Hawaii uses the three largest 2020 Census CDPs. These are city/place populations, not metro populations.', '',
@@ -247,6 +248,7 @@ def render(data, report):
         path = f'cities/states/{slug}.md'
         index.append('| ' + f'[{state}]({path}) | ' + ' | '.join(f"[{md(c['name'])}]({path}#city-{c['id']})" for c in cities) + ' |')
         page = [f'# {state}: three largest places', '', GENERATED, '',
+            'Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](../../LICENSE-CONTENT). [Scope and attribution](../../LICENSING.md). Provider material retains its own terms.', '',
             '[All states](../../CITIES.md) · [Source details](../SOURCES.md) · [Methodology](../../docs/city-methodology.md)', '',
             'Rank uses incorporated-place population as of July 1, 2025 (Census Vintage 2025).' if state != 'Hawaii' else 'Hawaii exception: rank uses 2020 Census CDP population as of April 1, 2020. All three places are on Oahu.', '',
             'Sources are discovery references. Confirm utility service territory by address and check the publisher for current notices. HTTP results indicate retrieval only; they do not test live data, subscriptions or feed functionality.', '']
@@ -269,6 +271,7 @@ def render(data, report):
         '[Editable catalog](catalog/cities.json) · [Contribution guide](CONTRIBUTING.md#city-source-packs)', '']
     pages[ROOT / 'CITIES.md'] = '\n'.join(index)
     registry = ['# City source details', '', GENERATED, '', '[Browse states and cities](../CITIES.md) · [Review method](../docs/city-methodology.md)', '',
+        'Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](../LICENSE-CONTENT). [Scope and attribution](../LICENSING.md). Provider material retains its own terms.', '',
         'These entries are web references. No documented API, machine-readable feed, update cadence, comprehensive coverage or commercial reuse license is asserted by inclusion.', '',
         'Review methods describe how a reference was found. HTTP checks are separate and do not advance the content review date.', '']
     used_by = defaultdict(list)

@@ -2,6 +2,8 @@
 
 <!-- Generated from catalog/cities.json and catalog/city-link-check.json; run python tools/cities.py build. -->
 
+Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](LICENSE-CONTENT). [Scope and attribution](LICENSING.md). Provider material retains its own terms.
+
 **150 places · 50 states · 542 source records · 614 city-to-source references.** Reviewed 2026-09-20.
 
 [National and global library](LIBRARY.md) · [Source details](cities/SOURCES.md) · [Selection and review method](docs/city-methodology.md)

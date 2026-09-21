@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Offline validation, search, and Markdown generation for the source library."""
 import argparse
-from datetime import date
+from datetime import date, datetime, timezone
 import json
 from pathlib import Path
 import re
@@ -45,7 +45,7 @@ def valid_date(value):
     if not isinstance(value, str) or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
         return False
     try:
-        return date.fromisoformat(value) <= date.today()
+        return date.fromisoformat(value) <= datetime.now(timezone.utc).date()
     except ValueError:
         return False
 
@@ -143,6 +143,7 @@ def render(data):
     sources = data["sources"]
     index = [
         "# Source library", "", GENERATED, "",
+        "Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](LICENSE-CONTENT). [Scope and attribution](LICENSING.md). Provider material retains its own terms.", "",
         f"**{len(sources)} sources across {len(data['categories'])} categories.** Catalog review: {data['review_date']}.", "",
         "Browse a category for source cards with documentation, access, limitations and evidence.",
         "For local agencies and utilities, browse the [three largest places in every state](CITIES.md).",
@@ -154,7 +155,8 @@ def render(data):
     for category, title in data["categories"].items():
         entries = sorted((s for s in sources if s["category"] == category), key=lambda s: s["name"].casefold())
         index.append(f"| [{escape(title)}](sources/{category}.md) | {len(entries)} |")
-        page = [f"# {title}", "", GENERATED, "", "[All categories](../LIBRARY.md) | [How to use this library](../docs/getting-started.md)", ""]
+        page = [f"# {title}", "", GENERATED, "", "[All categories](../LIBRARY.md) | [How to use this library](../docs/getting-started.md)", "",
+                "Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](../LICENSE-CONTENT). [Scope and attribution](../LICENSING.md). Provider material retains its own terms.", ""]
         for item in entries:
             page += [
                 f'<a id="{item["id"]}"></a>', "",

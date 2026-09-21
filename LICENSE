@@ -20,5 +20,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-This license applies to original repository code and written content.
-Third-party data, services, maps and publications retain their own licenses.
+Scope notice (not a modification of the MIT terms above):
+This license applies to original code, tests, software configuration and
+embedded code examples. Original catalog content and prose documentation
+are licensed under CC BY 4.0; see LICENSE-CONTENT and LICENSING.md for scope,
+attribution and the treatment of earlier MIT-licensed revisions.
+Third-party material retains its own terms.

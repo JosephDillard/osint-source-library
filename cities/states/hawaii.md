@@ -2,6 +2,8 @@
 
 <!-- Generated from catalog/cities.json and catalog/city-link-check.json; run python tools/cities.py build. -->
 
+Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](../../LICENSE-CONTENT). [Scope and attribution](../../LICENSING.md). Provider material retains its own terms.
+
 [All states](../../CITIES.md) · [Source details](../SOURCES.md) · [Methodology](../../docs/city-methodology.md)
 
 Hawaii exception: rank uses 2020 Census CDP population as of April 1, 2020. All three places are on Oahu.

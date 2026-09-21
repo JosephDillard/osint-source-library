@@ -2,6 +2,8 @@
 
 <!-- Generated from catalog/sources.json; edit the catalog, then run python tools/catalog.py build. -->
 
+Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](LICENSE-CONTENT). [Scope and attribution](LICENSING.md). Provider material retains its own terms.
+
 **47 sources across 15 categories.** Catalog review: 2026-09-21.
 
 Browse a category for source cards with documentation, access, limitations and evidence.

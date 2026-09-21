@@ -1,17 +1,31 @@
 """Guard coverage and provenance when the city directory is maintained."""
 from copy import deepcopy
+from datetime import date, datetime, timezone
 import html
 from pathlib import Path
 import re
 import sys
 import unittest
+from unittest.mock import patch
 from urllib.parse import unquote, urlsplit
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
 import cities
+import catalog
 
 
 class CityCatalogChecks(unittest.TestCase):
+    def test_review_dates_use_utc_when_local_day_is_earlier(self):
+        class LocalDate(date):
+            @classmethod
+            def today(cls):
+                return cls(2026, 9, 20)
+
+        with patch.object(catalog, 'date', LocalDate), patch.object(catalog, 'datetime') as clock:
+            clock.now.return_value = datetime(2026, 9, 21, 1, tzinfo=timezone.utc)
+            self.assertTrue(catalog.valid_date('2026-09-21'))
+            self.assertFalse(catalog.valid_date('2026-09-22'))
+
     @classmethod
     def setUpClass(cls):
         cls.catalog = cities.load()

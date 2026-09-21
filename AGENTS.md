@@ -8,6 +8,10 @@ This is a curated OSINT source-discovery library for physical security, protecti
 
 The repository is independent of Open GEOINT Watch and other sibling projects. Use repository-relative paths; do not introduce dependencies on a particular user's checkout location.
 
+## Licensing
+
+Follow [LICENSING.md](LICENSING.md): original code, tests, software configuration and code examples use MIT; original catalog content and prose documentation use CC BY 4.0. Preserve content-license notices in generated views. Third-party material retains its own terms, and earlier MIT grants remain valid. Keep the standard license texts intact and describe scope separately.
+
 ## Editable files and generated views
 
 - `catalog/sources.json`: national/global source records.

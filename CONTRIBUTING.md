@@ -1,5 +1,7 @@
 # Contributing sources
 
+Original code contributions use MIT. Original catalog descriptions and prose contributions use CC BY 4.0. Follow the [licensing scope and attribution guidance](LICENSING.md), retain notices and identify any third-party material and its terms. Provider license notes remain separate from the license of your original catalog annotation.
+
 1. Find the original publisher's dataset page or official API documentation.
 2. Copy a similar record in `catalog/sources.json` and assign a stable, unique lowercase ID.
 3. Record geographic coverage, data type, access requirements, formats, update timing, limitations and specific security use.

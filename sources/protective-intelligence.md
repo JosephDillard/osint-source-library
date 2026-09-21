@@ -4,6 +4,8 @@
 
 [All categories](../LIBRARY.md) | [How to use this library](../docs/getting-started.md)
 
+Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](../LICENSE-CONTENT). [Scope and attribution](../LICENSING.md). Provider material retains its own terms.
+
 <a id="ontic"></a>
 
 ## Ontic protective intelligence and investigations

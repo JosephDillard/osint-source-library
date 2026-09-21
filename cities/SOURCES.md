@@ -4,6 +4,8 @@
 
 [Browse states and cities](../CITIES.md) · [Review method](../docs/city-methodology.md)
 
+Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](../LICENSE-CONTENT). [Scope and attribution](../LICENSING.md). Provider material retains its own terms.
+
 These entries are web references. No documented API, machine-readable feed, update cadence, comprehensive coverage or commercial reuse license is asserted by inclusion.
 
 Review methods describe how a reference was found. HTTP checks are separate and do not advance the content review date.
