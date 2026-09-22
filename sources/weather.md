@@ -78,3 +78,22 @@ Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC B
 - **API entrypoint / example:** [Open endpoint](https://api.weather.gov/alerts/active). Required parameters, credentials and pagination may still apply.
 - **Evidence:** [Provider reference 1](https://www.weather.gov/documentation/services-web-api)
 - **Catalog ID:** `nws-alerts`
+
+<a id="open-meteo"></a>
+
+## Open-Meteo weather models and current conditions
+
+**[Visit source](https://open-meteo.com/)** | [Provider documentation](https://open-meteo.com/en/docs)
+
+- **Provider:** Open-Meteo / contributing weather agencies
+- **Coverage:** Global model coverage; resolution and available variables differ by model and region.
+- **Type / access:** `periodic` / `mixed`
+- **Formats:** JSON, CSV, XLSX
+- **Updates:** Model-dependent runs; current conditions are based on 15-minutely model data.
+- **Security use:** Weather context and forecasts for outdoor operations, routes and facilities.
+- **License / terms:** Data uses CC BY 4.0 with attribution. The hosted free API is restricted to noncommercial use and quotas; commercial service access requires an appropriate subscription.
+- **Limitations:** Current conditions are modeled estimates, not necessarily a nearby station observation. Weather animation is a visualization, not measured cloud geometry; retain model/time information.
+- **Review:** 2026-09-22 — `provider-documentation-reviewed`
+- **API entrypoint / example:** [Open endpoint](https://api.open-meteo.com/v1/forecast). Required parameters, credentials and pagination may still apply.
+- **Evidence:** [Provider reference 1](https://open-meteo.com/en/docs) · [Provider reference 2](https://open-meteo.com/en/terms) · [Provider reference 3](https://open-meteo.com/en/licence)
+- **Catalog ID:** `open-meteo`

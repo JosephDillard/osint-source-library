@@ -6,6 +6,24 @@
 
 Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](../LICENSE-CONTENT). [Scope and attribution](../LICENSING.md). Provider material retains its own terms.
 
+<a id="aisstream"></a>
+
+## AISStream vessel message stream
+
+**[Visit source](https://aisstream.io/)** | [Provider documentation](https://aisstream.io/documentation)
+
+- **Provider:** AISStream.io
+- **Coverage:** Global AIS observations within available receiver coverage and subscription bounds.
+- **Type / access:** `live-feed` / `registration`
+- **Formats:** WebSocket, JSON, AIS
+- **Updates:** Event-driven AIS messages; receipt depends on transmissions, coverage, filtering and connection performance.
+- **Security use:** Monitor vessel movement around ports, coastal facilities and maritime logistics corridors.
+- **License / terms:** Account API key required. Documentation establishes service access, not a blanket open-data redistribution license; confirm intended retention and reuse with the provider.
+- **Limitations:** Documented transport is wss://stream.aisstream.io/v0/stream (this catalog endpoint field accepts HTTP(S) only). Server-side connections required; three subscribed connections per account, no SLA or durable replay, and slow consumers can lose messages. AIS identities and positions require corroboration.
+- **Review:** 2026-09-22 — `provider-documentation-reviewed`
+- **Evidence:** [Provider reference 1](https://aisstream.io/documentation)
+- **Catalog ID:** `aisstream`
+
 <a id="noaa-ais"></a>
 
 ## Marine Cadastre vessel traffic / AIS

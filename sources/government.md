@@ -62,6 +62,24 @@ Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC B
 - **Evidence:** [Provider reference 1](https://www.fema.gov/about/openfema/api) · [Provider reference 2](https://www.fema.gov/gu/about/reports-and-data/openfema)
 - **Catalog ID:** `openfema`
 
+<a id="radio-browser"></a>
+
+## Radio Browser station directory
+
+**[Visit source](https://www.radio-browser.info/)** | [Provider documentation](https://api.radio-browser.info/)
+
+- **Provider:** Radio Browser community / individual broadcasters
+- **Coverage:** Worldwide submitted internet-radio stations; geolocation and coverage are uneven.
+- **Type / access:** `catalog` / `open`
+- **Formats:** JSON, REST, Broadcaster stream links
+- **Updates:** Community directory and automated stream checks; broadcaster programming is independent.
+- **Security use:** Discover local broadcasters for human review and corroboration of public reporting.
+- **License / terms:** API documentation permits public use and mirroring. Verify the current directory license separately; each broadcaster controls rights to its audio.
+- **Limitations:** Station coordinates and tags do not establish a current local-news program or verified incident. Discover an API mirror per the docs; directory access grants no recording or redistribution rights to broadcasts.
+- **Review:** 2026-09-22 — `provider-documentation-reviewed`
+- **Evidence:** [Provider reference 1](https://api.radio-browser.info/)
+- **Catalog ID:** `radio-browser`
+
 <a id="reliefweb"></a>
 
 ## ReliefWeb reports and disasters API

@@ -1,5 +1,13 @@
 # Source reviews
 
+## God's Eye View source expansion — 2026-09-22
+
+The [source audit](gods-eye-view-source-audit.md) maps the project at commit `0dbde1e` to this library. Added 41 sources, taking the catalog from 47 to 88 across 16 categories. OpenSky and OpenStreetMap records were updated; other existing review dates were preserved.
+
+The additions cover aircraft observations and metadata, AIS, orbital elements, launches, traffic cameras, seven transit operators, GBFS discovery, weather, news/radio and geographic reference services. Vantor disaster imagery and other static datasets are explicitly distinguished from live feeds. The audit inventories all 32 GBFS systems configured in that revision and excludes sample-video camera fixtures.
+
+Provider documentation and selected metadata were reviewed. 13 additions remain `partial-review`; record-level limitations describe missing terms, incomplete retrieval or integration uncertainty. Rebuilt pages and offline validation do not certify provider availability, data accuracy or operational-use permission. No authenticated integrations, city-profile edits or full HTTP snapshot refresh were performed.
+
 ## Service expansion — 2026-09-21
 
 The [expanded shortlist](service-shortlist.md) contains 18 services and public sources. Eight were already cataloged; ten commercial services were added, bringing the national/global catalog to 47 sources across 15 categories. Existing records were improved where the new review supported a change. Individual review dates remain authoritative; the catalog date does not imply every source was re-reviewed.

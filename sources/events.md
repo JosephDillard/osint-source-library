@@ -42,6 +42,24 @@ Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC B
 - **Evidence:** [Provider reference 1](https://gdeltproject.org/data.html) · [Provider reference 2](https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/) · [Provider reference 3](https://www.gdeltproject.org/)
 - **Catalog ID:** `gdelt`
 
+<a id="google-news-rss"></a>
+
+## Google News locality and topic RSS discovery
+
+**[Visit source](https://news.google.com/)** | [Provider documentation](https://www.google.com/intl/en_us/terms_google_news.html)
+
+- **Provider:** Google News / linked publishers
+- **Coverage:** International indexed news; language, outlet selection and place matching vary.
+- **Type / access:** `mixed` / `open`
+- **Formats:** RSS, Web search
+- **Updates:** Indexing-dependent; article publication and event occurrence can differ substantially.
+- **Security use:** Discover locality-matched reporting for manual verification and event corroboration.
+- **License / terms:** Reviewed Google News terms restrict use to personal, noncommercial purposes; publishers retain rights to their articles. Confirm permitted use rather than treating RSS access as redistribution permission.
+- **Limitations:** The project constructs RSS search URLs, but a supported public API contract was not established. Matches are news references, not validated incident locations or severity assessments.
+- **Review:** 2026-09-22 — `partial-review`
+- **Evidence:** [Provider reference 1](https://www.google.com/intl/en_us/terms_google_news.html)
+- **Catalog ID:** `google-news-rss`
+
 <a id="nyc-permitted-events"></a>
 
 ## NYC permitted event information

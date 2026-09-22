@@ -41,3 +41,21 @@ Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC B
 - **Review:** 2026-09-20 — `provider-documentation-reviewed`
 - **Evidence:** [Provider reference 1](https://api.ioda.inetintel.cc.gatech.edu/v2/) · [Provider reference 2](https://ioda.inetintel.cc.gatech.edu/resources?tab=glossary)
 - **Catalog ID:** `ioda`
+
+<a id="telegeography-cables"></a>
+
+## TeleGeography Submarine Cable Map
+
+**[Visit source](https://www.submarinecablemap.com/)** | [Provider documentation](https://www.submarinecablemap.com/)
+
+- **Provider:** TeleGeography
+- **Coverage:** Global mapped submarine cable systems and landing points.
+- **Type / access:** `reference` / `mixed`
+- **Formats:** Web map, Licensed GIS data
+- **Updates:** Editorial updates; bundled project extracts are dated snapshots.
+- **Security use:** Connectivity dependency and geographic cable-landing context.
+- **License / terms:** The audited project labels its bundled extract CC BY-NC-SA 3.0. Current publisher licensing and commercial structured-data access must be confirmed independently; do not assume the code license covers cable data.
+- **Limitations:** Map lines are schematic context, not precise engineering routes or cable-outage observations. Publisher site rendered insufficient text for a full license review.
+- **Review:** 2026-09-22 — `partial-review`
+- **Evidence:** [Provider reference 1](https://www.submarinecablemap.com/) · [Provider reference 2](https://www2.telegeography.com/submarine-cable-map)
+- **Catalog ID:** `telegeography-cables`

@@ -60,3 +60,21 @@ Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC B
 - **API entrypoint / example:** [Open endpoint](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson). Required parameters, credentials and pagination may still apply.
 - **Evidence:** [Provider reference 1](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
 - **Catalog ID:** `usgs-earthquakes`
+
+<a id="vantor-open-data"></a>
+
+## Vantor Open Data Program disaster imagery
+
+**[Visit source](https://vantor.com/company/open-data-program/)** | [Provider documentation](https://vantor.com/company/open-data-program/)
+
+- **Provider:** Vantor
+- **Coverage:** Selected major disaster activations worldwide; event footprints and acquisition dates vary.
+- **Type / access:** `catalog` / `open`
+- **Formats:** Satellite imagery, GeoTIFF, Event downloads
+- **Updates:** Event-triggered selected before/after image releases; not continuous global observation.
+- **Security use:** Compare disaster-area imagery for situational awareness and humanitarian impact assessment within permitted use.
+- **License / terms:** Provider identifies Creative Commons BY-NC 4.0 for Open Data Program imagery. Preserve attribution and noncommercial restrictions; confirm each activation and obtain separate permission for incompatible uses.
+- **Limitations:** Clouds, acquisition timing and selective activation constrain coverage. The project bundles two dated Nepal-event image crops; those are not a live imagery feed. Visual change alone does not establish damage cause or severity.
+- **Review:** 2026-09-22 — `provider-documentation-reviewed`
+- **Evidence:** [Provider reference 1](https://vantor.com/company/open-data-program/)
+- **Catalog ID:** `vantor-open-data`

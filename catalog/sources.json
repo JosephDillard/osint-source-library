@@ -1,6 +1,6 @@
 {
   "catalog_version": 1,
-  "review_date": "2026-09-21",
+  "review_date": "2026-09-22",
   "categories": {
     "weather": "Weather, flooding & air quality",
     "hazards": "Natural hazards & disasters",
@@ -16,7 +16,8 @@
     "context": "Maps, infrastructure & geographic context",
     "risk-intelligence": "Critical events & risk intelligence",
     "travel-risk": "Travel risk & assistance",
-    "protective-intelligence": "Protective intelligence & investigations"
+    "protective-intelligence": "Protective intelligence & investigations",
+    "space": "Satellite orbits & space activity"
   },
   "sources": [
     {
@@ -373,18 +374,18 @@
       "category": "aviation",
       "coverage": "Global receiver network; coverage varies",
       "kind": "live-feed",
-      "access": "approval",
+      "access": "mixed",
       "formats": [
         "JSON"
       ],
       "url": "https://opensky-network.org/",
       "documentation_url": "https://openskynetwork.github.io/opensky-api/rest.html",
       "endpoint_url": "https://opensky-network.org/api/states/all",
-      "update_frequency": "Near real time where receivers report; API quotas apply.",
-      "license_notes": "OAuth2 client credentials. Written license required for commercial entities and operational REST API use; see current terms.",
+      "update_frequency": "Near-real-time state vectors where received. Anonymous access: 400 daily credits; standard authenticated access: 4,000. Global states query costs four credits; verify current tiers.",
+      "license_notes": "Anonymous position queries are technically available; OAuth2 client credentials enable authenticated tiers. Commercial entities and operational REST API use require a written license under current OpenSky terms.",
       "security_use": "Airspace awareness and aviation exposure research where licensed.",
-      "limitations": "ADS-B coverage gaps and incomplete identity data; does not supply airline schedules or establish passenger identity.",
-      "reviewed_on": "2026-09-20",
+      "limitations": "Receiver coverage and position age vary. No airline schedules or passenger identity. Client polling, cache age and interpolated animation must remain distinct from the latest position timestamp.",
+      "reviewed_on": "2026-09-22",
       "review_status": "provider-documentation-reviewed",
       "evidence_urls": [
         "https://openskynetwork.github.io/opensky-api/rest.html",
@@ -915,19 +916,21 @@
       "formats": [
         "OSM PBF",
         "OSM XML",
+        "JSON via Overpass",
         "Map data"
       ],
       "url": "https://www.openstreetmap.org/",
       "documentation_url": "https://www.openstreetmap.org/copyright",
-      "endpoint_url": null,
+      "endpoint_url": "https://overpass-api.de/api/interpreter",
       "update_frequency": "Continuously edited; extracts have their own snapshot dates.",
       "license_notes": "ODbL database license; attribution and applicable share-alike terms. Tile-server policies are separate.",
-      "security_use": "Road, building and place context for situational-awareness maps.",
-      "limitations": "Map features are not a live incident or verified critical-infrastructure inventory.",
-      "reviewed_on": "2026-09-20",
+      "security_use": "Road, building, place and mapped infrastructure context; bounded Overpass queries for relevant tags.",
+      "limitations": "Community tags are not live observations or a verified infrastructure inventory. ALPR/camera tags describe mapped locations, not plate records, camera footage or present operating status. Public Overpass services have separate capacity and commercial-use policies.",
+      "reviewed_on": "2026-09-22",
       "review_status": "provider-documentation-reviewed",
       "evidence_urls": [
-        "https://www.openstreetmap.org/copyright"
+        "https://www.openstreetmap.org/copyright",
+        "https://wiki.openstreetmap.org/wiki/Overpass_API"
       ]
     },
     {
@@ -1260,6 +1263,1079 @@
         "https://ontic.co/",
         "https://ontic.co/legal/msa/",
         "https://www.factal.com/partners/"
+      ]
+    },
+    {
+      "id": "adsb-lol",
+      "name": "adsb.lol aircraft positions and traces",
+      "provider": "adsb.lol contributor network",
+      "category": "aviation",
+      "coverage": "Global volunteer receiver network; reception and altitude determine actual coverage.",
+      "kind": "mixed",
+      "access": "open",
+      "formats": [
+        "JSON",
+        "ADS-B / MLAT positions"
+      ],
+      "url": "https://www.adsb.lol/",
+      "documentation_url": "https://www.adsb.lol/docs/open-data/api/",
+      "endpoint_url": "https://api.adsb.lol/v2/mil",
+      "update_frequency": "Near-real-time reports where received; use position age and source timestamps rather than animation speed.",
+      "license_notes": "API data is published under ODbL 1.0; retain attribution and applicable database share-alike obligations. Public access does not provide an SLA.",
+      "security_use": "Aircraft activity near airports and operating areas; compare civilian and military-classified contacts.",
+      "limitations": "The project also uses the regional /v2/lat/{lat}/lon/{lon}/dist/{radius} API. Its tar1090 trace-file path is an undocumented dependency, not a supported history API established here. Missing aircraft do not prove absence.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.adsb.lol/docs/open-data/api/",
+        "https://api.adsb.lol/docs",
+        "https://www.adsb.lol/docs/overview/introduction/"
+      ]
+    },
+    {
+      "id": "adsbdb",
+      "name": "adsbdb aircraft and callsign metadata",
+      "provider": "adsbdb / upstream aircraft and route contributors",
+      "category": "aviation",
+      "coverage": "International aircraft and callsign database; matching completeness varies.",
+      "kind": "reference",
+      "access": "open",
+      "formats": [
+        "JSON"
+      ],
+      "url": "https://www.adsbdb.com/",
+      "documentation_url": "https://www.adsbdb.com/",
+      "endpoint_url": null,
+      "update_frequency": "Lookup service; no reliable public refresh commitment established in this review.",
+      "license_notes": "Underlying aircraft and route data have separate contributor rights. Full reuse and redistribution terms were not independently established; do not infer rights from public API access or software licensing.",
+      "security_use": "Enrich an observed aircraft identifier with type, registration and route context.",
+      "limitations": "Not a position feed or authoritative airline schedule. Website documentation rendered incompletely; project code identifies /aircraft/{identifier} and /callsign/{callsign}. Route matches may be stale or ambiguous. API routes are retained as discovery context only until current primary documentation can be fully reviewed.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "partial-review",
+      "evidence_urls": [
+        "https://www.adsbdb.com/"
+      ]
+    },
+    {
+      "id": "aisstream",
+      "name": "AISStream vessel message stream",
+      "provider": "AISStream.io",
+      "category": "maritime",
+      "coverage": "Global AIS observations within available receiver coverage and subscription bounds.",
+      "kind": "live-feed",
+      "access": "registration",
+      "formats": [
+        "WebSocket",
+        "JSON",
+        "AIS"
+      ],
+      "url": "https://aisstream.io/",
+      "documentation_url": "https://aisstream.io/documentation",
+      "endpoint_url": null,
+      "update_frequency": "Event-driven AIS messages; receipt depends on transmissions, coverage, filtering and connection performance.",
+      "license_notes": "Account API key required. Documentation establishes service access, not a blanket open-data redistribution license; confirm intended retention and reuse with the provider.",
+      "security_use": "Monitor vessel movement around ports, coastal facilities and maritime logistics corridors.",
+      "limitations": "Documented transport is wss://stream.aisstream.io/v0/stream (this catalog endpoint field accepts HTTP(S) only). Server-side connections required; three subscribed connections per account, no SLA or durable replay, and slow consumers can lose messages. AIS identities and positions require corroboration.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://aisstream.io/documentation"
+      ]
+    },
+    {
+      "id": "celestrak",
+      "name": "CelesTrak general perturbations orbital elements",
+      "provider": "CelesTrak",
+      "category": "space",
+      "coverage": "Cataloged Earth-orbiting objects; groups and public availability vary.",
+      "kind": "periodic",
+      "access": "open",
+      "formats": [
+        "TLE",
+        "OMM XML",
+        "JSON",
+        "CSV"
+      ],
+      "url": "https://celestrak.org/",
+      "documentation_url": "https://celestrak.org/NORAD/documentation/gp-data-formats.php",
+      "endpoint_url": "https://celestrak.org/NORAD/elements/gp.php",
+      "update_frequency": "Orbital-element updates, not continuous measured positions. Inspect each element epoch and avoid excessive polling.",
+      "license_notes": "Follow CelesTrak usage policy, caching and backoff requirements and identify the data source. Public access does not imply unrestricted polling or an operational guarantee.",
+      "security_use": "Orbital context for satellite communications, observation planning and space-event research.",
+      "limitations": "SGP4 positions are predictions from orbital elements; error grows with age and maneuvers. Legacy TLE numeric limits affect newer catalog identifiers. GP-format documentation retrieval failed; usage-policy material was accessible, so the record remains a partial review.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "partial-review",
+      "evidence_urls": [
+        "https://celestrak.org/NORAD/documentation/gp-data-formats.php",
+        "https://celestrak.org/usage-policy.php"
+      ]
+    },
+    {
+      "id": "launch-library-2",
+      "name": "Launch Library 2 spaceflight events",
+      "provider": "The Space Devs",
+      "category": "space",
+      "coverage": "Worldwide launch and space-event catalog; historical and scheduled missions.",
+      "kind": "mixed",
+      "access": "mixed",
+      "formats": [
+        "JSON",
+        "REST"
+      ],
+      "url": "https://thespacedevs.com/llapi",
+      "documentation_url": "https://ll.thespacedevs.com/docs/",
+      "endpoint_url": "https://ll.thespacedevs.com/2.3.0/launches/",
+      "update_frequency": "Curated updates as information changes; public allowance documented as 15 calls/hour, with token-based higher limits.",
+      "license_notes": "Provider FAQ permits use and sharing, discourages forwarding without added value, and encourages attribution. Cache results and check current tier limits.",
+      "security_use": "Identify planned launches and recovery activity relevant to travel, ports and regional operations.",
+      "limitations": "Schedule and mission metadata are not flight telemetry, exclusion-zone authority or an observed launch trajectory. Development API data can be stale.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://ll.thespacedevs.com/docs/",
+        "https://github.com/TheSpaceDevs/Tutorials/blob/main/faqs/faq_TSD.md"
+      ]
+    },
+    {
+      "id": "open-meteo",
+      "name": "Open-Meteo weather models and current conditions",
+      "provider": "Open-Meteo / contributing weather agencies",
+      "category": "weather",
+      "coverage": "Global model coverage; resolution and available variables differ by model and region.",
+      "kind": "periodic",
+      "access": "mixed",
+      "formats": [
+        "JSON",
+        "CSV",
+        "XLSX"
+      ],
+      "url": "https://open-meteo.com/",
+      "documentation_url": "https://open-meteo.com/en/docs",
+      "endpoint_url": "https://api.open-meteo.com/v1/forecast",
+      "update_frequency": "Model-dependent runs; current conditions are based on 15-minutely model data.",
+      "license_notes": "Data uses CC BY 4.0 with attribution. The hosted free API is restricted to noncommercial use and quotas; commercial service access requires an appropriate subscription.",
+      "security_use": "Weather context and forecasts for outdoor operations, routes and facilities.",
+      "limitations": "Current conditions are modeled estimates, not necessarily a nearby station observation. Weather animation is a visualization, not measured cloud geometry; retain model/time information.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://open-meteo.com/en/docs",
+        "https://open-meteo.com/en/terms",
+        "https://open-meteo.com/en/licence"
+      ]
+    },
+    {
+      "id": "tomtom-traffic",
+      "name": "TomTom traffic flow and incidents",
+      "provider": "TomTom",
+      "category": "roads",
+      "coverage": "Supported road networks worldwide; product coverage differs by country and road class.",
+      "kind": "live-feed",
+      "access": "commercial",
+      "formats": [
+        "Vector tiles",
+        "JSON",
+        "XML",
+        "REST"
+      ],
+      "url": "https://developer.tomtom.com/traffic-api",
+      "documentation_url": "https://docs.tomtom.com/traffic-api/documentation/tomtom-maps/v1/traffic-flow/vector-flow-tiles",
+      "endpoint_url": null,
+      "update_frequency": "Frequently refreshed traffic estimates; check product timestamps and cache instructions.",
+      "license_notes": "Proprietary API with key, account terms and metered allowances; verify current pricing and permitted display, storage and redistribution.",
+      "security_use": "Road congestion and travel-delay context for logistics and facility access.",
+      "limitations": "Traffic flow is aggregate speed/congestion information. It does not locate individual vehicles; cars animated from these values remain simulated.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://docs.tomtom.com/traffic-api/documentation/tomtom-maps/v1/traffic-flow/vector-flow-tiles",
+        "https://docs.tomtom.com/pricing/"
+      ]
+    },
+    {
+      "id": "austin-traffic-cameras",
+      "name": "Austin traffic camera inventory and public views",
+      "provider": "City of Austin Transportation and Public Works",
+      "category": "roads",
+      "coverage": "Austin, Texas municipal traffic-camera locations.",
+      "kind": "mixed",
+      "access": "open",
+      "formats": [
+        "Socrata JSON",
+        "CSV",
+        "Web camera imagery"
+      ],
+      "url": "https://data.austintexas.gov/Transportation-and-Mobility/Traffic-Cameras/b4k4-adkb",
+      "documentation_url": "https://data.austintexas.gov/api/views/b4k4-adkb.json",
+      "endpoint_url": "https://data.austintexas.gov/resource/b4k4-adkb.json",
+      "update_frequency": "Inventory metadata states daily updates; image freshness is separate and camera-dependent.",
+      "license_notes": "Catalog metadata marks the inventory PUBLIC_DOMAIN. Do not assume that this metadata declaration independently licenses every image stream; confirm camera-service reuse.",
+      "security_use": "Visually corroborate traffic conditions near Austin routes and sites.",
+      "limitations": "Locations are approximate. The city states footage is not recorded or retained; inventory availability does not establish camera health or an archive.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-metadata-reviewed",
+      "evidence_urls": [
+        "https://data.austintexas.gov/api/views/b4k4-adkb.json"
+      ]
+    },
+    {
+      "id": "caltrans-cctv",
+      "name": "Caltrans CWWP2 traffic-camera data",
+      "provider": "California Department of Transportation",
+      "category": "roads",
+      "coverage": "California highway cameras, published by Caltrans district.",
+      "kind": "mixed",
+      "access": "open",
+      "formats": [
+        "JSON",
+        "CSV",
+        "XML",
+        "Camera stills and video"
+      ],
+      "url": "https://cwwp2.dot.ca.gov/",
+      "documentation_url": "https://cwwp2.dot.ca.gov/documentation/cctv/cctv.htm",
+      "endpoint_url": "https://cwwp2.dot.ca.gov/data/d7/cctv/cctvStatusD07.json",
+      "update_frequency": "District catalogs update as necessary; individual images/streams have separate refresh timing.",
+      "license_notes": "Caltrans documents no-charge integration access subject to its Conditions of Use; retain provider attribution and inspect imagery restrictions.",
+      "security_use": "Corroborate California road, visibility and disruption reports with camera imagery.",
+      "limitations": "Endpoint is a District 7 example, not the statewide catalog. District completeness varies; Caltrans states imagery is not retained or archived. Distinct from the existing QuickMap dashboard entry.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://cwwp2.dot.ca.gov/documentation/cctv/cctv.htm"
+      ]
+    },
+    {
+      "id": "txdot-traffic-cameras",
+      "name": "TxDOT public traffic cameras",
+      "provider": "Texas Department of Transportation",
+      "category": "roads",
+      "coverage": "Texas highway cameras organized by TxDOT district.",
+      "kind": "dashboard",
+      "access": "open",
+      "formats": [
+        "Web camera views"
+      ],
+      "url": "https://www.txdot.gov/discover/live-traffic-cameras.html",
+      "documentation_url": "https://www.txdot.gov/discover/live-traffic-cameras.html",
+      "endpoint_url": null,
+      "update_frequency": "Camera-specific current views; verify timestamp and availability at each location.",
+      "license_notes": "Public viewing is documented; supported third-party API access, archiving and redistribution rights were not established.",
+      "security_use": "Check visible highway conditions around Texas facilities and travel corridors.",
+      "limitations": "TxDOT says footage is not recorded. The audited project uses ITS backend routes; these are not promoted here as a documented public integration contract. Distinct from DriveTexas road-condition reports.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "partial-review",
+      "evidence_urls": [
+        "https://www.txdot.gov/discover/live-traffic-cameras.html",
+        "https://its.txdot.gov/"
+      ]
+    },
+    {
+      "id": "tfl-jamcams",
+      "name": "TfL Unified API and JamCam traffic cameras",
+      "provider": "Transport for London",
+      "category": "roads",
+      "coverage": "Greater London roads and TfL transport network.",
+      "kind": "mixed",
+      "access": "mixed",
+      "formats": [
+        "JSON",
+        "Camera imagery",
+        "REST"
+      ],
+      "url": "https://tfl.gov.uk/info-for/open-data-users/",
+      "documentation_url": "https://tfl.gov.uk/info-for/open-data-users/api-documentation",
+      "endpoint_url": "https://api.tfl.gov.uk/Place/Type/JamCam",
+      "update_frequency": "Resource-dependent updates; camera image timestamps can differ from catalog retrieval.",
+      "license_notes": "TfL open-data terms and attribution apply, with third-party mapping exclusions. Register for appropriate API access and check request limits.",
+      "security_use": "London road-condition corroboration and transport-disruption context.",
+      "limitations": "Camera coverage is selective and imagery can be unavailable or old. API access is distinct from rights to every returned image or third-party asset.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://tfl.gov.uk/info-for/open-data-users/api-documentation",
+        "https://api.tfl.gov.uk/"
+      ]
+    },
+    {
+      "id": "ontario-511",
+      "name": "Ontario 511 cameras and traveler-information API",
+      "provider": "Ontario Ministry of Transportation",
+      "category": "roads",
+      "coverage": "Ontario provincial road network and listed transport facilities.",
+      "kind": "mixed",
+      "access": "mixed",
+      "formats": [
+        "JSON",
+        "XML",
+        "Camera imagery"
+      ],
+      "url": "https://511on.ca/",
+      "documentation_url": "https://511on.ca/developers/doc",
+      "endpoint_url": "https://511on.ca/api/v2/get/cameras?format=json&lang=en",
+      "update_frequency": "Resource-dependent operational updates; documentation limits calls to ten per 60 seconds.",
+      "license_notes": "Review Ontario open-government licensing, imagery conditions and developer access requirements before reuse; no authenticated integration performed.",
+      "security_use": "Highway closures, road conditions and camera corroboration for Ontario operations.",
+      "limitations": "Catalog positions do not establish camera field of view or current image availability. Honor throttling and inspect each resource timestamp.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://511on.ca/developers/doc",
+        "https://www.ontario.ca/page/open-government-licence-ontario"
+      ]
+    },
+    {
+      "id": "fintraffic-digitraffic",
+      "name": "Fintraffic Digitraffic road-weather cameras and data",
+      "provider": "Fintraffic / Digitraffic",
+      "category": "roads",
+      "coverage": "Finnish road monitoring stations and weather-camera presets.",
+      "kind": "mixed",
+      "access": "open",
+      "formats": [
+        "GeoJSON",
+        "JSON",
+        "JPEG",
+        "REST"
+      ],
+      "url": "https://www.digitraffic.fi/en/",
+      "documentation_url": "https://www.digitraffic.fi/en/road-traffic/",
+      "endpoint_url": "https://tie.digitraffic.fi/api/weathercam/v1/stations",
+      "update_frequency": "Camera and station-dependent periodic updates; inspect image capture times and station collection intervals.",
+      "license_notes": "CC BY 4.0 with Fintraffic attribution; follow API guidance, identification headers, caching and current rate restrictions.",
+      "security_use": "Road-weather and visibility context for travel and logistics in Finland.",
+      "limitations": "Weather-camera images are periodic stills, not continuous video. Inactive presets and collection gaps must remain visible.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.digitraffic.fi/en/road-traffic/",
+        "https://www.digitraffic.fi/en/terms-of-service/"
+      ]
+    },
+    {
+      "id": "drivebc-webcams",
+      "name": "DriveBC highway webcams",
+      "provider": "Government of British Columbia",
+      "category": "roads",
+      "coverage": "British Columbia highway camera locations.",
+      "kind": "mixed",
+      "access": "open",
+      "formats": [
+        "Web camera stills",
+        "JSON catalog"
+      ],
+      "url": "https://www.drivebc.ca/",
+      "documentation_url": "https://www.drivebc.ca/api/webcams/",
+      "endpoint_url": null,
+      "update_frequency": "Camera-specific image refresh; inspect image timestamps independently of catalog retrieval.",
+      "license_notes": "Confirm applicability of the Open Government Licence - British Columbia to the selected catalog and imagery; public retrieval alone does not settle reuse.",
+      "security_use": "Visual road-weather and route-condition corroboration in British Columbia.",
+      "limitations": "Public JSON camera metadata was retrieved. A supported API contract and image-reuse scope were not independently established; endpoint remains unset. Camera failures and delayed stills are possible.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "partial-review",
+      "evidence_urls": [
+        "https://www.drivebc.ca/api/webcams/",
+        "https://www2.gov.bc.ca/gov/content/data/open-data/open-government-licence-bc"
+      ]
+    },
+    {
+      "id": "calgary-traffic-cameras",
+      "name": "Calgary traffic camera inventory and images",
+      "provider": "City of Calgary",
+      "category": "roads",
+      "coverage": "Major Calgary routes and selected intersections.",
+      "kind": "mixed",
+      "access": "open",
+      "formats": [
+        "Socrata JSON",
+        "CSV",
+        "Camera stills"
+      ],
+      "url": "https://data.calgary.ca/Transportation-Transit/Traffic-Cameras/k7p9-kppz",
+      "documentation_url": "https://data.calgary.ca/api/views/k7p9-kppz.json",
+      "endpoint_url": "https://data.calgary.ca/resource/k7p9-kppz.json",
+      "update_frequency": "Inventory metadata states daily updates; images are described as up-to-the-minute, with per-camera availability limits.",
+      "license_notes": "Dataset metadata points to City of Calgary Open Data Terms; follow the linked license and attribution requirements rather than assuming public domain.",
+      "security_use": "Corroborate traffic and access conditions around Calgary operating areas.",
+      "limitations": "Provider states footage is not recorded and cameras may be disabled for maintenance or to protect people involved in collisions. A missing image is not evidence of a clear road.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-metadata-reviewed",
+      "evidence_urls": [
+        "https://data.calgary.ca/api/views/k7p9-kppz.json",
+        "https://data.calgary.ca/d/Open-Data-Terms/u45n-7awa"
+      ]
+    },
+    {
+      "id": "nsw-traffic-cameras",
+      "name": "Live Traffic NSW cameras",
+      "provider": "Transport for NSW",
+      "category": "roads",
+      "coverage": "New South Wales published traffic-camera sites.",
+      "kind": "mixed",
+      "access": "mixed",
+      "formats": [
+        "GeoJSON",
+        "Camera images"
+      ],
+      "url": "https://opendata.transport.nsw.gov.au/dataset/live-traffic-cameras",
+      "documentation_url": "https://opendata.transport.nsw.gov.au/dataset/live-traffic-cameras",
+      "endpoint_url": "https://data.livetraffic.com/cameras/traffic-cam.json",
+      "update_frequency": "Periodic camera images and catalog updates; inspect per-image timestamps.",
+      "license_notes": "Official catalog lists Creative Commons Attribution. Preserve the feed rights object and verify current portal/login and image-specific conditions.",
+      "security_use": "Road-condition corroboration and travel planning in New South Wales.",
+      "limitations": "Camera URLs, locations and view descriptions are supplied. Catalog access does not establish continuous video, accurate pose or incident detection; portal resources may require login.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://opendata.transport.nsw.gov.au/dataset/live-traffic-cameras",
+        "https://opendata.transport.nsw.gov.au/sites/default/files/2023-08/Live_Traffic_Data_Developer_Guide.pdf"
+      ]
+    },
+    {
+      "id": "tallinn-traffic-cameras",
+      "name": "Tallinn public intersection cameras",
+      "provider": "City of Tallinn",
+      "category": "roads",
+      "coverage": "Selected Tallinn intersections and corridors, Estonia.",
+      "kind": "dashboard",
+      "access": "open",
+      "formats": [
+        "Web camera views"
+      ],
+      "url": "https://ristmikud.tallinn.ee/",
+      "documentation_url": "https://ristmikud.tallinn.ee/",
+      "endpoint_url": null,
+      "update_frequency": "Camera-dependent public views; refresh cadence not established.",
+      "license_notes": "Public municipal viewing does not establish an open-data license, bulk collection or redistribution permission; confirm with the city.",
+      "security_use": "Corroborate visible road conditions at selected Tallinn intersections.",
+      "limitations": "Public site and camera categories reviewed; supported API, capture timing and reuse terms remain unresolved. The project uses curated camera locations and estimated poses.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "partial-review",
+      "evidence_urls": [
+        "https://ristmikud.tallinn.ee/"
+      ]
+    },
+    {
+      "id": "tarktee-road-cameras",
+      "name": "Tark Tee road cameras and travel conditions",
+      "provider": "Estonian Transport Administration / Transpordiamet",
+      "category": "roads",
+      "coverage": "Estonian road network and published road-weather camera locations.",
+      "kind": "mixed",
+      "access": "open",
+      "formats": [
+        "Web map",
+        "ArcGIS REST",
+        "JSON",
+        "GeoJSON"
+      ],
+      "url": "https://tarktee.transpordiamet.ee/",
+      "documentation_url": "https://tarktee.transpordiamet.ee/tarktee/rest/services/road_cameras/MapServer",
+      "endpoint_url": "https://tarktee.transpordiamet.ee/tarktee/rest/services/road_cameras/MapServer",
+      "update_frequency": "Resource-specific updates; verify camera capture and road-event times.",
+      "license_notes": "Public service metadata is available, but full image and data-reuse terms were not established. Confirm current conditions through Transpordiamet or its national access point.",
+      "security_use": "Road-weather, visibility and disruption context for travel in Estonia.",
+      "limitations": "The cataloged ArcGIS service exposes queryable camera geography. The project uses separate DATEX backend routes; their support contract and image access were not independently validated.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "partial-review",
+      "evidence_urls": [
+        "https://tarktee.transpordiamet.ee/tarktee/rest/services/road_cameras/MapServer",
+        "https://transpordiamet.ee/liiklusjuhtimiskeskus"
+      ]
+    },
+    {
+      "id": "warendorf-webcam",
+      "name": "Warendorf municipal market-square webcam",
+      "provider": "Stadt Warendorf",
+      "category": "roads",
+      "coverage": "A single market-square view in Warendorf, Germany.",
+      "kind": "dashboard",
+      "access": "open",
+      "formats": [
+        "Webcam still image"
+      ],
+      "url": "http://webcam.warendorf.de/",
+      "documentation_url": "https://www.warendorf.de/de/",
+      "endpoint_url": null,
+      "update_frequency": "Refresh timing not established in this review.",
+      "license_notes": "The municipal website links the webcam; independent image reuse and redistribution permission remain unverified.",
+      "security_use": "Limited visual context for the market square, subject to current provider access.",
+      "limitations": "Municipal webcam link verified, but camera health, timing, API support and image-reuse terms remain unresolved. The project uses an HTTP JPEG endpoint and an estimated pose.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "partial-review",
+      "evidence_urls": [
+        "https://www.warendorf.de/de/",
+        "http://webcam.warendorf.de/"
+      ]
+    },
+    {
+      "id": "mbta-realtime",
+      "name": "MBTA real-time transit feeds",
+      "provider": "MBTA / MassDOT",
+      "category": "roads",
+      "coverage": "Greater Boston, Massachusetts, by supported mode.",
+      "kind": "live-feed",
+      "access": "open",
+      "formats": [
+        "GTFS-Realtime Protocol Buffers",
+        "GTFS schedules"
+      ],
+      "url": "https://www.mbta.com/developers",
+      "documentation_url": "https://www.mbta.com/developers",
+      "endpoint_url": "https://cdn.mbta.com/realtime/VehiclePositions.pb",
+      "update_frequency": "Operational real-time reports; exact per-feed cadence not independently verified.",
+      "license_notes": "MassDOT developer license governs use and attribution. Full agreement retrieval was blocked; confirm current redistribution and trademark conditions.",
+      "security_use": "Public-transit service continuity, route disruption and last-mile access planning.",
+      "limitations": "The project uses the public VehiclePositions feed. Documentation and license retrieval were incomplete; API availability is not certified. Vehicle positions are reports with age and coverage gaps; interpolation is not an additional measurement. Join identifiers to the matching static GTFS version.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "partial-review",
+      "evidence_urls": [
+        "https://www.mbta.com/developers",
+        "https://cdn.mbta.com/sites/default/files/2023-08/mbta-massdot-develop-license-agreement.pdf"
+      ]
+    },
+    {
+      "id": "capmetro-realtime",
+      "name": "CapMetro real-time transit feeds",
+      "provider": "Capital Metropolitan Transportation Authority",
+      "category": "roads",
+      "coverage": "Austin and the CapMetro service area, Texas.",
+      "kind": "live-feed",
+      "access": "open",
+      "formats": [
+        "GTFS-Realtime Protocol Buffers",
+        "GTFS schedules"
+      ],
+      "url": "https://www.capmetro.org/developertools",
+      "documentation_url": "https://www.capmetro.org/developertools",
+      "endpoint_url": "https://data.texas.gov/download/eiei-9rpf/application%2Foctet-stream",
+      "update_frequency": "Operational vehicle, trip and service-alert updates; inspect message timestamps.",
+      "license_notes": "CapMetro grants limited, revocable use, reproduction and redistribution subject to its terms. Agency trademarks cannot be used in association with the data.",
+      "security_use": "Public-transit service continuity, route disruption and last-mile access planning.",
+      "limitations": "Texas open-data download is the vehicle-position resource used by the project; other resources cover trip updates and alerts. Vehicle positions are reports with age and coverage gaps; interpolation is not an additional measurement. Join identifiers to the matching static GTFS version.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.capmetro.org/developertools",
+        "https://data.texas.gov/Transportation/CapMetro-VehiclePositions/eiei-9rpf"
+      ]
+    },
+    {
+      "id": "metro-transit-realtime",
+      "name": "Metro Transit Twin Cities real-time feeds",
+      "provider": "Metro Transit / Metropolitan Council",
+      "category": "roads",
+      "coverage": "Minneapolis-Saint Paul service area, Minnesota.",
+      "kind": "live-feed",
+      "access": "open",
+      "formats": [
+        "GTFS-Realtime Protocol Buffers",
+        "GTFS schedules"
+      ],
+      "url": "https://svc.metrotransit.org/",
+      "documentation_url": "https://svc.metrotransit.org/",
+      "endpoint_url": "https://svc.metrotransit.org/mtgtfs/vehiclepositions.pb",
+      "update_frequency": "Provider documents GTFS-Realtime refresh every five seconds; individual observations can be older.",
+      "license_notes": "Public developer feeds are documented, but a complete reuse license for the real-time feed was not established. Do not transfer the companion static schedule dataset license automatically.",
+      "security_use": "Public-transit service continuity, route disruption and last-mile access planning.",
+      "limitations": "Includes documented vehicle, trip-update and service-alert feeds. Redistribution terms need confirmation. Vehicle positions are reports with age and coverage gaps; interpolation is not an additional measurement. Join identifiers to the matching static GTFS version.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "partial-review",
+      "evidence_urls": [
+        "https://svc.metrotransit.org/"
+      ]
+    },
+    {
+      "id": "hsl-realtime",
+      "name": "HSL Helsinki real-time transit feeds",
+      "provider": "Helsinki Region Transport",
+      "category": "roads",
+      "coverage": "Helsinki region, Finland.",
+      "kind": "live-feed",
+      "access": "open",
+      "formats": [
+        "GTFS-Realtime Protocol Buffers",
+        "GTFS schedules"
+      ],
+      "url": "https://www.hsl.fi/en/hsl/open-data",
+      "documentation_url": "https://hsldevcom.github.io/gtfs_rt/",
+      "endpoint_url": "https://realtime.hsl.fi/realtime/vehicle-positions/v2/hsl",
+      "update_frequency": "Feed-specific real-time updates; use the documented update table and message timestamps.",
+      "license_notes": "HSL transit data is CC BY 4.0; credit HSL and delivery time. OSM-derived geometry uses separate ODbL terms.",
+      "security_use": "Public-transit service continuity, route disruption and last-mile access planning.",
+      "limitations": "Vehicle positions, trip updates and alerts have separate endpoints. Other Digitransit services can have different access requirements. Vehicle positions are reports with age and coverage gaps; interpolation is not an additional measurement. Join identifiers to the matching static GTFS version.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://hsldevcom.github.io/gtfs_rt/",
+        "https://www.hsl.fi/en/hsl/open-data"
+      ]
+    },
+    {
+      "id": "ovapi-realtime",
+      "name": "OVapi Netherlands real-time transit feeds",
+      "provider": "Stichting OpenGeo / OVapi and contributing operators",
+      "category": "roads",
+      "coverage": "Netherlands; completeness varies by operator and mode.",
+      "kind": "live-feed",
+      "access": "open",
+      "formats": [
+        "GTFS-Realtime Protocol Buffers",
+        "GTFS schedules"
+      ],
+      "url": "https://gtfs.ovapi.nl/",
+      "documentation_url": "https://gtfs.ovapi.nl/README",
+      "endpoint_url": "https://gtfs.ovapi.nl/nl/vehiclePositions.pb",
+      "update_frequency": "Real-time operator reports; use conditional requests when polling faster than once per minute.",
+      "license_notes": "Provider README permits use with no SLA and prohibits representing or impersonating transit agencies. Identify clients and follow compression/caching guidance.",
+      "security_use": "Public-transit service continuity, route disruption and last-mile access planning.",
+      "limitations": "Integrated feeds inherit upstream coverage gaps and matching issues. Vehicle positions are reports with age and coverage gaps; interpolation is not an additional measurement. Join identifiers to the matching static GTFS version.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://gtfs.ovapi.nl/README"
+      ]
+    },
+    {
+      "id": "entur-realtime",
+      "name": "Entur Norway real-time transit feeds",
+      "provider": "Entur AS / Norwegian transport operators",
+      "category": "roads",
+      "coverage": "Included Norwegian public-transport operators.",
+      "kind": "live-feed",
+      "access": "open",
+      "formats": [
+        "GTFS-Realtime Protocol Buffers",
+        "GTFS schedules"
+      ],
+      "url": "https://developer.entur.no/",
+      "documentation_url": "https://developer.entur.org/pages-real-time-intro/",
+      "endpoint_url": "https://api.entur.io/realtime/v1/gtfs-rt/vehicle-positions",
+      "update_frequency": "Reviewed documentation describes GTFS-Realtime dataset refresh every 15 seconds.",
+      "license_notes": "Most open APIs use NLOD; identify the application with ET-Client-Name. Privileged APIs have separate authorization requirements.",
+      "security_use": "Public-transit service continuity, route disruption and last-mile access planning.",
+      "limitations": "Developer documentation is migrating to developer.entur.no; confirm the current feed and policy before integration. Vehicle positions are reports with age and coverage gaps; interpolation is not an additional measurement. Join identifiers to the matching static GTFS version.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://developer.entur.org/pages-real-time-intro/",
+        "https://developer.entur.org/pages-intro-authentication/"
+      ]
+    },
+    {
+      "id": "translink-seq-realtime",
+      "name": "Translink South East Queensland real-time transit",
+      "provider": "Translink / Queensland Government",
+      "category": "roads",
+      "coverage": "South East Queensland, Australia.",
+      "kind": "live-feed",
+      "access": "open",
+      "formats": [
+        "GTFS-Realtime Protocol Buffers",
+        "GTFS schedules"
+      ],
+      "url": "https://translink.com.au/about-translink/open-data",
+      "documentation_url": "https://translink.com.au/about-translink/open-data",
+      "endpoint_url": "https://gtfsrt.api.translink.com.au/api/realtime/seq/VehiclePositions",
+      "update_frequency": "Operational GTFS-Realtime updates; timestamps and reporting vary by mode.",
+      "license_notes": "CC BY 4.0; provider states authentication is not required for these feeds.",
+      "security_use": "Public-transit service continuity, route disruption and last-mile access planning.",
+      "limitations": "SEQ vehicle positions, trip updates and alerts are separate resources. Do not infer coverage of all Queensland services. Vehicle positions are reports with age and coverage gaps; interpolation is not an additional measurement. Join identifiers to the matching static GTFS version.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://translink.com.au/about-translink/open-data"
+      ]
+    },
+    {
+      "id": "gbfs-bikeshare",
+      "name": "GBFS shared-mobility feed directory and station availability",
+      "provider": "Individual mobility operators / MobilityData GBFS directory",
+      "category": "roads",
+      "coverage": "Global directory; audited project configures 32 U.S. systems including Citi Bike, Divvy, Capital Bikeshare, Bay Wheels, BCycle and PBSC-hosted operators.",
+      "kind": "catalog",
+      "access": "open",
+      "formats": [
+        "GBFS JSON",
+        "CSV system directory"
+      ],
+      "url": "https://gbfs.org/",
+      "documentation_url": "https://gbfs.org/documentation/",
+      "endpoint_url": null,
+      "update_frequency": "Operator-specific station_status reports with last_updated and TTL; directory changes are separate.",
+      "license_notes": "GBFS is a specification, not a common license for every operator. Read each feed system_information license URL or license identifier and terms; commercial reuse is not presumed.",
+      "security_use": "Discover public station availability for alternative transport and last-mile continuity.",
+      "limitations": "Directory entry and schema compatibility do not establish active service, feed health or individual rider movement. All 32 configured systems were inventoried, not individually integration-tested; see the project-source audit.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "partial-review",
+      "evidence_urls": [
+        "https://gbfs.org/documentation/",
+        "https://github.com/MobilityData/gbfs/blob/master/systems.csv"
+      ]
+    },
+    {
+      "id": "radio-browser",
+      "name": "Radio Browser station directory",
+      "provider": "Radio Browser community / individual broadcasters",
+      "category": "government",
+      "coverage": "Worldwide submitted internet-radio stations; geolocation and coverage are uneven.",
+      "kind": "catalog",
+      "access": "open",
+      "formats": [
+        "JSON",
+        "REST",
+        "Broadcaster stream links"
+      ],
+      "url": "https://www.radio-browser.info/",
+      "documentation_url": "https://api.radio-browser.info/",
+      "endpoint_url": null,
+      "update_frequency": "Community directory and automated stream checks; broadcaster programming is independent.",
+      "license_notes": "API documentation permits public use and mirroring. Verify the current directory license separately; each broadcaster controls rights to its audio.",
+      "security_use": "Discover local broadcasters for human review and corroboration of public reporting.",
+      "limitations": "Station coordinates and tags do not establish a current local-news program or verified incident. Discover an API mirror per the docs; directory access grants no recording or redistribution rights to broadcasts.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://api.radio-browser.info/"
+      ]
+    },
+    {
+      "id": "google-news-rss",
+      "name": "Google News locality and topic RSS discovery",
+      "provider": "Google News / linked publishers",
+      "category": "events",
+      "coverage": "International indexed news; language, outlet selection and place matching vary.",
+      "kind": "mixed",
+      "access": "open",
+      "formats": [
+        "RSS",
+        "Web search"
+      ],
+      "url": "https://news.google.com/",
+      "documentation_url": "https://www.google.com/intl/en_us/terms_google_news.html",
+      "endpoint_url": null,
+      "update_frequency": "Indexing-dependent; article publication and event occurrence can differ substantially.",
+      "license_notes": "Reviewed Google News terms restrict use to personal, noncommercial purposes; publishers retain rights to their articles. Confirm permitted use rather than treating RSS access as redistribution permission.",
+      "security_use": "Discover locality-matched reporting for manual verification and event corroboration.",
+      "limitations": "The project constructs RSS search URLs, but a supported public API contract was not established. Matches are news references, not validated incident locations or severity assessments.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "partial-review",
+      "evidence_urls": [
+        "https://www.google.com/intl/en_us/terms_google_news.html"
+      ]
+    },
+    {
+      "id": "google-maps-platform",
+      "name": "Google Maps imagery, 3D tiles and place context",
+      "provider": "Google Maps Platform",
+      "category": "context",
+      "coverage": "Global mapping with product-dependent 3D, imagery and Places coverage.",
+      "kind": "reference",
+      "access": "commercial",
+      "formats": [
+        "3D Tiles",
+        "Raster imagery",
+        "JSON APIs"
+      ],
+      "url": "https://developers.google.com/maps",
+      "documentation_url": "https://developers.google.com/maps/documentation/tile/3d-tiles",
+      "endpoint_url": "https://tile.googleapis.com/v1/3dtiles/root.json",
+      "update_frequency": "Provider-managed imagery and map updates; capture dates vary by location and product.",
+      "license_notes": "API key, billing and product-specific terms apply. Preserve attribution and review storage, caching, redistribution and derived-data restrictions; documentation license does not license map content.",
+      "security_use": "Visual geographic context, geocoding and place discovery around authorized operating areas.",
+      "limitations": "Photorealistic 3D is a textured mesh, not live satellite video. Geocoding, Places and Street View are separate products; appearance or a place-search match does not verify present activity.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://developers.google.com/maps/documentation/tile/3d-tiles",
+        "https://developers.google.com/maps/documentation/geocoding/overview",
+        "https://cloud.google.com/maps-platform/terms"
+      ]
+    },
+    {
+      "id": "esri-world-imagery",
+      "name": "Esri World Imagery basemap",
+      "provider": "Esri and credited imagery contributors",
+      "category": "context",
+      "coverage": "Worldwide imagery mosaic; resolution and acquisition age vary.",
+      "kind": "reference",
+      "access": "mixed",
+      "formats": [
+        "ArcGIS REST MapServer",
+        "Raster tiles"
+      ],
+      "url": "https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9",
+      "documentation_url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "endpoint_url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "update_frequency": "Mosaic updates by region; imagery acquisition date is not the tile request time.",
+      "license_notes": "Esri and contributor terms apply with required source credit. Public access to the classic service does not grant unlimited commercial usage, bulk downloads or redistribution rights.",
+      "security_use": "Imagery context for facilities, routes and geographic interpretation.",
+      "limitations": "Static aerial/satellite imagery may be old and has mixed spatial resolution. Service metadata was inspected; plan entitlements and offline-use rights were not validated.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-metadata-reviewed",
+      "evidence_urls": [
+        "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "https://www.esri.com/en-us/legal/terms/full-master-agreement"
+      ]
+    },
+    {
+      "id": "cesium-ion-terrain",
+      "name": "Cesium ion global terrain and hosted content",
+      "provider": "Cesium / credited source providers",
+      "category": "context",
+      "coverage": "Global terrain with source-dependent detail; hosted imagery and 3D assets have separate coverage.",
+      "kind": "reference",
+      "access": "mixed",
+      "formats": [
+        "Quantized-mesh terrain",
+        "3D Tiles"
+      ],
+      "url": "https://cesium.com/platform/cesium-ion/content/cesium-world-terrain/",
+      "documentation_url": "https://cesium.com/platform/cesium-ion/content/cesium-world-terrain/",
+      "endpoint_url": null,
+      "update_frequency": "Provider-curated terrain releases; not a live terrain-change feed.",
+      "license_notes": "ion account/token and plan terms govern access; source credits and third-party asset terms apply. Verify commercial eligibility and quotas independently.",
+      "security_use": "Terrain context, elevation-aware display and preliminary line-of-sight exploration.",
+      "limitations": "Terrain meshes are generalized representations, not a survey or guaranteed clearance model. ion hosting does not transfer rights to Google or other third-party content.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://cesium.com/platform/cesium-ion/content/cesium-world-terrain/"
+      ]
+    },
+    {
+      "id": "reearth-terrain",
+      "name": "Re:Earth Terrain elevation and mesh service",
+      "provider": "Eukarya / Re:Earth / Mapterhorn and credited elevation providers",
+      "category": "context",
+      "coverage": "Global terrain product with heterogeneous source resolution.",
+      "kind": "reference",
+      "access": "open",
+      "formats": [
+        "Quantized-mesh terrain",
+        "Terrain-RGB",
+        "Terrarium"
+      ],
+      "url": "https://terrain.reearth.land/",
+      "documentation_url": "https://terrain.reearth.land/",
+      "endpoint_url": "https://terrain.reearth.land/cesium-mesh/ellipsoid",
+      "update_frequency": "Source/product release dependent; no live elevation-update promise established.",
+      "license_notes": "Mapterhorn DEM: CC BY 4.0; EGM2008 geoid: public domain; optional Protomaps/OSM water mask: ODbL. Retain required credits. Hosted service is keyless and best-effort, with possible rate limits and no SLA.",
+      "security_use": "Elevation context and terrain placement in situational-awareness maps.",
+      "limitations": "The documented endpoint supplies ellipsoidal heights; sea-level and geoid products differ. Terrain is generalized, not a survey or clearance guarantee. The project also calls /heights.json, whose separate API contract was not established here.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://terrain.reearth.land/"
+      ]
+    },
+    {
+      "id": "photon-geocoding",
+      "name": "Photon OpenStreetMap geocoding",
+      "provider": "komoot / Photon / OpenStreetMap contributors",
+      "category": "context",
+      "coverage": "Global OSM-derived place search and reverse geocoding.",
+      "kind": "reference",
+      "access": "open",
+      "formats": [
+        "GeoJSON",
+        "REST"
+      ],
+      "url": "https://photon.komoot.io/",
+      "documentation_url": "https://photon.komoot.io/",
+      "endpoint_url": "https://photon.komoot.io/api/",
+      "update_frequency": "OSM-derived index updates; search results are geographic context rather than events.",
+      "license_notes": "Underlying OSM data is ODbL. Public instance is fair-use, can throttle extensive use, and offers no availability guarantee; self-host or arrange capacity for sustained workloads.",
+      "security_use": "Resolve place mentions and label operating-area coordinates.",
+      "limitations": "Ambiguous names and incomplete OSM addresses require disambiguation. Public search access is not an unrestricted bulk-geocoding entitlement.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://photon.komoot.io/"
+      ]
+    },
+    {
+      "id": "nominatim-geocoding",
+      "name": "Nominatim OpenStreetMap geocoding",
+      "provider": "OpenStreetMap Foundation / Nominatim",
+      "category": "context",
+      "coverage": "Global OSM-derived addresses and named places; completeness varies.",
+      "kind": "reference",
+      "access": "open",
+      "formats": [
+        "JSON",
+        "GeoJSON",
+        "XML"
+      ],
+      "url": "https://nominatim.org/",
+      "documentation_url": "https://operations.osmfoundation.org/policies/nominatim/",
+      "endpoint_url": "https://nominatim.openstreetmap.org/search",
+      "update_frequency": "OSM-derived index updates; inspect returned geometry and place identity.",
+      "license_notes": "ODbL data attribution and applicable share-alike terms. Public service policy requires identified clients, caching and at most one request/second across the application; bulk/systematic queries and autocomplete are restricted.",
+      "security_use": "Occasional place resolution and reverse-geocoded location context within permitted use.",
+      "limitations": "Read the linked usage policy before choosing the hosted endpoint. Public capacity is limited; this is not a default backend for generic no-code geocoding or recurring bulk enrichment. Self-hosted or contracted services have separate policies.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://operations.osmfoundation.org/policies/nominatim/"
+      ]
+    },
+    {
+      "id": "fossgis-osrm",
+      "name": "FOSSGIS OpenStreetMap routing service",
+      "provider": "FOSSGIS e.V. / OSRM / OpenStreetMap contributors",
+      "category": "roads",
+      "coverage": "OSM-covered road, cycling and walking networks; profile and regional completeness vary.",
+      "kind": "reference",
+      "access": "open",
+      "formats": [
+        "JSON routes",
+        "GeoJSON",
+        "Encoded polyline"
+      ],
+      "url": "https://routing.openstreetmap.de/",
+      "documentation_url": "https://routing.openstreetmap.de/about.html",
+      "endpoint_url": null,
+      "update_frequency": "Routes computed on request from processed map data; not a live road-closure service.",
+      "license_notes": "ODbL-derived data plus FOSSGIS hosted-service policy. Attribution, a fix-the-map link and identified clients are required; maximum one request/second, no scraping or heavy use, and commercial restrictions apply.",
+      "security_use": "Preliminary route alternatives for travel and site-access planning.",
+      "limitations": "Routing does not prove current passability, legal access or emergency suitability. Use provider documentation for current car/bike/foot endpoints and arrange self-hosting or licensed capacity for sustained use.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://routing.openstreetmap.de/about.html",
+        "https://www.fossgis.de/arbeitsgruppen/osm-server/nutzungsbedingungen/"
+      ]
+    },
+    {
+      "id": "telegeography-cables",
+      "name": "TeleGeography Submarine Cable Map",
+      "provider": "TeleGeography",
+      "category": "connectivity",
+      "coverage": "Global mapped submarine cable systems and landing points.",
+      "kind": "reference",
+      "access": "mixed",
+      "formats": [
+        "Web map",
+        "Licensed GIS data"
+      ],
+      "url": "https://www.submarinecablemap.com/",
+      "documentation_url": "https://www.submarinecablemap.com/",
+      "endpoint_url": null,
+      "update_frequency": "Editorial updates; bundled project extracts are dated snapshots.",
+      "license_notes": "The audited project labels its bundled extract CC BY-NC-SA 3.0. Current publisher licensing and commercial structured-data access must be confirmed independently; do not assume the code license covers cable data.",
+      "security_use": "Connectivity dependency and geographic cable-landing context.",
+      "limitations": "Map lines are schematic context, not precise engineering routes or cable-outage observations. Publisher site rendered insufficient text for a full license review.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "partial-review",
+      "evidence_urls": [
+        "https://www.submarinecablemap.com/",
+        "https://www2.telegeography.com/submarine-cable-map"
+      ]
+    },
+    {
+      "id": "natural-earth",
+      "name": "Natural Earth physical and cultural map data",
+      "provider": "Natural Earth contributors",
+      "category": "context",
+      "coverage": "Global small-scale cartography at 1:10m, 1:50m and 1:110m.",
+      "kind": "reference",
+      "access": "open",
+      "formats": [
+        "Shapefile",
+        "GeoPackage",
+        "Raster"
+      ],
+      "url": "https://www.naturalearthdata.com/",
+      "documentation_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "endpoint_url": null,
+      "update_frequency": "Versioned releases; review the source release and processing date.",
+      "license_notes": "Provider places raster and vector data in the public domain; attribution is appreciated but not required.",
+      "security_use": "Regional names, land/marine boundaries and general geographic context.",
+      "limitations": "Cartographic generalization is unsuitable for parcel, legal boundary or facility-scale decisions. Project copies are simplified snapshots, not live boundary observations.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.naturalearthdata.com/about/terms-of-use/",
+        "https://www.naturalearthdata.com/downloads/"
+      ]
+    },
+    {
+      "id": "datasf-analysis-neighborhoods",
+      "name": "DataSF Analysis Neighborhoods",
+      "provider": "City and County of San Francisco / DataSF",
+      "category": "context",
+      "coverage": "San Francisco analysis-neighborhood polygons.",
+      "kind": "reference",
+      "access": "open",
+      "formats": [
+        "Socrata",
+        "GeoJSON",
+        "GIS download"
+      ],
+      "url": "https://data.sf.gov/Geographic-Locations-and-Boundaries/Analysis-Neighborhoods/j2bu-swwd",
+      "documentation_url": "https://data.sf.gov/api/views/j2bu-swwd.json",
+      "endpoint_url": null,
+      "update_frequency": "Administrative dataset revisions; no live update cadence established.",
+      "license_notes": "The upstream project records PDDL 1.0 for its source snapshot; current provider metadata could not be independently retrieved due to TLS/retrieval errors. Confirm before redistribution.",
+      "security_use": "Consistent neighborhood aggregation and locality labels for San Francisco reporting.",
+      "limitations": "Analysis areas are not proof of colloquial, legal or operational boundaries. Preserve source version; project polygons were simplified. Endpoint is not promoted until current documentation is verified.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "partial-review",
+      "evidence_urls": [
+        "https://data.sf.gov/api/views/j2bu-swwd.json"
+      ]
+    },
+    {
+      "id": "open-infrastructure-map",
+      "name": "Open Infrastructure Map",
+      "provider": "Open Infrastructure Map / OpenStreetMap contributors",
+      "category": "context",
+      "coverage": "Global community-mapped infrastructure; completeness varies substantially.",
+      "kind": "reference",
+      "access": "open",
+      "formats": [
+        "Web map",
+        "OSM extracts",
+        "GeoJSON via Overpass"
+      ],
+      "url": "https://openinframap.org/",
+      "documentation_url": "https://openinframap.org/about",
+      "endpoint_url": null,
+      "update_frequency": "Map processing of community edits; inspect extract age and underlying OSM features.",
+      "license_notes": "Underlying OSM data is ODbL; additional analysis and regional layers have their own credits. Commercial GIS exports are offered separately by Infrageomatics.",
+      "security_use": "Discover mapped power, communications and other infrastructure for further verification.",
+      "limitations": "No guaranteed facility completeness, operational status, capacity or outage detection. Provider recommends Overpass for small extracts and raw OSM processing for large ones.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://openinframap.org/about"
+      ]
+    },
+    {
+      "id": "vantor-open-data",
+      "name": "Vantor Open Data Program disaster imagery",
+      "provider": "Vantor",
+      "category": "hazards",
+      "coverage": "Selected major disaster activations worldwide; event footprints and acquisition dates vary.",
+      "kind": "catalog",
+      "access": "open",
+      "formats": [
+        "Satellite imagery",
+        "GeoTIFF",
+        "Event downloads"
+      ],
+      "url": "https://vantor.com/company/open-data-program/",
+      "documentation_url": "https://vantor.com/company/open-data-program/",
+      "endpoint_url": null,
+      "update_frequency": "Event-triggered selected before/after image releases; not continuous global observation.",
+      "license_notes": "Provider identifies Creative Commons BY-NC 4.0 for Open Data Program imagery. Preserve attribution and noncommercial restrictions; confirm each activation and obtain separate permission for incompatible uses.",
+      "security_use": "Compare disaster-area imagery for situational awareness and humanitarian impact assessment within permitted use.",
+      "limitations": "Clouds, acquisition timing and selective activation constrain coverage. The project bundles two dated Nepal-event image crops; those are not a live imagery feed. Visual change alone does not establish damage cause or severity.",
+      "reviewed_on": "2026-09-22",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://vantor.com/company/open-data-program/"
       ]
     }
   ]
