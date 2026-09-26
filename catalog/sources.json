@@ -2552,6 +2552,33 @@
         "https://www.eia.gov/electricity/data/eia923/",
         "https://www.eia.gov/about/copyrights_reuse.php"
       ]
+    },
+    {
+      "id": "nws-forecast-zones",
+      "name": "NWS public forecast-zone boundaries",
+      "provider": "NOAA / National Weather Service",
+      "category": "weather",
+      "coverage": "NWS public forecast zones in supported U.S. jurisdictions; this product does not cover every alert-zone type.",
+      "kind": "periodic",
+      "access": "open",
+      "formats": [
+        "Zipped polygon Shapefile",
+        "Metadata and change history"
+      ],
+      "url": "https://www.weather.gov/gis/PublicZones",
+      "documentation_url": "https://www.weather.gov/gis/PublicZones",
+      "endpoint_url": null,
+      "update_frequency": "Releases follow zone changes and carry effective dates; select the boundary version applicable to the alert time.",
+      "license_notes": "NWS information is public domain unless otherwise noted. Preserve attribution and product metadata; identify transformed geometry and do not present it as an unmodified official product or imply endorsement.",
+      "security_use": "Provide reference polygons for supported forecast-zone alerts without supplied geometry, enabling explicitly labeled area-level exposure screening.",
+      "limitations": "Public forecast zones can be county subsets. Match the identifier namespace and effective date; fire, county and marine references require appropriate products. A resolved zone is an alert-area reference, not observed hazard extent or confirmed damage. Unmatched or ambiguous references must remain geometry gaps.",
+      "reviewed_on": "2026-09-26",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.weather.gov/gis/PublicZones",
+        "https://www.weather.gov/documentation/services-web-api",
+        "https://www.weather.gov/disclaimer"
+      ]
     }
   ]
 }

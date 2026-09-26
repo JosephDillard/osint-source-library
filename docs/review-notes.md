@@ -1,5 +1,18 @@
 # Source reviews
 
+## Public datasets and ETL priorities — 2026-09-26
+
+The [public-dataset selection](public-dataset-etl.md) adds nine records from the Awesome Public Datasets review and directly related publisher products, taking the catalog from 88 to 97 sources across the same 16 categories:
+
+- Geographic reference: Geofabrik regional OSM extracts, Census TIGER/Line, GeoNames and OpenAddresses.
+- Population context: Census ACS five-year estimates and WorldPop.
+- Power-system context: EIA-860 inventory and EIA-923 generation/fuel statistics.
+- Weather reference: NWS public forecast-zone boundaries.
+
+Eight entries have provider documentation reviewed; OpenAddresses remains `partial-review` because current batch-download access and sample exports were not verified. The ACS record notes the documented API-key requirement, and WorldPop identifies the reviewed R2025A product as alpha. EIA data is periodic context, not live outage evidence. The guidance explains proposed ETL paths, join/geometry checks, provenance fields and why HIFLD Open, GADM and historical OpenFlights routes were deferred.
+
+Existing source records, review dates, city profiles and HTTP snapshots were preserved. Catalog validation, generated-view checks and offline tests assess repository consistency, not provider reliability or completed ETL. No authenticated queries, bulk datasets, collectors or operational integration tests were added.
+
 ## God's Eye View source expansion — 2026-09-22
 
 The [source audit](gods-eye-view-source-audit.md) maps the project at commit `0dbde1e` to this library. Added 41 sources, taking the catalog from 47 to 88 across 16 categories. OpenSky and OpenStreetMap records were updated; other existing review dates were preserved.

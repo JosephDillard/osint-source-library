@@ -49,6 +49,8 @@ For an integration pilot:
 
 Poll at documented rates and use supported incremental retrieval. Evaluate corrections, late reports, duplicate alerts and service failures as well as the first report. No collector or scheduled ETL job is installed by this repository.
 
+For file-based GIS and statistical enrichment, use the [public-dataset ETL guide](public-dataset-etl.md). It covers NWS zones, regional OSM extracts, Census boundaries and estimates, gazetteers, power inventory and population grids, with source-specific joins and acceptance checks. Keep these reference datasets separate from event observations.
+
 ## Major cybersecurity events
 
 Include a cybersecurity event when credible reporting establishes substantial consequences, such as:

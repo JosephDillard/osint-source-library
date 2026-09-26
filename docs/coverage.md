@@ -6,15 +6,15 @@ The collection is US-focused with global hazard, event, aviation, maritime, conn
 | --- | --- | --- |
 | Crime | National statistics, Chicago and NYC reports; police/public-safety references for 150 places | Dedicated local open data, reporting lag and permitted call-for-service feeds |
 | Public events and protests | GDELT, ACLED, NYC permits | City permits, official closures and local corroboration; no exhaustive protest feed is assumed |
-| Weather and hazards | Weather alerts, hurricanes, flooding, fires, earthquakes, air quality; emergency/alert references for 150 places | Confirm local alert enrollment and evacuation-notice coverage |
+| Weather and hazards | Weather alerts, NWS public forecast zones, hurricanes, flooding, fires, earthquakes, air quality; emergency/alert references for 150 places | Implement version-aware zone resolution, retain unsupported zone gaps and confirm local evacuation-notice coverage |
 | Air traffic | OpenSky, adsb.lol, aircraft metadata, FAA status and aviation weather | Receiver coverage, actual position age, applicable operational licenses and local airport notices |
 | Sea traffic | Historical AIS, AISStream, navigational warnings and a commercial live AIS option | Reception gaps, permitted retention, live data agreement and port-specific notices |
 | Roads | State/province APIs, traffic cameras, TomTom flow, seven transit operators and GBFS discovery | Camera capture times, current service status, per-operator terms and routes outside covered networks |
-| Government | OpenFEMA, Federal Register, Data.gov, ReliefWeb | Local government bulletins, international travel and public-health advisories |
-| Power | Historical outage data, aggregate option and electric-provider references across 150 places | Verify serving utility by facility address, regional selections and usable restoration notices |
+| Government | OpenFEMA, Federal Register, Data.gov, ReliefWeb and Census ACS estimates | Local bulletins, public-health advisories, compatible statistical geography and ACS API credentials or download selection |
+| Power | Historical outage data, aggregate option, EIA-860/923 inventory and statistics, and electric-provider references across 150 places | Verify serving utility by facility address and usable restoration notices; plant statistics do not establish live outage status or site supply |
 | Water | DC Water outage example, USGS/EPA context and water-service references across 150 places | Replace general department/quality pages with direct outage and boil-water notices where available |
 | Connectivity | IODA and Cloudflare Radar | Serving-carrier status and direct, authorized service-health checks |
-| Geographic context | OSM/Overpass, Overture, HDX, imagery, terrain, routing and geographic reference datasets | Acquisition age, vertical datum, authoritative local boundaries and verified facility locations |
+| Geographic context | OSM/Overpass, Geofabrik extracts, TIGER/Line, GeoNames, OpenAddresses, WorldPop, Overture, HDX, imagery, terrain and routing | Snapshot/vintage compatibility, geometry quality, modeled-population uncertainty, OpenAddresses access and verified facility locations |
 | Satellite orbits and launches | CelesTrak orbital elements and Launch Library 2 metadata | Element age, propagation error, official launch restrictions and measured telemetry |
 | Critical events and risk intelligence | Factal, Samdesk, Dataminr, Seerist, AlertMedia and Everbridge | Compare event quality, geographic precision, duplicate sources, feed entitlement and actual delivery latency |
 | Travel risk and assistance | Riskline and Crisis24 Horizon | Destination coverage, traveler exposure, assistance scope and supported outbound data access |
@@ -22,6 +22,8 @@ The collection is US-focused with global hazard, event, aviation, maritime, conn
 | Major cybersecurity events | Broad event/news services and connectivity indicators | Corroborate consequential breaches and operational impact with affected organizations or authorities; an internet outage alone does not establish a cyberattack |
 
 ## Local coverage and remaining gaps
+
+The [public-dataset ETL guide](public-dataset-etl.md) prioritizes NWS zones, regional OSM extracts and Census boundaries/statistics for a bounded exposure pilot. These are source records and proposed ingestion paths; reference layers and modeled populations are not live incidents or confirmed impacts.
 
 The state pages use Census Vintage 2025 incorporated-place rankings, with 2020 Census CDPs for Hawaii. See the [selection method and review limits](city-methodology.md). All four source categories are present for every profile, but dedicated live feeds, complete utility territories and authenticated access are not established.
 

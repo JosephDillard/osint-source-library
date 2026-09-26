@@ -4,7 +4,7 @@
 
 Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](LICENSE-CONTENT). [Scope and attribution](LICENSING.md). Provider material retains its own terms.
 
-**96 sources across 16 categories.** Catalog review: 2026-09-26.
+**97 sources across 16 categories.** Catalog review: 2026-09-26.
 
 Browse a category for source cards with documentation, access, limitations and evidence.
 For local agencies and utilities, browse the [three largest places in every state](CITIES.md).
@@ -13,7 +13,7 @@ Review status describes evidence inspected, not a successful integration test.
 
 | Category | Sources |
 | --- | ---: |
-| [Weather, flooding & air quality](sources/weather.md) | 5 |
+| [Weather, flooding & air quality](sources/weather.md) | 6 |
 | [Natural hazards & disasters](sources/hazards.md) | 4 |
 | [Crime & public safety](sources/crime.md) | 4 |
 | [Public events, protests & conflict](sources/events.md) | 4 |
@@ -38,6 +38,7 @@ Review status describes evidence inspected, not a successful integration test.
 | [National Hurricane Center GIS products](sources/weather.md#nhc-gis) | Weather, flooding & air quality | mixed | open |
 | [National Water Prediction Service](sources/weather.md#nwps) | Weather, flooding & air quality | live-feed | open |
 | [NWS forecasts, observations and alerts](sources/weather.md#nws-alerts) | Weather, flooding & air quality | live-feed | open |
+| [NWS public forecast-zone boundaries](sources/weather.md#nws-forecast-zones) | Weather, flooding & air quality | periodic | open |
 | [Open-Meteo weather models and current conditions](sources/weather.md#open-meteo) | Weather, flooding & air quality | periodic | mixed |
 | [FIRMS active fire and thermal anomalies](sources/hazards.md#nasa-firms) | Natural hazards & disasters | live-feed | registration |
 | [GDACS disaster alerts and geospatial services](sources/hazards.md#gdacs) | Natural hazards & disasters | live-feed | open |

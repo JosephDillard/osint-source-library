@@ -79,6 +79,24 @@ Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC B
 - **Evidence:** [Provider reference 1](https://www.weather.gov/documentation/services-web-api)
 - **Catalog ID:** `nws-alerts`
 
+<a id="nws-forecast-zones"></a>
+
+## NWS public forecast-zone boundaries
+
+**[Visit source](https://www.weather.gov/gis/PublicZones)** | [Provider documentation](https://www.weather.gov/gis/PublicZones)
+
+- **Provider:** NOAA / National Weather Service
+- **Coverage:** NWS public forecast zones in supported U.S. jurisdictions; this product does not cover every alert-zone type.
+- **Type / access:** `periodic` / `open`
+- **Formats:** Zipped polygon Shapefile, Metadata and change history
+- **Updates:** Releases follow zone changes and carry effective dates; select the boundary version applicable to the alert time.
+- **Security use:** Provide reference polygons for supported forecast-zone alerts without supplied geometry, enabling explicitly labeled area-level exposure screening.
+- **License / terms:** NWS information is public domain unless otherwise noted. Preserve attribution and product metadata; identify transformed geometry and do not present it as an unmodified official product or imply endorsement.
+- **Limitations:** Public forecast zones can be county subsets. Match the identifier namespace and effective date; fire, county and marine references require appropriate products. A resolved zone is an alert-area reference, not observed hazard extent or confirmed damage. Unmatched or ambiguous references must remain geometry gaps.
+- **Review:** 2026-09-26 — `provider-documentation-reviewed`
+- **Evidence:** [Provider reference 1](https://www.weather.gov/gis/PublicZones) · [Provider reference 2](https://www.weather.gov/documentation/services-web-api) · [Provider reference 3](https://www.weather.gov/disclaimer)
+- **Catalog ID:** `nws-forecast-zones`
+
 <a id="open-meteo"></a>
 
 ## Open-Meteo weather models and current conditions

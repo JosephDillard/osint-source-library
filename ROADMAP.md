@@ -8,6 +8,7 @@
 - [x] Local search, validation and deterministic Markdown generation.
 - [x] Contribution guidance and CI catalog checks.
 - [x] Add source packs for three largest places in each of the 50 states, with the Hawaii CDP exception documented.
+- [x] Catalog selected public GIS, population and power datasets with [proposed ETL paths](docs/public-dataset-etl.md).
 - [ ] Extend city profiles with dedicated fire/EMS, public-health, transit, event-permit and closure sources.
 
 ## Phase 2 — Evaluate and prioritize
@@ -21,6 +22,8 @@
 
 ## Phase 3 — Collect selected feeds
 
+- Pilot versioned NWS forecast zones, regional OSM extracts and compatible Census geography/statistics using the [documented acceptance criteria](docs/public-dataset-etl.md#first-pilot-and-acceptance-criteria).
+- Evaluate EIA inventory/generation joins next; keep periodic infrastructure context separate from outage observations.
 - Implement small, documented connectors with timeouts, backoff and source attribution.
 - Track source health and distinguish no events from collection failure.
 - Retain event time, retrieval time, revisions and geolocation uncertainty.
