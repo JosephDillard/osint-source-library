@@ -6,6 +6,24 @@
 
 Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](../LICENSE-CONTENT). [Scope and attribution](../LICENSING.md). Provider material retains its own terms.
 
+<a id="census-acs"></a>
+
+## Census American Community Survey five-year estimates
+
+**[Visit source](https://www.census.gov/data/developers/data-sets/acs-5year.html)** | [Provider documentation](https://www.census.gov/data/developers/data-sets/acs-5year.html)
+
+- **Provider:** U.S. Census Bureau
+- **Coverage:** United States and Puerto Rico; geography availability depends on the table, with detailed estimates down to block groups.
+- **Type / access:** `periodic` / `mixed`
+- **Formats:** JSON API, Downloadable statistical tables
+- **Updates:** Annual releases of estimates spanning five years; reference period and publication date differ.
+- **Security use:** Join population, housing and selected demographic estimates to compatible Census boundaries for community-level preparedness and exposure context.
+- **License / terms:** Public statistical data subject to Census policies. API use requires the provider's non-endorsement notice and prohibits respondent identification. Current documentation requires an API key for data queries; download access is separate.
+- **Limitations:** Estimates are not current occupancy or individual attributes. Retain margins of error and annotations, handle unavailable-value codes, match geographic vintages and avoid treating overlapping five-year releases as independent periods. No authenticated API query was tested.
+- **Review:** 2026-09-26 — `provider-documentation-reviewed`
+- **Evidence:** [Provider reference 1](https://www.census.gov/data/developers/data-sets/acs-5year.html) · [Provider reference 2](https://www.census.gov/data/developers/about/terms-of-service.html)
+- **Catalog ID:** `census-acs`
+
 <a id="data-gov"></a>
 
 ## Data.gov catalog

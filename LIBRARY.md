@@ -4,7 +4,7 @@
 
 Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](LICENSE-CONTENT). [Scope and attribution](LICENSING.md). Provider material retains its own terms.
 
-**92 sources across 16 categories.** Catalog review: 2026-09-26.
+**94 sources across 16 categories.** Catalog review: 2026-09-26.
 
 Browse a category for source cards with documentation, access, limitations and evidence.
 For local agencies and utilities, browse the [three largest places in every state](CITIES.md).
@@ -20,11 +20,11 @@ Review status describes evidence inspected, not a successful integration test.
 | [Air traffic & aviation](sources/aviation.md) | 5 |
 | [Sea traffic & maritime safety](sources/maritime.md) | 4 |
 | [Road traffic & transport](sources/roads.md) | 25 |
-| [Government & humanitarian information](sources/government.md) | 5 |
+| [Government & humanitarian information](sources/government.md) | 6 |
 | [Power outages & grid resilience](sources/power.md) | 3 |
 | [Water outages & water systems](sources/water.md) | 3 |
 | [Internet & communications disruptions](sources/connectivity.md) | 3 |
-| [Maps, infrastructure & geographic context](sources/context.md) | 16 |
+| [Maps, infrastructure & geographic context](sources/context.md) | 17 |
 | [Critical events & risk intelligence](sources/risk-intelligence.md) | 6 |
 | [Travel risk & assistance](sources/travel-risk.md) | 2 |
 | [Protective intelligence & investigations](sources/protective-intelligence.md) | 1 |
@@ -85,6 +85,7 @@ Review status describes evidence inspected, not a successful integration test.
 | [Translink South East Queensland real-time transit](sources/roads.md#translink-seq-realtime) | Road traffic & transport | live-feed | open |
 | [TxDOT public traffic cameras](sources/roads.md#txdot-traffic-cameras) | Road traffic & transport | dashboard | open |
 | [Warendorf municipal market-square webcam](sources/roads.md#warendorf-webcam) | Road traffic & transport | dashboard | open |
+| [Census American Community Survey five-year estimates](sources/government.md#census-acs) | Government & humanitarian information | periodic | mixed |
 | [Data.gov catalog](sources/government.md#data-gov) | Government & humanitarian information | catalog | mixed |
 | [Federal Register API](sources/government.md#federal-register) | Government & humanitarian information | periodic | open |
 | [OpenFEMA disaster declarations and program data](sources/government.md#openfema) | Government & humanitarian information | periodic | open |
@@ -115,6 +116,7 @@ Review status describes evidence inspected, not a successful integration test.
 | [Overture Maps](sources/context.md#overture) | Maps, infrastructure & geographic context | reference | open |
 | [Photon OpenStreetMap geocoding](sources/context.md#photon-geocoding) | Maps, infrastructure & geographic context | reference | open |
 | [Re:Earth Terrain elevation and mesh service](sources/context.md#reearth-terrain) | Maps, infrastructure & geographic context | reference | open |
+| [WorldPop modeled population counts and density](sources/context.md#worldpop) | Maps, infrastructure & geographic context | periodic | open |
 | [AlertMedia risk intelligence](sources/risk-intelligence.md#alertmedia) | Critical events & risk intelligence | mixed | commercial |
 | [Dataminr for Corporate Security](sources/risk-intelligence.md#dataminr-corporate-security) | Critical events & risk intelligence | live-feed | commercial |
 | [Everbridge Risk Intelligence](sources/risk-intelligence.md#everbridge-risk-intelligence) | Critical events & risk intelligence | mixed | commercial |

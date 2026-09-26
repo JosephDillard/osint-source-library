@@ -300,3 +300,21 @@ Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC B
 - **API entrypoint / example:** [Open endpoint](https://terrain.reearth.land/cesium-mesh/ellipsoid). Required parameters, credentials and pagination may still apply.
 - **Evidence:** [Provider reference 1](https://terrain.reearth.land/)
 - **Catalog ID:** `reearth-terrain`
+
+<a id="worldpop"></a>
+
+## WorldPop modeled population counts and density
+
+**[Visit source](https://hub.worldpop.org/)** | [Provider documentation](https://www.worldpop.org/choosing-the-right-worldpop-population-data-for-you/)
+
+- **Provider:** WorldPop / University of Southampton and partners
+- **Coverage:** Global and country-specific population products; available years, resolution and methods differ.
+- **Type / access:** `periodic` / `open`
+- **Formats:** Gridded population rasters, Dataset metadata and release documentation
+- **Updates:** Versioned product releases; annual modeled reference years do not imply annual observation or a live feed.
+- **Security use:** Estimate population potentially within hazard footprints for humanitarian preparedness and broad exposure summaries.
+- **License / terms:** The Hub identifies CC BY 4.0 for WorldPop datasets. Preserve the selected product's citation, release/version and any accompanying terms.
+- **Limitations:** Modeled distributions and projections are not observed presence, casualties or displacement. Distinguish counts per pixel from density, retain NoData and model uncertainty, and avoid double counting overlapping areas. The reviewed R2025A global 100 m product is explicitly alpha; pin and assess the chosen release before use.
+- **Review:** 2026-09-26 — `provider-documentation-reviewed`
+- **Evidence:** [Provider reference 1](https://hub.worldpop.org/) · [Provider reference 2](https://www.worldpop.org/choosing-the-right-worldpop-population-data-for-you/) · [Provider reference 3](https://hub.worldpop.org/geodata/listing?id=135)
+- **Catalog ID:** `worldpop`

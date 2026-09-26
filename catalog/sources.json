@@ -2447,6 +2447,59 @@
         "https://github.com/openaddresses/openaddresses/blob/master/DEVELOPMENT.md",
         "https://batch.openaddresses.io/"
       ]
+    },
+    {
+      "id": "census-acs",
+      "name": "Census American Community Survey five-year estimates",
+      "provider": "U.S. Census Bureau",
+      "category": "government",
+      "coverage": "United States and Puerto Rico; geography availability depends on the table, with detailed estimates down to block groups.",
+      "kind": "periodic",
+      "access": "mixed",
+      "formats": [
+        "JSON API",
+        "Downloadable statistical tables"
+      ],
+      "url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "documentation_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "endpoint_url": null,
+      "update_frequency": "Annual releases of estimates spanning five years; reference period and publication date differ.",
+      "license_notes": "Public statistical data subject to Census policies. API use requires the provider's non-endorsement notice and prohibits respondent identification. Current documentation requires an API key for data queries; download access is separate.",
+      "security_use": "Join population, housing and selected demographic estimates to compatible Census boundaries for community-level preparedness and exposure context.",
+      "limitations": "Estimates are not current occupancy or individual attributes. Retain margins of error and annotations, handle unavailable-value codes, match geographic vintages and avoid treating overlapping five-year releases as independent periods. No authenticated API query was tested.",
+      "reviewed_on": "2026-09-26",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/data/developers/about/terms-of-service.html"
+      ]
+    },
+    {
+      "id": "worldpop",
+      "name": "WorldPop modeled population counts and density",
+      "provider": "WorldPop / University of Southampton and partners",
+      "category": "context",
+      "coverage": "Global and country-specific population products; available years, resolution and methods differ.",
+      "kind": "periodic",
+      "access": "open",
+      "formats": [
+        "Gridded population rasters",
+        "Dataset metadata and release documentation"
+      ],
+      "url": "https://hub.worldpop.org/",
+      "documentation_url": "https://www.worldpop.org/choosing-the-right-worldpop-population-data-for-you/",
+      "endpoint_url": null,
+      "update_frequency": "Versioned product releases; annual modeled reference years do not imply annual observation or a live feed.",
+      "license_notes": "The Hub identifies CC BY 4.0 for WorldPop datasets. Preserve the selected product's citation, release/version and any accompanying terms.",
+      "security_use": "Estimate population potentially within hazard footprints for humanitarian preparedness and broad exposure summaries.",
+      "limitations": "Modeled distributions and projections are not observed presence, casualties or displacement. Distinguish counts per pixel from density, retain NoData and model uncertainty, and avoid double counting overlapping areas. The reviewed R2025A global 100 m product is explicitly alpha; pin and assess the chosen release before use.",
+      "reviewed_on": "2026-09-26",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://hub.worldpop.org/",
+        "https://www.worldpop.org/choosing-the-right-worldpop-population-data-for-you/",
+        "https://hub.worldpop.org/geodata/listing?id=135"
+      ]
     }
   ]
 }
