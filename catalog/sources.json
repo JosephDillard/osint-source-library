@@ -2500,6 +2500,58 @@
         "https://www.worldpop.org/choosing-the-right-worldpop-population-data-for-you/",
         "https://hub.worldpop.org/geodata/listing?id=135"
       ]
+    },
+    {
+      "id": "eia-860",
+      "name": "EIA-860 electric power plant and generator inventory",
+      "provider": "U.S. Energy Information Administration",
+      "category": "power",
+      "coverage": "U.S. surveyed electric power plants with at least 1 MW combined nameplate capacity; plant, utility and generator tables.",
+      "kind": "periodic",
+      "access": "open",
+      "formats": [
+        "Zipped Excel workbooks",
+        "Data layouts and code descriptions"
+      ],
+      "url": "https://www.eia.gov/electricity/data/eia860/",
+      "documentation_url": "https://www.eia.gov/electricity/data/eia860/",
+      "endpoint_url": null,
+      "update_frequency": "Annual inventory releases; the separate preliminary monthly generator inventory is a different product.",
+      "license_notes": "EIA permits reuse and distribution of its government data and requests source acknowledgment with publication date. Third-party material and agency marks have separate restrictions.",
+      "security_use": "Build a dated public power-plant inventory with generator, fuel and capacity context for hazard exposure screening.",
+      "limitations": "Survey coverage excludes smaller installations. Proposed, operable and retired records must stay distinct; the annual retired tab is not a complete retirement history. Inventory status is not live availability, a service territory or evidence that a plant supplies a particular site. Validate coordinates and generator-to-plant joins before mapping.",
+      "reviewed_on": "2026-09-26",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.eia.gov/electricity/data/eia860/",
+        "https://www.eia.gov/about/copyrights_reuse.php"
+      ]
+    },
+    {
+      "id": "eia-923",
+      "name": "EIA-923 power generation, fuel use and fuel stocks",
+      "provider": "U.S. Energy Information Administration",
+      "category": "power",
+      "coverage": "U.S. surveyed power plants; the monthly reporting subset and annual population differ.",
+      "kind": "periodic",
+      "access": "open",
+      "formats": [
+        "Zipped Excel workbooks",
+        "Survey schedules and documentation"
+      ],
+      "url": "https://www.eia.gov/electricity/data/eia923/",
+      "documentation_url": "https://www.eia.gov/electricity/data/eia923/",
+      "endpoint_url": null,
+      "update_frequency": "Monthly and annual releases with reporting lag, preliminary values and later revisions; preserve reporting period and release date.",
+      "license_notes": "EIA government data can be reused and distributed with requested source/date acknowledgment; separately credited third-party material keeps its own terms.",
+      "security_use": "Enrich a compatible EIA-860 inventory with generation and fuel context for continuity research and historical comparisons.",
+      "limitations": "Tables have different plant, prime-mover, generator or boiler grains. Document join keys and units; aggregate before joining to avoid multiplying values. Missing data is not zero, and generation changes alone do not establish an outage, cause or customer impact. Downloaded workbooks and joins were not tested in this review.",
+      "reviewed_on": "2026-09-26",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.eia.gov/electricity/data/eia923/",
+        "https://www.eia.gov/about/copyrights_reuse.php"
+      ]
     }
   ]
 }

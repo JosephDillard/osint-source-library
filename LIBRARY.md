@@ -4,7 +4,7 @@
 
 Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](LICENSE-CONTENT). [Scope and attribution](LICENSING.md). Provider material retains its own terms.
 
-**94 sources across 16 categories.** Catalog review: 2026-09-26.
+**96 sources across 16 categories.** Catalog review: 2026-09-26.
 
 Browse a category for source cards with documentation, access, limitations and evidence.
 For local agencies and utilities, browse the [three largest places in every state](CITIES.md).
@@ -21,7 +21,7 @@ Review status describes evidence inspected, not a successful integration test.
 | [Sea traffic & maritime safety](sources/maritime.md) | 4 |
 | [Road traffic & transport](sources/roads.md) | 25 |
 | [Government & humanitarian information](sources/government.md) | 6 |
-| [Power outages & grid resilience](sources/power.md) | 3 |
+| [Power outages & grid resilience](sources/power.md) | 5 |
 | [Water outages & water systems](sources/water.md) | 3 |
 | [Internet & communications disruptions](sources/connectivity.md) | 3 |
 | [Maps, infrastructure & geographic context](sources/context.md) | 17 |
@@ -93,6 +93,8 @@ Review status describes evidence inspected, not a successful integration test.
 | [ReliefWeb reports and disasters API](sources/government.md#reliefweb) | Government & humanitarian information | live-feed | approval |
 | [Austin Energy outage map](sources/power.md#austin-energy) | Power outages & grid resilience | dashboard | open |
 | [EAGLE-I historical power outage data, 2014-2022](sources/power.md#eaglei-history) | Power outages & grid resilience | historical | open |
+| [EIA-860 electric power plant and generator inventory](sources/power.md#eia-860) | Power outages & grid resilience | periodic | open |
+| [EIA-923 power generation, fuel use and fuel stocks](sources/power.md#eia-923) | Power outages & grid resilience | periodic | open |
 | [PowerOutage.us](sources/power.md#poweroutage-us) | Power outages & grid resilience | mixed | commercial |
 | [DC Water service alerts and outage map](sources/water.md#dc-water) | Water outages & water systems | dashboard | open |
 | [EPA drinking-water systems and compliance data](sources/water.md#epa-sdwis) | Water outages & water systems | periodic | open |
