@@ -4,7 +4,7 @@
 
 Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](LICENSE-CONTENT). [Scope and attribution](LICENSING.md). Provider material retains its own terms.
 
-**88 sources across 16 categories.** Catalog review: 2026-09-22.
+**92 sources across 16 categories.** Catalog review: 2026-09-26.
 
 Browse a category for source cards with documentation, access, limitations and evidence.
 For local agencies and utilities, browse the [three largest places in every state](CITIES.md).
@@ -24,7 +24,7 @@ Review status describes evidence inspected, not a successful integration test.
 | [Power outages & grid resilience](sources/power.md) | 3 |
 | [Water outages & water systems](sources/water.md) | 3 |
 | [Internet & communications disruptions](sources/connectivity.md) | 3 |
-| [Maps, infrastructure & geographic context](sources/context.md) | 12 |
+| [Maps, infrastructure & geographic context](sources/context.md) | 16 |
 | [Critical events & risk intelligence](sources/risk-intelligence.md) | 6 |
 | [Travel risk & assistance](sources/travel-risk.md) | 2 |
 | [Protective intelligence & investigations](sources/protective-intelligence.md) | 1 |
@@ -99,14 +99,18 @@ Review status describes evidence inspected, not a successful integration test.
 | [Cloudflare Radar outages and traffic anomalies](sources/connectivity.md#cloudflare-radar) | Internet & communications disruptions | live-feed | registration |
 | [IODA internet outage detection](sources/connectivity.md#ioda) | Internet & communications disruptions | live-feed | open |
 | [TeleGeography Submarine Cable Map](sources/connectivity.md#telegeography-cables) | Internet & communications disruptions | reference | mixed |
+| [Census TIGER/Line boundaries and geographic features](sources/context.md#census-tiger-line) | Maps, infrastructure & geographic context | periodic | open |
 | [Cesium ion global terrain and hosted content](sources/context.md#cesium-ion-terrain) | Maps, infrastructure & geographic context | reference | mixed |
 | [DataSF Analysis Neighborhoods](sources/context.md#datasf-analysis-neighborhoods) | Maps, infrastructure & geographic context | reference | open |
 | [Esri World Imagery basemap](sources/context.md#esri-world-imagery) | Maps, infrastructure & geographic context | reference | mixed |
+| [Geofabrik regional OpenStreetMap extracts](sources/context.md#geofabrik-extracts) | Maps, infrastructure & geographic context | periodic | open |
+| [GeoNames geographic names and alternate names](sources/context.md#geonames) | Maps, infrastructure & geographic context | periodic | open |
 | [Google Maps imagery, 3D tiles and place context](sources/context.md#google-maps-platform) | Maps, infrastructure & geographic context | reference | commercial |
 | [Humanitarian Data Exchange](sources/context.md#hdx) | Maps, infrastructure & geographic context | catalog | mixed |
 | [Natural Earth physical and cultural map data](sources/context.md#natural-earth) | Maps, infrastructure & geographic context | reference | open |
 | [Nominatim OpenStreetMap geocoding](sources/context.md#nominatim-geocoding) | Maps, infrastructure & geographic context | reference | open |
 | [Open Infrastructure Map](sources/context.md#open-infrastructure-map) | Maps, infrastructure & geographic context | reference | open |
+| [OpenAddresses address and location source collection](sources/context.md#openaddresses) | Maps, infrastructure & geographic context | catalog | mixed |
 | [OpenStreetMap](sources/context.md#openstreetmap) | Maps, infrastructure & geographic context | reference | open |
 | [Overture Maps](sources/context.md#overture) | Maps, infrastructure & geographic context | reference | open |
 | [Photon OpenStreetMap geocoding](sources/context.md#photon-geocoding) | Maps, infrastructure & geographic context | reference | open |

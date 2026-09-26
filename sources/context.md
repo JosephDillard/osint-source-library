@@ -6,6 +6,24 @@
 
 Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC BY 4.0](../LICENSE-CONTENT). [Scope and attribution](../LICENSING.md). Provider material retains its own terms.
 
+<a id="census-tiger-line"></a>
+
+## Census TIGER/Line boundaries and geographic features
+
+**[Visit source](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)** | [Provider documentation](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)
+
+- **Provider:** U.S. Census Bureau
+- **Coverage:** United States and supported territories; geographic levels and feature availability vary by release.
+- **Type / access:** `periodic` / `open`
+- **Formats:** Zipped Shapefile, Technical documentation
+- **Updates:** Annual releases with explicit boundary reference dates; select and retain a specific vintage.
+- **Security use:** Attach events to states, counties, places and tracts; join compatible Census statistics for area-level exposure context.
+- **License / terms:** Public Census downloads; preserve source, vintage and accompanying metadata. Census website policies apply; do not imply agency endorsement.
+- **Limitations:** Geometry does not include demographic counts. Keep GEOIDs and FIPS codes as strings, verify CRS and match statistical geography vintages. Census geometry is not a parcel survey, utility territory or live road-condition feed.
+- **Review:** 2026-09-26 — `provider-documentation-reviewed`
+- **Evidence:** [Provider reference 1](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) · [Provider reference 2](https://www.census.gov/about/policies.html)
+- **Catalog ID:** `census-tiger-line`
+
 <a id="cesium-ion-terrain"></a>
 
 ## Cesium ion global terrain and hosted content
@@ -60,6 +78,43 @@ Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC B
 - **API entrypoint / example:** [Open endpoint](https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer). Required parameters, credentials and pagination may still apply.
 - **Evidence:** [Provider reference 1](https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer) · [Provider reference 2](https://www.esri.com/en-us/legal/terms/full-master-agreement)
 - **Catalog ID:** `esri-world-imagery`
+
+<a id="geofabrik-extracts"></a>
+
+## Geofabrik regional OpenStreetMap extracts
+
+**[Visit source](https://download.geofabrik.de/)** | [Provider documentation](https://download.geofabrik.de/technical.html)
+
+- **Provider:** Geofabrik / OpenStreetMap contributors
+- **Coverage:** Global regional extracts, including U.S. states; extract edges can extend beyond administrative boundaries.
+- **Type / access:** `periodic` / `open`
+- **Formats:** OSM PBF, Regional GIS downloads, OSM change files, GeoJSON download index
+- **Updates:** Regional extracts normally refresh daily; individual files and formats can differ in age.
+- **Security use:** Prepare regional road, building and mapped facility layers for hazard exposure screening and response-resource context.
+- **License / terms:** OSM database material uses ODbL 1.0; preserve attribution and applicable share-alike obligations. Public extracts omit contributor identity fields.
+- **Limitations:** A bulk delivery option for the existing openstreetmap source, not independent corroboration. Tag completeness varies; edits do not establish physical change or operating status. Clipping polygons are not administrative boundaries.
+- **Review:** 2026-09-26 — `provider-documentation-reviewed`
+- **API entrypoint / example:** [Open endpoint](https://download.geofabrik.de/index-v1.json). Required parameters, credentials and pagination may still apply.
+- **Evidence:** [Provider reference 1](https://download.geofabrik.de/) · [Provider reference 2](https://download.geofabrik.de/technical.html) · [Provider reference 3](https://www.openstreetmap.org/copyright)
+- **Catalog ID:** `geofabrik-extracts`
+
+<a id="geonames"></a>
+
+## GeoNames geographic names and alternate names
+
+**[Visit source](https://www.geonames.org/export/)** | [Provider documentation](https://download.geonames.org/export/dump/readme.txt)
+
+- **Provider:** GeoNames
+- **Coverage:** Global place-name points and administrative codes; completeness and precision vary.
+- **Type / access:** `periodic` / `open`
+- **Formats:** Zipped UTF-8 tab-delimited text, Modification and deletion files
+- **Updates:** Daily bulk extracts and modification/deletion files; record-level modification dates are supplied.
+- **Security use:** Build a local gazetteer for resolving place mentions in reports, including alternate names and administrative context.
+- **License / terms:** Gazetteer extracts use CC BY 4.0; credit GeoNames. Hosted API registration, quotas and premium services are separate from bulk-download access.
+- **Limitations:** Names are ambiguous and coordinates represent geographic features, not necessarily incident locations. Preserve geonameid, feature code and match uncertainty; population attributes are not a replacement for dated Census estimates.
+- **Review:** 2026-09-26 — `provider-documentation-reviewed`
+- **Evidence:** [Provider reference 1](https://www.geonames.org/export/) · [Provider reference 2](https://download.geonames.org/export/dump/readme.txt)
+- **Catalog ID:** `geonames`
 
 <a id="google-maps-platform"></a>
 
@@ -152,6 +207,24 @@ Original catalog text: Copyright (c) 2026 Joseph Dillard and contributors, [CC B
 - **Review:** 2026-09-22 — `provider-documentation-reviewed`
 - **Evidence:** [Provider reference 1](https://openinframap.org/about)
 - **Catalog ID:** `open-infrastructure-map`
+
+<a id="openaddresses"></a>
+
+## OpenAddresses address and location source collection
+
+**[Visit source](https://openaddresses.io/)** | [Provider documentation](https://github.com/openaddresses/openaddresses)
+
+- **Provider:** OpenAddresses and contributing public data publishers
+- **Coverage:** Global collection of local and national sources; address coverage and source age vary by jurisdiction.
+- **Type / access:** `catalog` / `mixed`
+- **Formats:** JSON source definitions, Line-delimited GeoJSON processor output, Provider-specific source downloads
+- **Updates:** Developer documentation describes a weekly processing pipeline; upstream publishing schedules and successful output dates vary.
+- **Security use:** Evaluate local address-to-coordinate matching for authorized facility inventories and location references.
+- **License / terms:** Source-definition JSON uses CC0; processed data retains each original publisher's license. Record the selected source's terms and attribution separately from OpenAddresses code licensing.
+- **Limitations:** Source and pipeline documentation reviewed; current batch-download access, account requirements and sample exports were not verified. Inspect each source's coverage, output schema and terms before ingestion. An address does not establish occupancy or facility identity.
+- **Review:** 2026-09-26 — `partial-review`
+- **Evidence:** [Provider reference 1](https://openaddresses.io/) · [Provider reference 2](https://github.com/openaddresses/openaddresses) · [Provider reference 3](https://github.com/openaddresses/openaddresses/blob/master/DEVELOPMENT.md) · [Provider reference 4](https://batch.openaddresses.io/)
+- **Catalog ID:** `openaddresses`
 
 <a id="openstreetmap"></a>
 

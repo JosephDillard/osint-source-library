@@ -1,6 +1,6 @@
 {
   "catalog_version": 1,
-  "review_date": "2026-09-22",
+  "review_date": "2026-09-26",
   "categories": {
     "weather": "Weather, flooding & air quality",
     "hazards": "Natural hazards & disasters",
@@ -2336,6 +2336,116 @@
       "review_status": "provider-documentation-reviewed",
       "evidence_urls": [
         "https://vantor.com/company/open-data-program/"
+      ]
+    },
+    {
+      "id": "geofabrik-extracts",
+      "name": "Geofabrik regional OpenStreetMap extracts",
+      "provider": "Geofabrik / OpenStreetMap contributors",
+      "category": "context",
+      "coverage": "Global regional extracts, including U.S. states; extract edges can extend beyond administrative boundaries.",
+      "kind": "periodic",
+      "access": "open",
+      "formats": [
+        "OSM PBF",
+        "Regional GIS downloads",
+        "OSM change files",
+        "GeoJSON download index"
+      ],
+      "url": "https://download.geofabrik.de/",
+      "documentation_url": "https://download.geofabrik.de/technical.html",
+      "endpoint_url": "https://download.geofabrik.de/index-v1.json",
+      "update_frequency": "Regional extracts normally refresh daily; individual files and formats can differ in age.",
+      "license_notes": "OSM database material uses ODbL 1.0; preserve attribution and applicable share-alike obligations. Public extracts omit contributor identity fields.",
+      "security_use": "Prepare regional road, building and mapped facility layers for hazard exposure screening and response-resource context.",
+      "limitations": "A bulk delivery option for the existing openstreetmap source, not independent corroboration. Tag completeness varies; edits do not establish physical change or operating status. Clipping polygons are not administrative boundaries.",
+      "reviewed_on": "2026-09-26",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://download.geofabrik.de/",
+        "https://download.geofabrik.de/technical.html",
+        "https://www.openstreetmap.org/copyright"
+      ]
+    },
+    {
+      "id": "census-tiger-line",
+      "name": "Census TIGER/Line boundaries and geographic features",
+      "provider": "U.S. Census Bureau",
+      "category": "context",
+      "coverage": "United States and supported territories; geographic levels and feature availability vary by release.",
+      "kind": "periodic",
+      "access": "open",
+      "formats": [
+        "Zipped Shapefile",
+        "Technical documentation"
+      ],
+      "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html",
+      "documentation_url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html",
+      "endpoint_url": null,
+      "update_frequency": "Annual releases with explicit boundary reference dates; select and retain a specific vintage.",
+      "license_notes": "Public Census downloads; preserve source, vintage and accompanying metadata. Census website policies apply; do not imply agency endorsement.",
+      "security_use": "Attach events to states, counties, places and tracts; join compatible Census statistics for area-level exposure context.",
+      "limitations": "Geometry does not include demographic counts. Keep GEOIDs and FIPS codes as strings, verify CRS and match statistical geography vintages. Census geometry is not a parcel survey, utility territory or live road-condition feed.",
+      "reviewed_on": "2026-09-26",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html",
+        "https://www.census.gov/about/policies.html"
+      ]
+    },
+    {
+      "id": "geonames",
+      "name": "GeoNames geographic names and alternate names",
+      "provider": "GeoNames",
+      "category": "context",
+      "coverage": "Global place-name points and administrative codes; completeness and precision vary.",
+      "kind": "periodic",
+      "access": "open",
+      "formats": [
+        "Zipped UTF-8 tab-delimited text",
+        "Modification and deletion files"
+      ],
+      "url": "https://www.geonames.org/export/",
+      "documentation_url": "https://download.geonames.org/export/dump/readme.txt",
+      "endpoint_url": null,
+      "update_frequency": "Daily bulk extracts and modification/deletion files; record-level modification dates are supplied.",
+      "license_notes": "Gazetteer extracts use CC BY 4.0; credit GeoNames. Hosted API registration, quotas and premium services are separate from bulk-download access.",
+      "security_use": "Build a local gazetteer for resolving place mentions in reports, including alternate names and administrative context.",
+      "limitations": "Names are ambiguous and coordinates represent geographic features, not necessarily incident locations. Preserve geonameid, feature code and match uncertainty; population attributes are not a replacement for dated Census estimates.",
+      "reviewed_on": "2026-09-26",
+      "review_status": "provider-documentation-reviewed",
+      "evidence_urls": [
+        "https://www.geonames.org/export/",
+        "https://download.geonames.org/export/dump/readme.txt"
+      ]
+    },
+    {
+      "id": "openaddresses",
+      "name": "OpenAddresses address and location source collection",
+      "provider": "OpenAddresses and contributing public data publishers",
+      "category": "context",
+      "coverage": "Global collection of local and national sources; address coverage and source age vary by jurisdiction.",
+      "kind": "catalog",
+      "access": "mixed",
+      "formats": [
+        "JSON source definitions",
+        "Line-delimited GeoJSON processor output",
+        "Provider-specific source downloads"
+      ],
+      "url": "https://openaddresses.io/",
+      "documentation_url": "https://github.com/openaddresses/openaddresses",
+      "endpoint_url": null,
+      "update_frequency": "Developer documentation describes a weekly processing pipeline; upstream publishing schedules and successful output dates vary.",
+      "license_notes": "Source-definition JSON uses CC0; processed data retains each original publisher's license. Record the selected source's terms and attribution separately from OpenAddresses code licensing.",
+      "security_use": "Evaluate local address-to-coordinate matching for authorized facility inventories and location references.",
+      "limitations": "Source and pipeline documentation reviewed; current batch-download access, account requirements and sample exports were not verified. Inspect each source's coverage, output schema and terms before ingestion. An address does not establish occupancy or facility identity.",
+      "reviewed_on": "2026-09-26",
+      "review_status": "partial-review",
+      "evidence_urls": [
+        "https://openaddresses.io/",
+        "https://github.com/openaddresses/openaddresses",
+        "https://github.com/openaddresses/openaddresses/blob/master/DEVELOPMENT.md",
+        "https://batch.openaddresses.io/"
       ]
     }
   ]
